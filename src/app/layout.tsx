@@ -17,8 +17,32 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://solquant.xyz"),
     title: "SolQuant | Stop Guessing. Start Seeing.",
     description: "High-precision tools for traders who want to see the market's wireframe—the hidden structure of volume, leverage, and time.",
+    openGraph: {
+        title: "SolQuant | Stop Guessing. Start Seeing.",
+        description: "High-precision tools for traders who want to see the market's wireframe—the hidden structure of volume, leverage, and time.",
+        url: "https://solquant.xyz/",
+        siteName: "SolQuant",
+        images: [
+            {
+                url: "/images/twitter-header.png",
+                width: 1500,
+                height: 500,
+                alt: "SolQuant",
+            },
+        ],
+        locale: "en_US",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "SolQuant | Stop Guessing. Start Seeing.",
+        description: "High-precision tools for traders who want to see the market's wireframe—the hidden structure of volume, leverage, and time.",
+        creator: "@SolQuant",
+        images: ["/images/twitter-header.png"],
+    },
 };
 
 export default function RootLayout({

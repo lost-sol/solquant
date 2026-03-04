@@ -46,6 +46,8 @@ async function fetchNotionBlocks(blockId: string) {
     return response.json();
 }
 
+import crypto from "crypto";
+
 async function downloadAndCacheImage(url: string, id: string, folder: string = "roadmap"): Promise<string> {
     try {
         const publicDir = path.join(process.cwd(), "public", "images", folder);
@@ -53,10 +55,23 @@ async function downloadAndCacheImage(url: string, id: string, folder: string = "
             fs.mkdirSync(publicDir, { recursive: true });
         }
 
-        const filePath = path.join(publicDir, `${id}.jpg`);
-        const publicPath = `/images/${folder}/${id}.jpg`;
+        // Use a hash of the URL to detect changes (Notion signed URLs change when content changes)
+        const urlHash = crypto.createHash('md5').update(url.split('?')[0]).digest('hex').substring(0, 8);
+        const fileName = `${id}_${urlHash}.jpg`;
+        const filePath = path.join(publicDir, fileName);
+        const publicPath = `/images/${folder}/${fileName}`;
 
         if (!fs.existsSync(filePath)) {
+            // Remove old versions of this image to save space
+            if (fs.existsSync(publicDir)) {
+                const files = fs.readdirSync(publicDir);
+                files.forEach(file => {
+                    if (file.startsWith(id) && file !== fileName) {
+                        try { fs.unlinkSync(path.join(publicDir, file)); } catch (e) { }
+                    }
+                });
+            }
+
             const response = await fetch(url);
             if (!response.ok) throw new Error(`Failed to fetch image: ${response.statusText}`);
             const arrayBuffer = await response.arrayBuffer();
@@ -194,15 +209,27 @@ export async function getWikiArticles() {
     }
 }
 
-// Helper to fetch a single page content
+// Helper to fetch a single page content, including nested blocks
 export async function getPageContent(pageId: string) {
     if (!process.env.NOTION_API_KEY) return [];
 
     try {
-        const response = await notion.blocks.children.list({
-            block_id: pageId,
-        });
-        return response.results;
+        const fetchBlocks = async (blockId: string): Promise<any[]> => {
+            const response = await notion.blocks.children.list({
+                block_id: blockId,
+            });
+
+            const blocks = await Promise.all(response.results.map(async (block: any) => {
+                if (block.has_children) {
+                    block[block.type].children = await fetchBlocks(block.id);
+                }
+                return block;
+            }));
+
+            return blocks;
+        };
+
+        return await fetchBlocks(pageId);
     } catch (error) {
         console.error("Error fetching page content:", error);
         return [];

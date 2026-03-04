@@ -21,6 +21,7 @@ async function fetchNotionDatabase(databaseId: string, body: any = {}) {
             "Content-Type": "application/json",
         },
         body: JSON.stringify(body),
+        next: { revalidate: 60 }
     });
 
     if (!response.ok) {
@@ -38,7 +39,8 @@ async function fetchNotionBlocks(blockId: string) {
         headers: {
             "Authorization": `Bearer ${process.env.NOTION_API_KEY}`,
             "Notion-Version": "2022-06-28",
-        }
+        },
+        next: { revalidate: 60 }
     });
     if (!response.ok) return { results: [] };
     return response.json();
@@ -56,6 +58,7 @@ async function downloadAndCacheImage(url: string, id: string, folder: string = "
 
         if (!fs.existsSync(filePath)) {
             const response = await fetch(url);
+            if (!response.ok) throw new Error(`Failed to fetch image: ${response.statusText}`);
             const arrayBuffer = await response.arrayBuffer();
             const buffer = Buffer.from(arrayBuffer);
             fs.writeFileSync(filePath, buffer);
@@ -86,23 +89,20 @@ export async function getLiveRoadmap() {
             page_size: 3,
         });
 
-        const items = response.results.map((page: any) => {
-            return {
+        const items = await Promise.all(response.results.map(async (page: any) => {
+            const item: any = {
                 id: page.id,
                 title: page.properties.Entry?.title[0]?.plain_text || "Untitled",
                 status: page.properties.Category?.multi_select?.[0]?.name || "Update",
                 date: page.properties.Date?.date?.start || "",
                 description: page.properties.Notes?.rich_text[0]?.plain_text || "",
-                imageUrl: "/images/logo.png",
-                _rawPage: page
+                imageUrl: "/images/logo.png"
             };
-        });
 
-        for (const item of items) {
-            let imageUrl = item._rawPage.icon?.external?.url || item._rawPage.icon?.file?.url || item._rawPage.cover?.external?.url || item._rawPage.cover?.file?.url;
+            let imageUrl = page.icon?.external?.url || page.icon?.file?.url || page.cover?.external?.url || page.cover?.file?.url;
 
             if (!imageUrl) {
-                const blocksData = await fetchNotionBlocks(item.id);
+                const blocksData = await fetchNotionBlocks(page.id);
                 const imageBlock = blocksData.results.find((b: any) => b.type === "image");
                 if (imageBlock) {
                     imageUrl = imageBlock.image?.file?.url || imageBlock.image?.external?.url;
@@ -110,11 +110,11 @@ export async function getLiveRoadmap() {
             }
 
             if (imageUrl) {
-                item.imageUrl = await downloadAndCacheImage(imageUrl, item.id);
+                item.imageUrl = await downloadAndCacheImage(imageUrl, page.id);
             }
 
-            delete item._rawPage;
-        }
+            return item;
+        }));
 
         return items;
     } catch (error) {
@@ -133,7 +133,7 @@ export async function getWikiArticles() {
     try {
         const response = await fetchNotionDatabase(WIKI_DATABASE_ID, {});
 
-        const items = response.results.map((page: any) => {
+        const items = await Promise.all(response.results.map(async (page: any) => {
             const title = page.properties['Indicator Name']?.title[0]?.plain_text || "Untitled";
             const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
             const tags = page.properties['Tags']?.multi_select?.map((t: any) => t.name) || [];
@@ -144,7 +144,7 @@ export async function getWikiArticles() {
                 rawScreenshotUrl = screenshotProp.files[0].file?.url || screenshotProp.files[0].external?.url || "";
             }
 
-            return {
+            const item: any = {
                 id: page.id,
                 title: title,
                 slug: slug,
@@ -153,17 +153,13 @@ export async function getWikiArticles() {
                 summary: page.properties['Core Concept']?.rich_text[0]?.plain_text || "",
                 imageUrl: "/images/logo.png",
                 screenshotUrl: "",
-                indicatorUrl: indicatorUrl,
-                _rawPage: page,
-                _rawScreenshotUrl: rawScreenshotUrl
+                indicatorUrl: indicatorUrl
             };
-        });
 
-        for (const item of items) {
-            let imageUrl = item._rawPage.cover?.external?.url || item._rawPage.cover?.file?.url;
+            let imageUrl = page.cover?.external?.url || page.cover?.file?.url;
 
             if (!imageUrl) {
-                const blocksData = await fetchNotionBlocks(item.id);
+                const blocksData = await fetchNotionBlocks(page.id);
                 // Look for first image block
                 const imageBlock = blocksData.results.find((b: any) => b.type === "image");
                 if (imageBlock) {
@@ -171,17 +167,25 @@ export async function getWikiArticles() {
                 }
             }
 
+            const imageOps = [];
             if (imageUrl) {
-                item.imageUrl = await downloadAndCacheImage(imageUrl, item.id, "wiki");
+                imageOps.push((async () => {
+                    item.imageUrl = await downloadAndCacheImage(imageUrl as string, page.id, "wiki");
+                })());
             }
 
-            if (item._rawScreenshotUrl) {
-                item.screenshotUrl = await downloadAndCacheImage(item._rawScreenshotUrl, `${item.id}_screenshot`, "wiki");
+            if (rawScreenshotUrl) {
+                imageOps.push((async () => {
+                    item.screenshotUrl = await downloadAndCacheImage(rawScreenshotUrl, `${page.id}_screenshot`, "wiki");
+                })());
             }
 
-            delete item._rawPage;
-            delete item._rawScreenshotUrl;
-        }
+            if (imageOps.length > 0) {
+                await Promise.all(imageOps);
+            }
+
+            return item;
+        }));
 
         return items;
     } catch (error) {

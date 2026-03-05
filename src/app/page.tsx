@@ -26,7 +26,7 @@ export default async function Home() {
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/50 to-[#050505] z-10"></div>
                     <Image src="/images/twitter-header.png" alt="Hero Background" fill className="object-cover object-center grayscale mix-blend-screen" priority />
                 </div>
-                <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter relative z-10">
+                <h1 className="text-5xl md:text-7xl tracking-tighter relative z-10">
                     Stop Guessing. <br className="hidden md:block" />
                     <span className="text-solquant-gold">Start Seeing.</span>
                 </h1>

@@ -6,7 +6,7 @@ export default async function DocsPage() {
 
     return (
         <div className="prose prose-invert max-w-none">
-            <h1 className="text-4xl font-extrabold tracking-tight mb-4">SolQuant Indicators</h1>
+            <h1 className="text-4xl tracking-tight mb-4">SolQuant Indicators</h1>
             <p className="text-xl text-gray-400 font-mono mb-8">
                 Welcome to the technical authority hub. We decode market mechanics before we explain settings.
             </p>

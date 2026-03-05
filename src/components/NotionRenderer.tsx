@@ -69,7 +69,7 @@ const RenderBlocks = ({ blocks }: { blocks: any[] }) => {
 
                     case 'heading_1':
                         return (
-                            <h1 key={block.id} className={`text-4xl font-bold mt-12 mb-6 border-b border-border pb-4 ${blockColor || 'text-white'}`}>
+                            <h1 key={block.id} className={`text-4xl mt-12 mb-6 border-b border-border pb-4 ${blockColor || 'text-white'}`}>
                                 {renderRichText(blockContent.rich_text, blockColor)}
                             </h1>
                         );

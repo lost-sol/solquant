@@ -26,7 +26,7 @@ export default async function WikiArticlePage({ params }: Props) {
             // Mock fallback for standard articles if Notion isn't connected
             return (
                 <div className="prose prose-invert max-w-none">
-                    <h1 className="text-4xl font-extrabold tracking-tight mb-4">PVSRA Volume Integration</h1>
+                    <h1 className="text-4xl tracking-tight mb-4">PVSRA Volume Integration</h1>
                     <p className="font-mono text-sm text-gray-500 mb-8 pb-4 border-b border-border">Fallback Mode - Configure Notion API</p>
                     <div className="p-6 bg-solquant-blue/10 border-l-4 border-solquant-blue flex items-start space-x-4 wireframe-box">
                         <span className="text-xl">💡</span>
@@ -63,7 +63,7 @@ export default async function WikiArticlePage({ params }: Props) {
 
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-4">
                 <div>
-                    <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-0">{articleMeta.title}</h1>
+                    <h1 className="text-4xl md:text-5xl tracking-tight mb-0">{articleMeta.title}</h1>
                     <p className="font-mono text-sm text-gray-500 mt-2">
                         {((articleMeta as any).categories || []).length > 0
                             ? `Suites: ${(articleMeta as any).categories.join(", ")}`

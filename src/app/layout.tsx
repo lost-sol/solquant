@@ -1,22 +1,10 @@
 import type { Metadata } from "next";
 // Deployment Verification: GitHub -> Vercel Link Test
-import { Oxanium, Roboto } from "next/font/google";
 import Image from "next/image";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import AnimatedBackground from "@/components/AnimatedBackground";
 import TopNav from "@/components/TopNav";
 import "./globals.css";
-
-const oxanium = Oxanium({
-    variable: "--font-oxanium",
-    subsets: ["latin"],
-});
-
-const roboto = Roboto({
-    variable: "--font-roboto",
-    weight: ["300", "400", "500", "700"],
-    subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://solquant.xyz"),
@@ -55,7 +43,7 @@ export default function RootLayout({
     return (
         <html lang="en" className="dark">
             <body
-                className={`${roboto.variable} ${oxanium.variable} antialiased bg-background text-foreground font-sans`}
+                className="antialiased bg-background text-foreground"
             >
                 <AnimatedBackground />
                 <div className="relative z-10 flex flex-col min-h-screen">

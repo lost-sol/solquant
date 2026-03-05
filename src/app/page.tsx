@@ -75,7 +75,7 @@ export default async function Home() {
                                 Focus on liquidity using the Liquidation Levels heatmap. Stop being the exit liquidity and start trading alongside institutional footprint.
                             </p>
                             <div className="relative w-full h-48 mb-6 rounded-2xl overflow-hidden border border-white/10 opacity-80 hover:opacity-100 transition-opacity">
-                                <Image src="/images/screenshots/screenshot1.png" alt="Liquidation Specialist" fill className="object-cover" />
+                                <Image src="/images/liquidation.jpg" alt="Liquidation Specialist" fill className="object-cover" />
                             </div>
                         </div>
                         <Link
@@ -99,7 +99,7 @@ export default async function Home() {
                                 Master the MTF Trend tools and the Synthetic Max Pain model. For traders operating on low timeframes extracting edge from volatility.
                             </p>
                             <div className="relative w-full h-48 mb-6 rounded-2xl overflow-hidden border border-white/10 opacity-80 hover:opacity-100 transition-opacity">
-                                <Image src="/images/screenshots/screenshot2.png" alt="Precision Scalper" fill className="object-cover" />
+                                <Image src="/images/scalper.jpg" alt="Precision Scalper" fill className="object-cover" />
                             </div>
                         </div>
                         <Link

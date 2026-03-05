@@ -46,45 +46,7 @@ async function fetchNotionBlocks(blockId: string) {
     return response.json();
 }
 
-import crypto from "crypto";
 
-async function downloadAndCacheImage(url: string, id: string, folder: string = "roadmap"): Promise<string> {
-    try {
-        const publicDir = path.join(process.cwd(), "public", "images", folder);
-        if (!fs.existsSync(publicDir)) {
-            fs.mkdirSync(publicDir, { recursive: true });
-        }
-
-        // Use a hash of the URL to detect changes (Notion signed URLs change when content changes)
-        const urlHash = crypto.createHash('md5').update(url.split('?')[0]).digest('hex').substring(0, 8);
-        const fileName = `${id}_${urlHash}.jpg`;
-        const filePath = path.join(publicDir, fileName);
-        const publicPath = `/images/${folder}/${fileName}`;
-
-        if (!fs.existsSync(filePath)) {
-            // Remove old versions of this image to save space
-            if (fs.existsSync(publicDir)) {
-                const files = fs.readdirSync(publicDir);
-                files.forEach(file => {
-                    if (file.startsWith(id) && file !== fileName) {
-                        try { fs.unlinkSync(path.join(publicDir, file)); } catch (e) { }
-                    }
-                });
-            }
-
-            const response = await fetch(url);
-            if (!response.ok) throw new Error(`Failed to fetch image: ${response.statusText}`);
-            const arrayBuffer = await response.arrayBuffer();
-            const buffer = Buffer.from(arrayBuffer);
-            fs.writeFileSync(filePath, buffer);
-        }
-
-        return publicPath;
-    } catch (e) {
-        console.error("Failed to download image", e);
-        return "/images/logo.png";
-    }
-}
 
 // Helper to fetch roadmap items
 export async function getLiveRoadmap() {
@@ -114,6 +76,9 @@ export async function getLiveRoadmap() {
                 imageUrl: "/images/logo.png"
             };
 
+            let _proxyType = 'page';
+            let _proxyId = page.id;
+
             let imageUrl = page.icon?.external?.url || page.icon?.file?.url || page.cover?.external?.url || page.cover?.file?.url;
 
             if (!imageUrl) {
@@ -121,11 +86,14 @@ export async function getLiveRoadmap() {
                 const imageBlock = blocksData.results.find((b: any) => b.type === "image");
                 if (imageBlock) {
                     imageUrl = imageBlock.image?.file?.url || imageBlock.image?.external?.url;
+                    _proxyType = 'block';
+                    _proxyId = imageBlock.id;
                 }
             }
 
             if (imageUrl) {
-                item.imageUrl = await downloadAndCacheImage(imageUrl, page.id);
+                const isNotionHosted = imageUrl.includes('amazonaws.com') || imageUrl.includes('secure.notion-static.com') || imageUrl.includes('prod-files-secure');
+                item.imageUrl = isNotionHosted ? `/api/notion-image?type=${_proxyType}&id=${_proxyId}` : imageUrl;
             }
 
             return item;
@@ -171,6 +139,9 @@ export async function getWikiArticles() {
                 indicatorUrl: indicatorUrl
             };
 
+            let _proxyType = 'page';
+            let _proxyId = page.id;
+
             let imageUrl = page.cover?.external?.url || page.cover?.file?.url;
 
             if (!imageUrl) {
@@ -179,24 +150,19 @@ export async function getWikiArticles() {
                 const imageBlock = blocksData.results.find((b: any) => b.type === "image");
                 if (imageBlock) {
                     imageUrl = imageBlock.image?.file?.url || imageBlock.image?.external?.url;
+                    _proxyType = 'block';
+                    _proxyId = imageBlock.id;
                 }
             }
 
-            const imageOps = [];
             if (imageUrl) {
-                imageOps.push((async () => {
-                    item.imageUrl = await downloadAndCacheImage(imageUrl as string, page.id, "wiki");
-                })());
+                const isNotionHosted = imageUrl.includes('amazonaws.com') || imageUrl.includes('secure.notion-static.com') || imageUrl.includes('prod-files-secure');
+                item.imageUrl = isNotionHosted ? `/api/notion-image?type=${_proxyType}&id=${_proxyId}` : imageUrl;
             }
 
             if (rawScreenshotUrl) {
-                imageOps.push((async () => {
-                    item.screenshotUrl = await downloadAndCacheImage(rawScreenshotUrl, `${page.id}_screenshot`, "wiki");
-                })());
-            }
-
-            if (imageOps.length > 0) {
-                await Promise.all(imageOps);
+                const isNotionHosted = rawScreenshotUrl.includes('amazonaws.com') || rawScreenshotUrl.includes('secure.notion-static.com') || rawScreenshotUrl.includes('prod-files-secure');
+                item.screenshotUrl = isNotionHosted ? `/api/notion-image?type=page&id=${page.id}&propName=Screenshot` : rawScreenshotUrl;
             }
 
             return item;
@@ -215,11 +181,19 @@ export async function getPageContent(pageId: string) {
 
     try {
         const fetchBlocks = async (blockId: string): Promise<any[]> => {
-            const response = await notion.blocks.children.list({
-                block_id: blockId,
+            const url = `https://api.notion.com/v1/blocks/${blockId}/children`;
+            const response = await fetch(url, {
+                method: "GET",
+                headers: {
+                    "Authorization": `Bearer ${process.env.NOTION_API_KEY}`,
+                    "Notion-Version": "2022-06-28",
+                },
+                next: { revalidate: 60 }
             });
+            const data = await response.json();
+            if (!response.ok) return [];
 
-            const blocks = await Promise.all(response.results.map(async (block: any) => {
+            const blocks = await Promise.all(data.results.map(async (block: any) => {
                 if (block.has_children) {
                     block[block.type].children = await fetchBlocks(block.id);
                 }

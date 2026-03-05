@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+// Deployment Verification: GitHub -> Vercel Link Test
 import { Oxanium, Roboto } from "next/font/google";
 import Image from "next/image";
 import { GoogleAnalytics } from '@next/third-parties/google';

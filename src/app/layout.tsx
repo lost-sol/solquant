@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Oxanium, Roboto } from "next/font/google";
 import Image from "next/image";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import AnimatedBackground from "@/components/AnimatedBackground";
 import TopNav from "@/components/TopNav";
 import "./globals.css";
@@ -79,6 +80,7 @@ export default function RootLayout({
                     </footer>
                 </div>
             </body>
+            <GoogleAnalytics gaId="G-KGEZHNT6VW" />
         </html>
     );
 }

@@ -2,10 +2,16 @@ import { getWikiArticles, getPageContent } from "@/lib/notion";
 import NotionRenderer from "@/components/NotionRenderer";
 import { notFound } from "next/navigation";
 
-export const revalidate = 60; // ISR 
 
 type Props = {
     params: Promise<{ slug: string }>
+}
+
+export async function generateStaticParams() {
+    const articles = await getWikiArticles();
+    return articles.map((a: any) => ({
+        slug: a.slug,
+    }));
 }
 
 export default async function WikiArticlePage({ params }: Props) {

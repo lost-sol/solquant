@@ -106,12 +106,10 @@ const RenderBlocks = ({ blocks }: { blocks: any[] }) => {
                         );
 
                     case 'image':
-                        const isNotionHosted = blockContent.file?.url?.includes('amazonaws.com') || blockContent.file?.url?.includes('notion-static.com') || blockContent.file?.url?.includes('prod-files-secure');
-                        const imgSrc = isNotionHosted ? `/api/notion-image?type=block&id=${block.id}` : (blockContent.external?.url || blockContent.file?.url);
                         return (
                             <figure key={block.id} className="my-8 wireframe-box p-2">
                                 <img
-                                    src={imgSrc}
+                                    src={blockContent.external?.url || blockContent.file?.url}
                                     alt="Notion Data"
                                     className="w-full h-auto"
                                 />

@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { getLiveRoadmap, getWikiArticles } from "@/lib/notion";
 
-export const revalidate = 60; // ISR revalidation every 60s
 
 export default async function Home() {
     const [roadmapItemsRaw, wikiArticles] = await Promise.all([

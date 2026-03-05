@@ -147,7 +147,6 @@ async function buildRoadmap() {
                 direction: "descending",
             },
         ],
-        page_size: 3,
     });
 
     const items = await Promise.all(response.results.map(async (page) => {
@@ -160,10 +159,19 @@ async function buildRoadmap() {
             imageUrl: "/images/logo.png"
         };
 
+        const blocksData = await fetchNotionBlocks(page.id, false);
+
+        // Fallback description from blocks if Notes is empty
+        if (!item.description) {
+            const firstParagraph = blocksData.find(b => b.type === 'paragraph');
+            if (firstParagraph && firstParagraph.paragraph.rich_text.length > 0) {
+                item.description = firstParagraph.paragraph.rich_text.map(t => t.plain_text).join("");
+            }
+        }
+
         let imageUrl = page.icon?.external?.url || page.icon?.file?.url || page.cover?.external?.url || page.cover?.file?.url;
 
         if (!imageUrl) {
-            const blocksData = await fetchNotionBlocks(page.id, false);
             const imageBlock = blocksData.find((b) => b.type === "image");
             if (imageBlock) {
                 imageUrl = imageBlock.image?.file?.url || imageBlock.image?.external?.url;

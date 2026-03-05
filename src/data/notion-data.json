@@ -1,11 +1,19 @@
 {
   "roadmap": [
     {
+      "id": "31a2e378-b76a-8085-ada6-f4a4cc99ede4",
+      "title": "Strategies are Coming",
+      "status": "Strategy",
+      "date": "2026-03-05",
+      "description": "Results from our custom backtester have been coming in and we’ve been hard at work eliminating repainting and data leaks to make these strategies true to real time results and double checking over fitment. We will be offering these to our subscribers very soon!",
+      "imageUrl": "/images/notion/31a2e378-b76a-8085-ada6-f4a4cc99ede4_b81277f2.jpg"
+    },
+    {
       "id": "31a2e378-b76a-80fc-8ba9-cfe53c303921",
       "title": "Backtesting strategies",
       "status": "Update",
       "date": "2026-03-04",
-      "description": "",
+      "description": "We've been running backtests on our indicators and testing strategies on years of data on $BTC, $ETH, $SOL and many others. It's been a busy couple of weeks. Announcements are coming soon!",
       "imageUrl": "/images/notion/31a2e378-b76a-80fc-8ba9-cfe53c303921_92944508.jpg"
     },
     {
@@ -13,7 +21,7 @@
       "title": "Website Soft launch",
       "status": "Update",
       "date": "2026-03-04",
-      "description": "",
+      "description": "We've soft launched. Still working on getting all the documentation on there but we finally have a permanent home for everything. We're cooking. Updates will be rolling out every day. https://solquant.xyz",
       "imageUrl": "/images/notion/3192e378-b76a-80a2-8325-ed4dc155f921_bd1a0835.jpg"
     },
     {

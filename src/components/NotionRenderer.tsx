@@ -146,6 +146,28 @@ const RenderBlocks = ({ blocks }: { blocks: any[] }) => {
                             </div>
                         );
 
+                    case 'table':
+                        return (
+                            <div key={block.id} className="my-8 overflow-x-auto wireframe-box">
+                                <table className="w-full text-left border-collapse">
+                                    <tbody className="divide-y divide-white/10">
+                                        <RenderBlocks blocks={blockContent.children} />
+                                    </tbody>
+                                </table>
+                            </div>
+                        );
+
+                    case 'table_row':
+                        return (
+                            <tr key={block.id} className="hover:bg-white/5 transition-colors">
+                                {blockContent.cells.map((cell: any[], cellIdx: number) => (
+                                    <td key={cellIdx} className="p-4 text-sm text-gray-300 border-x border-white/5 first:border-l-0 last:border-r-0">
+                                        {renderRichText(cell)}
+                                    </td>
+                                ))}
+                            </tr>
+                        );
+
                     case 'divider':
                         return <hr key={block.id} className="my-8 border-border" />;
 

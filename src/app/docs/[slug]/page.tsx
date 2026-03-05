@@ -65,7 +65,9 @@ export default async function WikiArticlePage({ params }: Props) {
                 <div>
                     <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-0">{articleMeta.title}</h1>
                     <p className="font-mono text-sm text-gray-500 mt-2">
-                        Category: {articleMeta.category}
+                        {((articleMeta as any).categories || []).length > 0
+                            ? `Suites: ${(articleMeta as any).categories.join(", ")}`
+                            : `Suite: ${(articleMeta as any).category || "General"}`}
                     </p>
                 </div>
 

@@ -201,7 +201,7 @@ async function buildWiki() {
             title: title,
             slug: slug,
             tags: tags,
-            category: page.properties.Suite?.select?.name || "General",
+            categories: page.properties.Suite?.multi_select?.map((s) => s.name) || ["General"],
             summary: page.properties['Core Concept']?.rich_text[0]?.plain_text || "",
             imageUrl: "/images/logo.png",
             screenshotUrl: "",

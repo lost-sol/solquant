@@ -23,7 +23,9 @@
       "title": "Liquidation Levels",
       "slug": "liquidation-levels",
       "tags": [],
-      "category": "General",
+      "categories": [
+        "Suite A - Liquidation Specialist"
+      ],
       "summary": "Highlights likely liquidation zones (forced close levels) based on leverage assumptions and price swings.",
       "imageUrl": "/images/notion/2f72e378-b76a-808b-9251-eee12df4db67_e205a8a3.jpg",
       "screenshotUrl": "/images/notion/2f72e378-b76a-808b-9251-eee12df4db67_screenshot_5644bc7c.jpg",
@@ -3400,7 +3402,9 @@
       "title": "Trend MTF",
       "slug": "trend-mtf",
       "tags": [],
-      "category": "General",
+      "categories": [
+        "Suite B - Precision Scalper"
+      ],
       "summary": "Multi-timeframe trend state aggregation for directional bias and alignment checks.",
       "imageUrl": "/images/notion/2f92e378-b76a-802f-82ea-e6e456645750_fbf4d2cc.jpg",
       "screenshotUrl": "/images/notion/2f92e378-b76a-802f-82ea-e6e456645750_screenshot_dc9f5cd2.jpg",
@@ -7151,7 +7155,9 @@
       "title": "WaveTrend Oscillator",
       "slug": "wavetrend-oscillator",
       "tags": [],
-      "category": "General",
+      "categories": [
+        "Suite B - Precision Scalper"
+      ],
       "summary": "Momentum oscillator (WaveTrend-style) for overbought/oversold, swings, and divergences.",
       "imageUrl": "/images/notion/2fd2e378-b76a-8080-bc2d-cbdff3a2af00_8313765a.jpg",
       "screenshotUrl": "/images/notion/2fd2e378-b76a-8080-bc2d-cbdff3a2af00_screenshot_93aa6f97.jpg",
@@ -8606,7 +8612,9 @@
       "title": "WaveTrend Oscillator CVD-Z",
       "slug": "wavetrend-oscillator-cvd-z",
       "tags": [],
-      "category": "General",
+      "categories": [
+        "Suite B - Precision Scalper"
+      ],
       "summary": "WaveTrend momentum overlaid with CVD Z-score style normalization for flow/imbalance confirmation.",
       "imageUrl": "/images/logo.png",
       "screenshotUrl": "/images/notion/3082e378-b76a-8148-a348-d960fd819093_screenshot_6f4eee47.jpg",
@@ -10061,7 +10069,9 @@
       "title": "WaveTrend Dashboard",
       "slug": "wavetrend-dashboard",
       "tags": [],
-      "category": "General",
+      "categories": [
+        "Community"
+      ],
       "summary": "Dashboard-style WaveTrend readouts across symbols/timeframes for scanning and alignment.",
       "imageUrl": "/images/notion/3082e378-b76a-816a-aaa9-dd7382ce8296_74f2bc00.jpg",
       "screenshotUrl": "/images/notion/3082e378-b76a-816a-aaa9-dd7382ce8296_screenshot_29658c09.jpg",
@@ -12331,7 +12341,9 @@
       "title": "Synthetic Max Pain",
       "slug": "synthetic-max-pain",
       "tags": [],
-      "category": "General",
+      "categories": [
+        "Suite B - Precision Scalper"
+      ],
       "summary": "Estimates a “max pain”/pinning zone using a synthetic model (not official options OI).",
       "imageUrl": "/images/logo.png",
       "screenshotUrl": "/images/notion/3082e378-b76a-8171-ad0e-eaafbec26e43_screenshot_f9411fd9.jpg",
@@ -16672,7 +16684,9 @@
       "title": "HeikenAshi Trend",
       "slug": "heikenashi-trend",
       "tags": [],
-      "category": "General",
+      "categories": [
+        "Suite B - Precision Scalper"
+      ],
       "summary": "Heikin Ashi-based trend state to reduce noise and keep you in moves longer.",
       "imageUrl": "/images/logo.png",
       "screenshotUrl": "/images/notion/3082e378-b76a-819b-b2ba-ebbe86c51996_screenshot_b0a1563d.jpg",
@@ -18127,7 +18141,10 @@
       "title": "Foundation TA",
       "slug": "foundation-ta",
       "tags": [],
-      "category": "General",
+      "categories": [
+        "Suite B - Precision Scalper",
+        "Suite A - Liquidation Specialist"
+      ],
       "summary": "Core toolkit indicator bundling foundational TA signals (trend, momentum, levels).",
       "imageUrl": "/images/logo.png",
       "screenshotUrl": "/images/notion/3082e378-b76a-81ef-8212-ebaa364eefa5_screenshot_191beab5.jpg",
@@ -21342,7 +21359,9 @@
       "title": "CVD Z-Score",
       "slug": "cvd-z-score",
       "tags": [],
-      "category": "General",
+      "categories": [
+        "Community"
+      ],
       "summary": "",
       "imageUrl": "/images/notion/31a2e378-b76a-800a-9f0f-dac871605ce9_c107fd57.jpg",
       "screenshotUrl": "/images/notion/31a2e378-b76a-800a-9f0f-dac871605ce9_screenshot_c9582275.jpg",
@@ -24560,7 +24579,9 @@
       "title": "PVSRA Volume Trend",
       "slug": "pvsra-volume-trend",
       "tags": [],
-      "category": "General",
+      "categories": [
+        "Suite B - Precision Scalper"
+      ],
       "summary": "",
       "imageUrl": "/images/notion/31a2e378-b76a-805d-bb92-ef75ee472a63_501d0738.jpg",
       "screenshotUrl": "/images/notion/31a2e378-b76a-805d-bb92-ef75ee472a63_screenshot_7143b721.jpg",

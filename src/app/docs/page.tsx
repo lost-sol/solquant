@@ -22,9 +22,9 @@ export default async function DocsPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
                 {articles.map((article: any) => {
-                    // Determine pill color based on category
-                    const isPrecision = article.category.includes('Precision');
-                    const isLiquidation = article.category.includes('Liquidation');
+                    const itemCategories = article.categories || [article.category || "General"];
+                    const isPrecision = itemCategories.some((cat: string) => cat.includes('Precision'));
+                    const isLiquidation = itemCategories.some((cat: string) => cat.includes('Liquidation'));
                     const pillColor = isPrecision
                         ? 'bg-[#6b4785] text-white'
                         : isLiquidation
@@ -46,7 +46,7 @@ export default async function DocsPage() {
                                     {article.summary || "Select to view detailed mechanics and configuration."}
                                 </p>
                                 <span className={`text-xs font-mono px-2 py-1 rounded self-start ${pillColor}`}>
-                                    {article.category}
+                                    {itemCategories.join(", ")}
                                 </span>
                             </div>
                         </Link>

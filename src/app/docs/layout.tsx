@@ -19,12 +19,19 @@ export default async function DocsLayout({
 
     const articles = articlesRaw.length > 0 ? articlesRaw : mockArticles;
 
-    // Group by category
-    const categories = articles.reduce((acc: any, article: any) => {
-        if (!acc[article.category]) acc[article.category] = [];
-        acc[article.category].push(article);
-        return acc;
-    }, {} as Record<string, typeof articles>);
+    // Group by category (handles multiple categories per article)
+    const categories: Record<string, any[]> = {};
+    articles.forEach((article: any) => {
+        const itemCategories = article.categories || [article.category || "General"];
+        itemCategories.forEach((cat: string) => {
+            if (!categories[cat]) categories[cat] = [];
+
+            // Check if already added to this category to avoid duplicates
+            if (!categories[cat].some(item => item.id === article.id)) {
+                categories[cat].push(article);
+            }
+        });
+    });
 
     return (
         <div className="container mx-auto px-6 py-8 flex flex-col md:flex-row gap-8">

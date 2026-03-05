@@ -24583,6 +24583,1415 @@
       ]
     },
     {
+      "id": "31a2e378-b76a-802b-8055-d0c1ae94e16d",
+      "title": "Weekly Cycles",
+      "slug": "weekly-cycles",
+      "tags": [],
+      "categories": [
+        "Community"
+      ],
+      "summary": "",
+      "imageUrl": "/images/logo.png",
+      "screenshotUrl": "/images/notion/31a2e378-b76a-802b-8055-d0c1ae94e16d_screenshot_5c2ba735.jpg",
+      "indicatorUrl": "https://www.tradingview.com/script/eJAqKBJF-Weekly-Cycles-SolQuant/",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8095-ad17-d62840be74ac",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Weekly Cycles",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Weekly Cycles",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " indicator maps recurring weekly behavioral phases onto the chart using colored daily boxes and labels. It divides each week into distinct phases based on observed market patterns, providing structural context for intraweek trading decisions.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " indicator maps recurring weekly behavioral phases onto the chart using colored daily boxes and labels. It divides each week into distinct phases based on observed market patterns, providing structural context for intraweek trading decisions.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80de-9019-d250f4e23292",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-806d-b760-d5d752d6ecd0",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:28:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "USAGE",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "USAGE",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80e3-867e-d55ad99fb891",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Weekly Phases",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Weekly Phases",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8045-821a-e7b97f1dde08",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Each day of the week is assigned a behavioral phase based on institutional and retail participation patterns:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Each day of the week is assigned a behavioral phase based on institutional and retail participation patterns:",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80eb-91b5-f3b4f11ba407",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Sunday — Dead Gap Zone:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Sunday — Dead Gap Zone:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Low-liquidity period where gaps from the weekend close can create traps. Price action is often unreliable for directional bias.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Low-liquidity period where gaps from the weekend close can create traps. Price action is often unreliable for directional bias.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80b7-bca9-ffcf44647879",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Monday — False Move:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Monday — False Move:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " The early-week move that frequently reverses. Monday often establishes a range extreme that gets swept later in the week.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " The early-week move that frequently reverses. Monday often establishes a range extreme that gets swept later in the week.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-806d-b978-d6ddb369725a",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Tuesday — Consolidation:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Tuesday — Consolidation:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " A transition day where the market digests Monday's move and begins building structure for the week's main move.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " A transition day where the market digests Monday's move and begins building structure for the week's main move.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8089-a1f7-f8f55d744e82",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Wednesday/Thursday — Midweek Reversal:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Wednesday/Thursday — Midweek Reversal:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " The highest-probability window for the week's primary directional move. This is often where the \"true trend\" establishes itself.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " The highest-probability window for the week's primary directional move. This is often where the \"true trend\" establishes itself.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80e6-bc94-d35a4f6c84de",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Friday — Model Completion:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Friday — Model Completion:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " The closing phase where weekly targets are met or the move stalls. Profit-taking and position squaring are common.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " The closing phase where weekly targets are met or the move stalls. Profit-taking and position squaring are common.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-800c-bf1a-dad065ff1ca3",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Saturday — Weekend Trap:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Saturday — Weekend Trap:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Low-liquidity continuation of Friday's action that can create misleading signals for the following week.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Low-liquidity continuation of Friday's action that can create misleading signals for the following week.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8049-b026-e9dae54dcc6b",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Visual Display",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Visual Display",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-805b-ac84-e7a60156459e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Each phase is represented by a ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Each phase is represented by a ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "colored box",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "colored box",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " spanning the day's price range. Labels at the top of each box display the phase name for quick reference. The boxes update in real-time as each day's high and low develop.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " spanning the day's price range. Labels at the top of each box display the phase name for quick reference. The boxes update in real-time as each day's high and low develop.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8071-8e00-ff695ecaaa3c",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8087-a229-ddc8d5543de7",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:28:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "DETAILS",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "DETAILS",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8091-95d5-ce7b8640e8f0",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The indicator uses the built-in ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The indicator uses the built-in ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "dayofweek",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": true,
+                  "color": "default"
+                },
+                "plain_text": "dayofweek",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " function to assign phases. Box boundaries are defined by:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " function to assign phases. Box boundaries are defined by:",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8078-bdbf-d60cab181b7e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Time:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Time:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " From each day's opening time through the next day's opening.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " From each day's opening time through the next day's opening.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8063-879e-f6fd5a9299dc",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Price:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Price:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Tracking the highest high and lowest low of all bars within that specific 24-hour window.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Tracking the highest high and lowest low of all bars within that specific 24-hour window.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8057-b246-ebc5102e1db2",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Historical boxes are maintained up to a configurable maximum count, ensuring the chart remains performant while allowing for back-analysis of previous weekly cycles.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Historical boxes are maintained up to a configurable maximum count, ensuring the chart remains performant while allowing for back-analysis of previous weekly cycles.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-804a-81fd-c71640bd8614",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8017-ba81-fecde409c068",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:28:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "SETTINGS",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "SETTINGS",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80be-839b-d9d1b7c0bfbc",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Show Phase Labels:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Show Phase Labels:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Toggle the text labels (e.g., \"Midweek Reversal\") above each daily box.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Toggle the text labels (e.g., \"Midweek Reversal\") above each daily box.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80d8-9a80-ecc7c494daf7",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Phase Colors:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Phase Colors:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Fully customizable colors for each individual day/phase to match your chart theme.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Fully customizable colors for each individual day/phase to match your chart theme.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8077-ac19-f19ea49c3d8d",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Max Boxes:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Max Boxes:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Controls the history length by limiting how many historical daily boxes are rendered.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Controls the history length by limiting how many historical daily boxes are rendered.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80dc-b1b5-f87fa16573e8",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:27:00.000Z",
+          "last_edited_time": "2026-03-05T12:27:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8071-8e9a-e2253c31290b",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-802b-8055-d0c1ae94e16d"
+          },
+          "created_time": "2026-03-05T12:28:00.000Z",
+          "last_edited_time": "2026-03-05T12:28:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "callout",
+          "callout": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Disclaimer:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Disclaimer:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Weekly cycle phases are based on observed market patterns and do not guarantee that price will follow the described behavior in any given week. Market conditions vary; phases should be used as context, not as standalone signals. This indicator does not constitute financial advice.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": true,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Weekly cycle phases are based on observed market patterns and do not guarantee that price will follow the described behavior in any given week. Market conditions vary; phases should be used as context, not as standalone signals. This indicator does not constitute financial advice.",
+                "href": null
+              }
+            ],
+            "icon": {
+              "type": "external",
+              "external": {
+                "url": "https://www.notion.so/icons/info-alternate_yellow.svg"
+              }
+            },
+            "color": "gray_background"
+          }
+        }
+      ]
+    },
+    {
       "id": "31a2e378-b76a-805d-bb92-ef75ee472a63",
       "title": "PVSRA Volume Trend",
       "slug": "pvsra-volume-trend",
@@ -28102,6 +29511,2232 @@
               }
             ],
             "color": "default"
+          }
+        }
+      ]
+    },
+    {
+      "id": "31a2e378-b76a-8062-9006-d0b1f4528f91",
+      "title": "Watermark",
+      "slug": "watermark",
+      "tags": [],
+      "categories": [
+        "Community"
+      ],
+      "summary": "",
+      "imageUrl": "/images/logo.png",
+      "screenshotUrl": "/images/notion/31a2e378-b76a-8062-9006-d0b1f4528f91_screenshot_576d806a.jpg",
+      "indicatorUrl": "https://www.tradingview.com/script/K3f00Mv5-Watermark/",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8054-97b0-c9fc94faa2ea",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8062-9006-d0b1f4528f91"
+          },
+          "created_time": "2026-03-05T12:33:00.000Z",
+          "last_edited_time": "2026-03-05T12:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Watermark",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Watermark",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " indicator displays a customizable text watermark on the chart along with key symbol information. It is a utility tool designed for chart branding, professional presentations, and social media screenshots.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " indicator displays a customizable text watermark on the chart along with key symbol information. It is a utility tool designed for chart branding, professional presentations, and social media screenshots.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-801e-9bb4-e268ddb3e14f",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8062-9006-d0b1f4528f91"
+          },
+          "created_time": "2026-03-05T12:33:00.000Z",
+          "last_edited_time": "2026-03-05T12:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80a9-83aa-c54c0b555df3",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8062-9006-d0b1f4528f91"
+          },
+          "created_time": "2026-03-05T12:33:00.000Z",
+          "last_edited_time": "2026-03-05T12:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "USAGE",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "USAGE",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-801f-ae90-d1d2f4c6912a",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8062-9006-d0b1f4528f91"
+          },
+          "created_time": "2026-03-05T12:33:00.000Z",
+          "last_edited_time": "2026-03-05T12:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The indicator places a multi-line text table on the chart that dynamically displays:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The indicator places a multi-line text table on the chart that dynamically displays:",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-809e-a994-f62db1d8beec",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8062-9006-d0b1f4528f91"
+          },
+          "created_time": "2026-03-05T12:33:00.000Z",
+          "last_edited_time": "2026-03-05T12:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Symbol & Exchange:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Symbol & Exchange:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " The current ticker (e.g., BTCUSDT, BINANCE).",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " The current ticker (e.g., BTCUSDT, BINANCE).",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80c1-8e38-d5310691e953",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8062-9006-d0b1f4528f91"
+          },
+          "created_time": "2026-03-05T12:33:00.000Z",
+          "last_edited_time": "2026-03-05T12:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Timeframe:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Timeframe:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " The active chart interval (e.g., 1H, 15m, 1D).",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " The active chart interval (e.g., 1H, 15m, 1D).",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-809d-8c64-e3ee1d71697c",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8062-9006-d0b1f4528f91"
+          },
+          "created_time": "2026-03-05T12:33:00.000Z",
+          "last_edited_time": "2026-03-05T12:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Custom Branding:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Custom Branding:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " A personalized text line for your name, trading group, or specific notes.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " A personalized text line for your name, trading group, or specific notes.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8048-be81-c92f90fd5ba0",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8062-9006-d0b1f4528f91"
+          },
+          "created_time": "2026-03-05T12:33:00.000Z",
+          "last_edited_time": "2026-03-05T12:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The watermark is positioned as a non-intrusive overlay, ensuring it provides consistent branding across all chart views without interfering with price action visibility.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The watermark is positioned as a non-intrusive overlay, ensuring it provides consistent branding across all chart views without interfering with price action visibility.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8041-84e4-fbaa85945e46",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8062-9006-d0b1f4528f91"
+          },
+          "created_time": "2026-03-05T12:33:00.000Z",
+          "last_edited_time": "2026-03-05T12:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-807e-8926-ce6213815392",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8062-9006-d0b1f4528f91"
+          },
+          "created_time": "2026-03-05T12:33:00.000Z",
+          "last_edited_time": "2026-03-05T12:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "SETTINGS",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "SETTINGS",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80d7-b4b7-d3361695d4d4",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8062-9006-d0b1f4528f91"
+          },
+          "created_time": "2026-03-05T12:33:00.000Z",
+          "last_edited_time": "2026-03-05T12:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Watermark Text:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Watermark Text:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Enter the custom text you want to display (e.g., \"SolQuant Premium\" or your handle).",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Enter the custom text you want to display (e.g., \"SolQuant Premium\" or your handle).",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-802c-b39d-ca8e652ae50a",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8062-9006-d0b1f4528f91"
+          },
+          "created_time": "2026-03-05T12:33:00.000Z",
+          "last_edited_time": "2026-03-05T12:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Text Color:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Text Color:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Choose a color that matches your chart theme (typically a low-opacity gray or white).",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Choose a color that matches your chart theme (typically a low-opacity gray or white).",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80e3-ac9d-f01539e9fdb6",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8062-9006-d0b1f4528f91"
+          },
+          "created_time": "2026-03-05T12:33:00.000Z",
+          "last_edited_time": "2026-03-05T12:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Text Size:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Text Size:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Adjust the scale of the text from Tiny to Large.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Adjust the scale of the text from Tiny to Large.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-804e-b7e4-dbc374a71613",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8062-9006-d0b1f4528f91"
+          },
+          "created_time": "2026-03-05T12:33:00.000Z",
+          "last_edited_time": "2026-03-05T12:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Position:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Position:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Select the preferred anchor point on your screen (Top-Left, Top-Right, Bottom-Left, Bottom-Right, or Center).",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Select the preferred anchor point on your screen (Top-Left, Top-Right, Bottom-Left, Bottom-Right, or Center).",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80b6-932f-c01cc12789ea",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8062-9006-d0b1f4528f91"
+          },
+          "created_time": "2026-03-05T12:33:00.000Z",
+          "last_edited_time": "2026-03-05T12:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8077-9831-c69e0c3ca965",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8062-9006-d0b1f4528f91"
+          },
+          "created_time": "2026-03-05T12:33:00.000Z",
+          "last_edited_time": "2026-03-05T12:33:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "callout",
+          "callout": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Disclaimer:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Disclaimer:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "This is a visual utility indicator with no analytical function. It does not generate signals or constitute financial advice.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": true,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "This is a visual utility indicator with no analytical function. It does not generate signals or constitute financial advice.",
+                "href": null
+              }
+            ],
+            "icon": {
+              "type": "external",
+              "external": {
+                "url": "https://www.notion.so/icons/info-alternate_yellow.svg"
+              }
+            },
+            "color": "gray_background"
+          }
+        }
+      ]
+    },
+    {
+      "id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd",
+      "title": "Markets",
+      "slug": "markets",
+      "tags": [],
+      "categories": [
+        "Community"
+      ],
+      "summary": "",
+      "imageUrl": "/images/logo.png",
+      "screenshotUrl": "/images/notion/31a2e378-b76a-80ea-8471-cf3ea445a3fd_screenshot_af7733f1.jpg",
+      "indicatorUrl": "https://www.tradingview.com/script/nu7EXd7f-Markets-SolQuant/",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80f3-b455-ffa824c5c395",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Markets",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Markets",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " indicator displays global trading session times with visual range boxes and highlights market maker activity zones. It maps the three major sessions — ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " indicator displays global trading session times with visual range boxes and highlights market maker activity zones. It maps the three major sessions — ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "New York, London, and Asia",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "New York, London, and Asia",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " — along with specialized zones observed to correlate with specific institutional behaviors.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " — along with specialized zones observed to correlate with specific institutional behaviors.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80ca-92cc-d4958980d7f9",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80c3-a02a-ff9a0b8824de",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:31:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "USAGE",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "USAGE",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80b6-8dc1-e4b8336775e9",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Session Boxes",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Session Boxes",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80be-8b0c-da7274b5a0b5",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Colored boxes are drawn for each active trading session, spanning from the session open to the session close. The box height covers the total price range traded during that session.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Colored boxes are drawn for each active trading session, spanning from the session open to the session close. The box height covers the total price range traded during that session.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-802e-8120-eae7fa95b831",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "New York:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "New York:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " The primary session for US equities and peak crypto volume.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " The primary session for US equities and peak crypto volume.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8047-8d2d-f3070bd7ff1f",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "London:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "London:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Overlaps with New York for the day's peak liquidity in forex and global markets.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Overlaps with New York for the day's peak liquidity in forex and global markets.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-805e-bfea-d314777b57d1",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Asia:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Asia:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Tokyo/Hong Kong session, often setting the range or tone for the following London open.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Tokyo/Hong Kong session, often setting the range or tone for the following London open.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-802c-bacd-db85c2d78565",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Session boxes provide immediate visual context about which global market participants were active during any given price move.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Session boxes provide immediate visual context about which global market participants were active during any given price move.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80ac-a3b8-d6df968bd062",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Market Maker Zones",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Market Maker Zones",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80f4-b239-eb2bf16841f6",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Two specialized time windows are highlighted to signal specific volatility patterns:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Two specialized time windows are highlighted to signal specific volatility patterns:",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80b2-aa2f-c1a6f243c5a1",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Reversal Session:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Reversal Session:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " A time window commonly associated with trend reversals and directional shifts.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " A time window commonly associated with trend reversals and directional shifts.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-803e-9740-f865736f3a85",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Gap Session:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Gap Session:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " A window where gaps, displacement moves, and liquidity sweeps frequently occur.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " A window where gaps, displacement moves, and liquidity sweeps frequently occur.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8062-b686-d2e4d06ec4f2",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "These zones act as awareness tools, helping traders identify periods where \"smart money\" maneuvers often take place.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "These zones act as awareness tools, helping traders identify periods where \"smart money\" maneuvers often take place.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80c4-b020-c82c4d99d93c",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-803c-a322-cd88cf97fd32",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:31:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "DETAILS",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "DETAILS",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80c7-81f8-fce56d09024e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Sessions are defined by fixed time ranges using ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Sessions are defined by fixed time ranges using ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "daylight saving time-aware",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "daylight saving time-aware",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " timezone strings, ensuring accuracy year-round regardless of seasonal shifts.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " timezone strings, ensuring accuracy year-round regardless of seasonal shifts.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8040-a6c3-e5ff3bf979ea",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The indicator dynamically tracks the highest high and lowest low from the second the session opens. All historical boxes are automatically managed and removed based on a configurable maximum count to keep your chart clean and performant.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The indicator dynamically tracks the highest high and lowest low from the second the session opens. All historical boxes are automatically managed and removed based on a configurable maximum count to keep your chart clean and performant.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80ad-831e-cc56a390ec3c",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8071-9d44-e31e3783bb5b",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:31:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "SETTINGS",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "SETTINGS",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-809b-8541-f7d1862e9c5a",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Show NY / London / Asia:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Show NY / London / Asia:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Individual toggles for each major global session.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Individual toggles for each major global session.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80df-a590-e8175e42f1b7",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Show Reversal / Gap Session:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Show Reversal / Gap Session:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Toggle the visibility of market maker behavioral zones.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Toggle the visibility of market maker behavioral zones.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8003-ad27-ce1908b47d4f",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Session Colors:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Session Colors:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Fully customizable hex colors for each session and specialized zone.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Fully customizable hex colors for each session and specialized zone.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8008-ad42-dcc5cc778000",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Max Boxes:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Max Boxes:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Controls the depth of historical data by limiting the number of past session boxes kept on the chart.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Controls the depth of historical data by limiting the number of past session boxes kept on the chart.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          }
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8085-889b-d46e4aa4a4f8",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:30:00.000Z",
+          "last_edited_time": "2026-03-05T12:30:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "divider",
+          "divider": {}
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8049-b4b6-efdccad791b5",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd"
+          },
+          "created_time": "2026-03-05T12:31:00.000Z",
+          "last_edited_time": "2026-03-05T12:31:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "archived": false,
+          "in_trash": false,
+          "type": "callout",
+          "callout": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Disclaimer:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Disclaimer:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "This indicator displays fixed time-based session zones and does not predict price direction. Market maker zones are based on observed patterns that may not persist. It does not constitute financial advice.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": true,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "This indicator displays fixed time-based session zones and does not predict price direction. Market maker zones are based on observed patterns that may not persist. It does not constitute financial advice.",
+                "href": null
+              }
+            ],
+            "icon": {
+              "type": "external",
+              "external": {
+                "url": "https://www.notion.so/icons/info-alternate_yellow.svg"
+              }
+            },
+            "color": "gray_background"
           }
         }
       ]

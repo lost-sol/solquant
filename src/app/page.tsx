@@ -182,7 +182,7 @@ export default async function Home() {
                     </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
-                    {wikiArticles.filter((a: any) => a.tags?.includes('Community') || a.category?.includes('Community')).map((article: any) => (
+                    {wikiArticles.filter((a: any) => a.categories?.includes('Community')).map((article: any) => (
                         <Link key={article.id} href={`/docs/${article.slug}`} className="group bg-[#0a0a0a] border border-white/5 p-4 hover:border-solquant-gold/50 transition-all duration-300 block rounded-2xl">
                             <div className="relative w-full h-32 mb-4 rounded-xl overflow-hidden border border-white/10 opacity-70 group-hover:opacity-100 transition-opacity">
                                 <img src={article.screenshotUrl || article.imageUrl} alt={article.title} className="w-full h-full object-cover" />

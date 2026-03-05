@@ -16,7 +16,8 @@
     /* Vibrant blue */
     --color-charcoal: var(--charcoal);
     --color-border: var(--border-color);
-    --font-sans: var(--font-roboto), Arial, Helvetica, sans-serif;
+    --font-sans: var(--font-roboto), ui-sans-serif, system-ui, sans-serif;
+    --font-display: var(--font-oxanium), cursive;
     --font-mono: var(--font-oxanium), ui-monospace, SFMono-Regular, monospace;
 }
 
@@ -24,6 +25,7 @@ body {
     background: var(--background);
     color: var(--foreground);
     font-family: var(--font-sans);
+    /* Roboto */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -34,7 +36,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-mono);
+    font-family: var(--font-display);
+    /* Oxanium */
+    letter-spacing: -0.02em;
 }
 
 

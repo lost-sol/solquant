@@ -26,11 +26,11 @@ export default async function Home() {
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/50 to-[#050505] z-10"></div>
                     <Image src="/images/twitter-header.png" alt="Hero Background" fill className="object-cover object-center grayscale mix-blend-screen" priority />
                 </div>
-                <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter relative z-10 font-mono">
+                <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter relative z-10">
                     Stop Guessing. <br className="hidden md:block" />
                     <span className="text-solquant-gold">Start Seeing.</span>
                 </h1>
-                <p className="max-w-3xl text-lg md:text-xl text-gray-400 font-mono">
+                <p className="max-w-3xl text-lg md:text-xl text-gray-400">
                     Most TradingView indicators lag behind the price. We build tools that show you the market’s true skeleton—the volume and leverage that actually move the needle before the candle even closes.
                 </p>
                 <div className="mt-8">
@@ -47,9 +47,9 @@ export default async function Home() {
 
             {/* Who We Are */}
             <section className="w-full max-w-4xl px-6 py-16 text-center">
-                <h2 className="text-3xl font-bold mb-8 font-mono">Who We Are</h2>
+                <h2 className="text-3xl font-bold mb-8">Who We Are</h2>
                 <div className="py-8 px-4 border-t border-b border-solquant-gold/20">
-                    <p className="text-gray-300 font-mono leading-relaxed text-sm md:text-base max-w-3xl mx-auto">
+                    <p className="text-gray-300 leading-relaxed text-sm md:text-base max-w-3xl mx-auto">
                         We’re systems architects, not hedge fund bros. SolQuant was born because retail technical analysis is often broken. We build high-precision tools for traders who are tired of basic RSI and want to see the market's 'wireframe' — the hidden structure of volume and time that dictates where price goes next.
                     </p>
                 </div>
@@ -59,8 +59,8 @@ export default async function Home() {
             {/* Product Suites */}
             <section className="w-full max-w-6xl px-6 py-24">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight font-mono">The Product Suites</h2>
-                    <p className="mt-4 text-gray-400 font-mono">Decode market mechanics with precision tools.</p>
+                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight">The Product Suites</h2>
+                    <p className="mt-4 text-gray-400">Decode market mechanics with precision tools.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -68,10 +68,10 @@ export default async function Home() {
                     <div className="bg-[#0a0a0a] p-8 flex flex-col justify-between transition-all duration-300 group rounded-2xl gold-glow">
                         <div>
                             <div className="flex justify-between items-center mb-4">
-                                <h3 className="text-2xl font-bold font-mono">The Liquidation Specialist</h3>
-                                <span className="text-solquant-gold font-mono font-bold">$39.99/mo</span>
+                                <h3 className="text-2xl font-bold">The Liquidation Specialist</h3>
+                                <span className="text-solquant-gold font-bold">$39.99/mo</span>
                             </div>
-                            <p className="text-gray-400 font-mono text-sm leading-relaxed mb-4">
+                            <p className="text-gray-400 text-sm leading-relaxed mb-4">
                                 Focus on liquidity using the Liquidation Levels heatmap. Stop being the exit liquidity and start trading alongside institutional footprint.
                             </p>
                             <div className="relative w-full h-48 mb-6 rounded-2xl overflow-hidden border border-white/10 opacity-80 hover:opacity-100 transition-opacity">
@@ -92,10 +92,10 @@ export default async function Home() {
                     <div className="bg-[#0a0a0a] p-8 flex flex-col justify-between transition-all duration-300 group rounded-2xl gold-glow">
                         <div>
                             <div className="flex justify-between items-center mb-4">
-                                <h3 className="text-2xl font-bold font-mono">Precision Scalper Toolkit</h3>
-                                <span className="text-solquant-gold font-mono font-bold">$34.99/mo</span>
+                                <h3 className="text-2xl font-bold">Precision Scalper Toolkit</h3>
+                                <span className="text-solquant-gold font-bold">$34.99/mo</span>
                             </div>
-                            <p className="text-gray-400 font-mono text-sm leading-relaxed mb-4">
+                            <p className="text-gray-400 text-sm leading-relaxed mb-4">
                                 Master the MTF Trend tools and the Synthetic Max Pain model. For traders operating on low timeframes extracting edge from volatility.
                             </p>
                             <div className="relative w-full h-48 mb-6 rounded-2xl overflow-hidden border border-white/10 opacity-80 hover:opacity-100 transition-opacity">
@@ -119,13 +119,13 @@ export default async function Home() {
                 <div className="p-4 md:p-8 rounded-2xl">
                     <div className="flex flex-col mb-8 border-b border-border pb-4">
                         <div className="flex justify-between items-center mb-2">
-                            <h2 className="text-2xl font-bold font-mono">The Development Lab:</h2>
-                            <span className="flex items-center text-xs font-mono text-solquant-gold animate-pulse">
+                            <h2 className="text-2xl font-bold">The Development Lab:</h2>
+                            <span className="flex items-center text-xs text-solquant-gold animate-pulse">
                                 <span className="w-2 h-2 rounded-full bg-solquant-gold mr-2"></span>
                                 LIVE SYNC
                             </span>
                         </div>
-                        <p className="text-gray-400 font-mono text-sm">
+                        <p className="text-gray-400 text-sm">
                             SolQuant is always evolving. Here’s a live look at the indicators we’re currently polishing and the new tools we’re dreaming up.
                         </p>
                     </div>
@@ -147,17 +147,17 @@ export default async function Home() {
                                             <div className="flex flex-col">
                                                 <span className="font-bold text-xl text-white group-hover:text-solquant-gold transition-colors">{item.title}</span>
                                                 {formattedDate && (
-                                                    <span className="text-xs font-mono text-gray-500 uppercase tracking-widest mt-1">
+                                                    <span className="text-xs text-gray-500 uppercase tracking-widest mt-1">
                                                         {formattedDate}
                                                     </span>
                                                 )}
                                             </div>
-                                            <span className="text-[10px] font-bold font-mono text-solquant-gold bg-solquant-gold/10 px-2 py-0.5 border border-solquant-gold/20 whitespace-nowrap w-fit rounded uppercase tracking-tighter self-start md:self-center">
+                                            <span className="text-[10px] font-bold text-solquant-gold bg-solquant-gold/10 px-2 py-0.5 border border-solquant-gold/20 whitespace-nowrap w-fit rounded uppercase tracking-tighter self-start md:self-center">
                                                 {item.status}
                                             </span>
                                         </div>
                                         {item.description && (
-                                            <p className="text-sm font-mono text-gray-400 leading-relaxed">{item.description}</p>
+                                            <p className="text-sm text-gray-400 leading-relaxed">{item.description}</p>
                                         )}
                                         {(item.imageUrl && item.imageUrl !== '/images/logo.png') && (
                                             <div className="relative w-full rounded-xl overflow-hidden border border-white/10 mt-2 bg-black shadow-inner">
@@ -176,8 +176,8 @@ export default async function Home() {
             {/* Community Library */}
             <section className="w-full max-w-6xl px-6 py-12 mb-24">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold mb-4 font-mono">The Community Library</h2>
-                    <p className="max-w-2xl mx-auto text-gray-400 font-mono">
+                    <h2 className="text-3xl font-bold mb-4">The Community Library</h2>
+                    <p className="max-w-2xl mx-auto text-gray-400">
                         Start with our free "Lite" tools to understand the SolQuant edge before stepping into the Inner Circle.
                     </p>
                 </div>
@@ -194,7 +194,7 @@ export default async function Home() {
                 <div className="text-center">
                     <Link
                         href="/docs"
-                        className="inline-flex items-center justify-center px-8 py-4 border border-border hover:bg-white/5 transition-colors font-mono text-sm uppercase tracking-wide rounded-2xl"
+                        className="inline-flex items-center justify-center px-8 py-4 border border-border hover:bg-white/5 transition-colors text-sm uppercase tracking-wide rounded-2xl"
                     >
                         Explore Free Indicators
                     </Link>

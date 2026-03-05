@@ -1,6 +1,14 @@
 {
   "roadmap": [
     {
+      "id": "31a2e378-b76a-80fc-8ba9-cfe53c303921",
+      "title": "Backtesting strategies",
+      "status": "Update",
+      "date": "2026-03-04",
+      "description": "",
+      "imageUrl": "/images/notion/31a2e378-b76a-80fc-8ba9-cfe53c303921_92944508.jpg"
+    },
+    {
       "id": "3192e378-b76a-80a2-8325-ed4dc155f921",
       "title": "Website Soft launch",
       "status": "Update",

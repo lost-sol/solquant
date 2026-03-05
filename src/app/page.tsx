@@ -33,7 +33,19 @@ export default async function Home() {
                 <p className="max-w-3xl text-lg md:text-xl text-gray-400">
                     Most TradingView indicators lag behind the price. We build tools that show you the market’s true skeleton—the volume and leverage that actually move the needle before the candle even closes.
                 </p>
-                <div className="mt-8">
+                <div className="mt-8 flex flex-col items-center">
+                    <div className="relative w-full max-w-2xl rounded-2xl overflow-hidden border border-solquant-gold/20 shadow-[0_0_50px_rgba(212,175,55,0.15)] mb-10 group">
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full h-auto object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+                        >
+                            <source src="/timelapse_2.mp4" type="video/mp4" />
+                        </video>
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/40 via-transparent to-transparent pointer-events-none"></div>
+                    </div>
                     <Link
                         href="https://whop.com/solquant"
                         target="_blank"

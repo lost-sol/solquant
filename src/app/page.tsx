@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getLiveRoadmap, getWikiArticles } from "@/lib/notion";
-
+import FAQ from "@/components/FAQ";
 
 export default async function Home() {
     const [roadmapItemsRaw, wikiArticles] = await Promise.all([
@@ -193,7 +193,7 @@ export default async function Home() {
                             SolQuant is always evolving. Here’s a live look at the indicators we’re currently polishing and the new tools we’re dreaming up.
                         </p>
                     </div>
-                    
+
                     <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 lg:gap-8">
                         {roadmapItems.map((item: any) => {
                             let formattedDate = "";
@@ -219,17 +219,17 @@ export default async function Home() {
                                                 </span>
                                             )}
                                         </div>
-                                        
+
                                         {item.description && (
                                             <p className="text-sm text-gray-400 leading-relaxed">{item.description}</p>
                                         )}
-                                        
+
                                         {(item.imageUrl && item.imageUrl !== '/images/logo.png') && (
                                             <div className="relative w-full rounded-xl overflow-hidden border border-white/10 bg-black shadow-inner">
-                                                <img 
-                                                    src={item.imageUrl} 
-                                                    alt={item.title} 
-                                                    className="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" 
+                                                <img
+                                                    src={item.imageUrl}
+                                                    alt={item.title}
+                                                    className="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
                                                 />
                                                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none"></div>
                                             </div>
@@ -269,6 +269,9 @@ export default async function Home() {
                     </Link>
                 </div>
             </section>
+
+            {/* FAQ Section */}
+            <FAQ />
         </div>
     );
 }

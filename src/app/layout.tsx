@@ -75,10 +75,14 @@ export default function RootLayout({
                                 <a href="/terms" className="text-gray-300 hover:text-solquant-gold transition-colors">Terms</a>
                             </div>
                             <div className="space-y-4">
-                                <div className="text-gray-400">
-                                    &copy; {new Date().getFullYear()} SolQuant. Momentum is velocity, but Liquidity is gravity.
+
+                                <div className="text-gray-500">
+                                    <strong>&copy; {new Date().getFullYear()} SolQuant </strong> |
+                                    <strong> Contact & Location:</strong> 1555 Sherman Ave #212, Evanston, IL 60201 |
+                                    <strong> Support:</strong> mr.lost.sol.1+solquant@gmail.com
                                 </div>
                                 <div className="max-w-3xl mx-auto text-xs opacity-70 leading-relaxed text-gray-500">
+
                                     SolQuant is an independent provider of technical analysis tools. We are not affiliated with, endorsed by, or partnered with TradingView, Inc., the Solana Foundation, or any cryptocurrency exchange. Our tools do not provide financial advice.
                                 </div>
                             </div>

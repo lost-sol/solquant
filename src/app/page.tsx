@@ -65,7 +65,7 @@ export default async function Home() {
                 <h2 className="text-3xl font-bold mb-8">Who We Are</h2>
                 <div className="py-8 px-4 border-t border-b border-solquant-gold/20">
                     <p className="text-gray-300 leading-relaxed text-sm md:text-base max-w-3xl mx-auto">
-                        We’re systems architects, not hedge fund bros. SolQuant was born because retail technical analysis is often broken. We build high-precision tools for traders who are tired of basic RSI and want to see the market's 'wireframe' — the hidden structure of volume and time that dictates where price goes next.
+                        We’re systems architects, not hedge fund bros. SolQuant was born because retail technical analysis is often broken. We build high-precision tools for traders who are tired of basic RSI and want to see the market's 'wireframe' — the hidden structure of volume and time that dictates where price goes next. <Link href="/about" className="text-solquant-gold hover:text-yellow-600 transition-colors font-bold ml-1">more...</Link>
                     </p>
                 </div>
             </section>

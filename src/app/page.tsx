@@ -52,8 +52,11 @@ export default async function Home() {
                         rel="noopener noreferrer"
                         className="group relative inline-flex items-center justify-center px-8 py-3.5 font-bold text-black transition-all duration-200 bg-solquant-gold border border-transparent rounded-2xl hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-solquant-gold uppercase tracking-wide text-sm"
                     >
-                        Unlock the Edge
+                        Subscribe via Whop
                     </Link>
+                    <p className="mt-4 text-xs text-gray-500 max-w-sm font-mono leading-relaxed">
+                        By clicking, you will be redirected to our secure store on Whop. Your purchase is subject to our <Link href="/terms" className="underline hover:text-solquant-gold transition-colors">Terms of Service</Link> and <Link href="/privacy" className="underline hover:text-solquant-gold transition-colors">Privacy Policy</Link>.
+                    </p>
                 </div>
             </section>
 
@@ -116,14 +119,19 @@ export default async function Home() {
                                 </div>
                             </div>
                         </div>
-                        <Link
-                            href="https://whop.com/solquant"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group relative inline-flex w-full items-center justify-center px-8 py-3.5 font-bold text-black transition-all duration-200 bg-solquant-gold border border-transparent rounded-2xl hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-solquant-gold mt-2 uppercase tracking-wide text-sm"
-                        >
-                            Unlock Liquidation Specialist
-                        </Link>
+                        <div className="flex flex-col items-center w-full">
+                            <Link
+                                href="https://whop.com/solquant"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group relative inline-flex w-full items-center justify-center px-8 py-3.5 font-bold text-black transition-all duration-200 bg-solquant-gold border border-transparent rounded-2xl hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-solquant-gold mt-2 uppercase tracking-wide text-sm"
+                            >
+                                Subscribe via Whop
+                            </Link>
+                            <p className="mt-2 text-[11px] text-gray-500 font-mono leading-relaxed text-center">
+                                By clicking, you will be redirected to our secure store on Whop. Your purchase is subject to our <Link href="/terms" className="underline hover:text-solquant-gold transition-colors">Terms of Service</Link> and <Link href="/privacy" className="underline hover:text-solquant-gold transition-colors">Privacy Policy</Link>.
+                            </p>
+                        </div>
                     </div>
 
                     {/* Suite B */}
@@ -166,14 +174,19 @@ export default async function Home() {
                                 </div>
                             </div>
                         </div>
-                        <Link
-                            href="https://whop.com/solquant"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group relative inline-flex w-full items-center justify-center px-8 py-3.5 font-bold text-black transition-all duration-200 bg-solquant-gold border border-transparent rounded-2xl hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-solquant-gold mt-2 uppercase tracking-wide text-sm"
-                        >
-                            Unlock Precision Scalper
-                        </Link>
+                        <div className="flex flex-col items-center w-full">
+                            <Link
+                                href="https://whop.com/solquant"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group relative inline-flex w-full items-center justify-center px-8 py-3.5 font-bold text-black transition-all duration-200 bg-solquant-gold border border-transparent rounded-2xl hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-solquant-gold mt-2 uppercase tracking-wide text-sm"
+                            >
+                                Subscribe via Whop
+                            </Link>
+                            <p className="mt-2 text-[9px] text-gray-500 font-mono leading-relaxed text-center">
+                                By clicking, you will be redirected to our secure store on Whop. Your purchase is subject to our <Link href="/terms" className="underline hover:text-solquant-gold transition-colors">Terms of Service</Link> and <Link href="/privacy" className="underline hover:text-solquant-gold transition-colors">Privacy Policy</Link>.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>

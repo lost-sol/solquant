@@ -24,6 +24,11 @@ export async function getEducationArticles() {
     return (notionData as any).education || [];
 }
 
+// Helper to fetch policy pages
+export async function getPolicies() {
+    return (notionData as any).policies || [];
+}
+
 // Helper to fetch a single page content, including nested blocks
 export async function getPageContent(pageId: string) {
     const wikiArticle = notionData.wiki.find((a: any) => a.id === pageId);
@@ -31,6 +36,9 @@ export async function getPageContent(pageId: string) {
     
     const educationArticle = (notionData as any).education?.find((a: any) => a.id === pageId);
     if (educationArticle) return educationArticle.blocks;
+    
+    const policyPage = (notionData as any).policies?.find((a: any) => a.id === pageId);
+    if (policyPage) return policyPage.blocks;
     
     return [];
 }

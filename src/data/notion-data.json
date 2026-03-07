@@ -40528,5 +40528,1931 @@
         }
       ]
     }
+  ],
+  "policies": [
+    {
+      "id": "31c2e378b76a8072a38be76a188248d2",
+      "title": "Terms",
+      "slug": "terms",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-802e-9882-c18aa4eece06",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8072-a38b-e76a188248d2"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Terms of Service & Disclaimers",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Terms of Service & Disclaimers",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-807f-b0a3-d8a5dba8832d",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8072-a38b-e76a188248d2"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Last Updated: March 7, 2026",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Last Updated: March 7, 2026",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-804d-bdf4-c97da8a8bfe1",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8072-a38b-e76a188248d2"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "By using SolQuant tools, you agree to the following terms.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "By using SolQuant tools, you agree to the following terms.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80b6-9e32-eb55ab73ce25",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8072-a38b-e76a188248d2"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "1. No Financial Advice",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "1. No Financial Advice",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-808f-aedc-dfcc262c9e8e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8072-a38b-e76a188248d2"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "SolQuant provides technical analysis tools for educational and informational purposes only. We are not financial advisors. Trading cryptocurrencies, stocks, and futures involves \"Significant Risk of Loss.\" You should consult with a qualified financial professional before making any investment decisions.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "SolQuant provides technical analysis tools for educational and informational purposes only. We are not financial advisors. Trading cryptocurrencies, stocks, and futures involves \"Significant Risk of Loss.\" You should consult with a qualified financial professional before making any investment decisions.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8030-83dc-d89f6dec82bf",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8072-a38b-e76a188248d2"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "2. No Guarantees",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "2. No Guarantees",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80a9-b652-e17791497f1a",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8072-a38b-e76a188248d2"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "While our indicators aim to provide clarity, we do not guarantee profits or specific market outcomes. Past performance is not indicative of future results.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "While our indicators aim to provide clarity, we do not guarantee profits or specific market outcomes. Past performance is not indicative of future results.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80f4-a518-c0b4727a5c49",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8072-a38b-e76a188248d2"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "3. Intellectual Property",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "3. Intellectual Property",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80b0-ae84-f142cf77c88e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8072-a38b-e76a188248d2"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "All SolQuant scripts, indicators, and website content are the intellectual property of SolQuant. Unauthorized redistribution, \"leaking,\" or reverse-engineering of our code is strictly prohibited and will result in a permanent ban without refund.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "All SolQuant scripts, indicators, and website content are the intellectual property of SolQuant. Unauthorized redistribution, \"leaking,\" or reverse-engineering of our code is strictly prohibited and will result in a permanent ban without refund.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8093-a6e0-eaee77e55805",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8072-a38b-e76a188248d2"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "4. Third-Party Platforms",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "4. Third-Party Platforms",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80ed-b684-fe79ba589141",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8072-a38b-e76a188248d2"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "SolQuant is not affiliated with, sponsored by, or endorsed by TradingView, Inc. or the Solana Foundation. Use of their platforms is subject to their respective terms and conditions.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "SolQuant is not affiliated with, sponsored by, or endorsed by TradingView, Inc. or the Solana Foundation. Use of their platforms is subject to their respective terms and conditions.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80c6-b62e-c7b697d4eec1",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8072-a38b-e76a188248d2"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "5. Refunds",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "5. Refunds",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8005-a1f9-d03d4240323a",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8072-a38b-e76a188248d2"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Due to the digital nature of our products and the immediate delivery of proprietary intellectual property, all sales are final. We do not offer refunds.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Due to the digital nature of our products and the immediate delivery of proprietary intellectual property, all sales are final. We do not offer refunds.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8053-90d9-e2483a8a193b",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8072-a38b-e76a188248d2"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "6. Contact Information",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "6. Contact Information",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8039-9f97-e7405c6091db",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8072-a38b-e76a188248d2"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:55:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "For support or inquiries, please contact:\n",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "For support or inquiries, please contact:\n",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "mr.lost.sol.1@gmail.com",
+                  "link": {
+                    "url": "mailto:mr.lost.sol.1@gmail.com"
+                  }
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "mr.lost.sol.1@gmail.com",
+                "href": "mailto:mr.lost.sol.1@gmail.com"
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "\n1555 Sherman Ave #212\nEvanston, IL 60202",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "\n1555 Sherman Ave #212\nEvanston, IL 60202",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        }
+      ]
+    },
+    {
+      "id": "31c2e378b76a80798de7de9b65b01aec",
+      "title": "Privacy",
+      "slug": "privacy",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80e7-9987-df7d378c3d85",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8079-8de7-de9b65b01aec"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Effective Date: March 7, 2026",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Effective Date: March 7, 2026",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-801c-99a3-d2a834fce105",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8079-8de7-de9b65b01aec"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "At SolQuant, we respect your privacy and are committed to protecting your personal data. This policy explains how we handle your information.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "At SolQuant, we respect your privacy and are committed to protecting your personal data. This policy explains how we handle your information.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-808d-b7c8-fdfef6000ed5",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8079-8de7-de9b65b01aec"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "1. Information We Collect",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "1. Information We Collect",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80c0-a13b-f648d5c87e65",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8079-8de7-de9b65b01aec"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Account Information:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Account Information:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " When you subscribe via Whop, we receive your email address and transaction details. We do not see or store your credit card information; this is handled securely by Whop.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " When you subscribe via Whop, we receive your email address and transaction details. We do not see or store your credit card information; this is handled securely by Whop.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80a5-85ce-e46a79e53e29",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8079-8de7-de9b65b01aec"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "TradingView Usernames:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "TradingView Usernames:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " We collect your TradingView username solely to grant \"Invite-Only\" access to our indicators.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " We collect your TradingView username solely to grant \"Invite-Only\" access to our indicators.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80b5-a948-d4e95c294981",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8079-8de7-de9b65b01aec"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Usage Data:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Usage Data:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " We may collect anonymous data on how you use our website to improve our services.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " We may collect anonymous data on how you use our website to improve our services.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8011-bf55-d877cd8f5b0f",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8079-8de7-de9b65b01aec"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "2. How We Use Your Information",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "2. How We Use Your Information",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-801d-b23a-ca241bde4e4f",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8079-8de7-de9b65b01aec"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "We use your data strictly to:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "We use your data strictly to:",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-805d-a543-ea5c4e3a4666",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8079-8de7-de9b65b01aec"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Provision access to your purchased tools.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Provision access to your purchased tools.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80bf-8bc6-c719b2c51555",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8079-8de7-de9b65b01aec"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Send critical service updates or security alerts.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Send critical service updates or security alerts.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80f5-acef-d58f93f4706c",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8079-8de7-de9b65b01aec"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Comply with legal obligations.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Comply with legal obligations.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8063-a472-de48565e3912",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8079-8de7-de9b65b01aec"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "3. Data Sharing",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "3. Data Sharing",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-807e-8a2a-c9e41e998a1a",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8079-8de7-de9b65b01aec"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "We ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "We ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "never",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "never",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " sell your data. We only share information with third-party processors (like Whop or TradingView) as necessary to fulfill your subscription.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " sell your data. We only share information with third-party processors (like Whop or TradingView) as necessary to fulfill your subscription.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80e3-8552-f56b4744c2e6",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8079-8de7-de9b65b01aec"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "4. Your Rights",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "4. Your Rights",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8061-9b00-f388c9a62eb0",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8079-8de7-de9b65b01aec"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "You may request to view, edit, or delete your personal information at any time by contacting us at [Your Support Email].",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "You may request to view, edit, or delete your personal information at any time by contacting us at [Your Support Email].",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-803a-a37c-f40235908bf3",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8079-8de7-de9b65b01aec"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "5. Security",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "5. Security",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8069-8589-f6bfea7f646e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8079-8de7-de9b65b01aec"
+          },
+          "created_time": "2026-03-07T14:54:00.000Z",
+          "last_edited_time": "2026-03-07T14:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "We use industry-standard encryption to protect your data. We will never ask for your TradingView password or private crypto keys.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "We use industry-standard encryption to protect your data. We will never ask for your TradingView password or private crypto keys.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        }
+      ]
+    },
+    {
+      "id": "31c2e378b76a804b9f91c10ea9801588",
+      "title": "About",
+      "slug": "about",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8031-a120-c44f308eaf32",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-804b-9f91-c10ea9801588"
+          },
+          "created_time": "2026-03-07T14:41:00.000Z",
+          "last_edited_time": "2026-03-07T15:50:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Hi, I'm Zach (lostsol). I’m a professor at Northwestern, not a \"hedge fund bro.\" I built SolQuant because most retail technical analysis is just plain broken.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Hi, I'm Zach (lostsol). I’m a professor at Northwestern, not a \"hedge fund bro.\" I built SolQuant because most retail technical analysis is just plain broken.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-809a-987a-ff1742b971c1",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-804b-9f91-c10ea9801588"
+          },
+          "created_time": "2026-03-07T15:49:00.000Z",
+          "last_edited_time": "2026-03-07T15:49:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "I’m a systems architect who got tired of lagging indicators and noisy charts. I wanted to see the market's \"wireframe\"—the hidden structure of volume and time that actually moves the price.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "I’m a systems architect who got tired of lagging indicators and noisy charts. I wanted to see the market's \"wireframe\"—the hidden structure of volume and time that actually moves the price.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8044-8da3-f0cae2ce7468",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-804b-9f91-c10ea9801588"
+          },
+          "created_time": "2026-03-07T15:49:00.000Z",
+          "last_edited_time": "2026-03-07T15:49:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Our tools show you the market's skeleton before the candle even closes. We don't do \"buy and sell\" signals. We give you the high-precision data you need to stop guessing and start seeing what's really happening.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Our tools show you the market's skeleton before the candle even closes. We don't do \"buy and sell\" signals. We give you the high-precision data you need to stop guessing and start seeing what's really happening.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-806a-9741-c63dbb8bf25b",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-804b-9f91-c10ea9801588"
+          },
+          "created_time": "2026-03-07T14:48:00.000Z",
+          "last_edited_time": "2026-03-07T14:48:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80c9-9c92-eaf7f43ae45a",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-804b-9f91-c10ea9801588"
+          },
+          "created_time": "2026-03-07T14:48:00.000Z",
+          "last_edited_time": "2026-03-07T14:50:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Contact Us: ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Contact Us: ",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8056-9a94-d771b7420cc4",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-804b-9f91-c10ea9801588"
+          },
+          "created_time": "2026-03-07T14:50:00.000Z",
+          "last_edited_time": "2026-03-07T14:50:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "SolQuant",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "SolQuant",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80bd-b794-cb453b58a90d",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-804b-9f91-c10ea9801588"
+          },
+          "created_time": "2026-03-07T14:51:00.000Z",
+          "last_edited_time": "2026-03-07T14:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "mr.lost.sol.1@gmail.com",
+                  "link": {
+                    "url": "mailto:mr.lost.sol.1@gmail.com"
+                  }
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "mr.lost.sol.1@gmail.com",
+                "href": "mailto:mr.lost.sol.1@gmail.com"
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8072-95ee-c3c3c52bba7a",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-804b-9f91-c10ea9801588"
+          },
+          "created_time": "2026-03-07T14:49:00.000Z",
+          "last_edited_time": "2026-03-07T14:49:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "(224) 382-2598\n1555 Sherman Ave #212\nEvanston, IL 60202",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "(224) 382-2598\n1555 Sherman Ave #212\nEvanston, IL 60202",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80a4-b633-de6e484cc056",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-804b-9f91-c10ea9801588"
+          },
+          "created_time": "2026-03-07T14:51:00.000Z",
+          "last_edited_time": "2026-03-07T14:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [],
+            "color": "default"
+          },
+          "archived": false
+        }
+      ]
+    }
   ]
 }

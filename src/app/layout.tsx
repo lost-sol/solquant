@@ -67,9 +67,21 @@ export default function RootLayout({
                     <main className="flex-grow">
                         {children}
                     </main>
-                    <footer className="border-t border-border py-8 mt-auto">
-                        <div className="container mx-auto px-6 text-center text-sm text-gray-500 wireframe-text">
-                            &copy; {new Date().getFullYear()} SolQuant. Momentum is velocity, but Liquidity is gravity.
+                    <footer className="border-t border-border py-12 mt-auto">
+                        <div className="container mx-auto px-6 text-center text-sm text-gray-400 wireframe-text space-y-6">
+                            <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-xs uppercase tracking-widest font-mono">
+                                <a href="/about" className="text-gray-300 hover:text-solquant-gold transition-colors">About</a>
+                                <a href="/privacy" className="text-gray-300 hover:text-solquant-gold transition-colors">Privacy</a>
+                                <a href="/terms" className="text-gray-300 hover:text-solquant-gold transition-colors">Terms</a>
+                            </div>
+                            <div className="space-y-4">
+                                <div className="text-gray-400">
+                                    &copy; {new Date().getFullYear()} SolQuant. Momentum is velocity, but Liquidity is gravity.
+                                </div>
+                                <div className="max-w-3xl mx-auto text-xs opacity-70 leading-relaxed text-gray-500">
+                                    SolQuant is an independent provider of technical analysis tools. We are not affiliated with, endorsed by, or partnered with TradingView, Inc., the Solana Foundation, or any cryptocurrency exchange. Our tools do not provide financial advice.
+                                </div>
+                            </div>
                         </div>
                     </footer>
                 </div>

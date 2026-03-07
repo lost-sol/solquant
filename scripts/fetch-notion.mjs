@@ -316,6 +316,40 @@ async function buildEducation() {
     return items;
 }
 
+async function buildPolicies() {
+    console.log("Fetching Policies (Terms, Privacy, About)...");
+    
+    const policyIds = {
+        terms: "31c2e378b76a8072a38be76a188248d2",
+        privacy: "31c2e378b76a80798de7de9b65b01aec",
+        about: "31c2e378b76a804b9f91c10ea9801588"
+    };
+
+    const items = await Promise.all(Object.entries(policyIds).map(async ([slug, pageId]) => {
+        // Fetch the full page object to get title
+        const page = await notion.pages.retrieve({ page_id: pageId });
+        const pageTitle = page.properties.title?.title[0]?.plain_text || page.properties.Name?.title[0]?.plain_text || slug.charAt(0).toUpperCase() + slug.slice(1);
+
+        const item = {
+            id: pageId,
+            title: pageTitle,
+            slug: slug,
+            blocks: []
+        };
+
+        // Get Blocks
+        console.log(`Fetching blocks for policy page: ${pageTitle}`);
+        item.blocks = await fetchNotionBlocks(pageId);
+
+        // Scan blocks for local images
+        await replaceImageBlocksWithLocalPaths(item.blocks);
+
+        return item;
+    }));
+
+    return items;
+}
+
 async function main() {
     if (!process.env.NOTION_API_KEY) {
         console.error("Missing NOTION_API_KEY");
@@ -325,7 +359,8 @@ async function main() {
     const data = {
         roadmap: [],
         wiki: [],
-        education: []
+        education: [],
+        policies: []
     };
 
     try {
@@ -344,6 +379,12 @@ async function main() {
         data.education = await buildEducation();
     } catch (e) {
         console.error("Failed to build education:", e.message);
+    }
+
+    try {
+        data.policies = await buildPolicies();
+    } catch (e) {
+        console.error("Failed to build policies:", e.message);
     }
 
     try {

@@ -66,6 +66,9 @@ export default async function EducationLayout({
                         >
                             Join SolQuant
                         </Link>
+                        <p className="mt-3 text-[11px] text-gray-500 font-mono leading-relaxed">
+                            By clicking, you will be redirected to our secure store on Whop. Your purchase is subject to our <Link href="/terms" className="underline hover:text-solquant-gold transition-colors">Terms of Service</Link> and <Link href="/privacy" className="underline hover:text-solquant-gold transition-colors">Privacy Policy</Link>.
+                        </p>
                     </div>
                 </div>
             </aside>

@@ -12,6 +12,7 @@ const notion = new Client({
 
 const ROADMAP_DATABASE_ID = process.env.NOTION_ROADMAP_DATABASE_ID;
 const WIKI_DATABASE_ID = process.env.NOTION_WIKI_DATABASE_ID;
+const EDUCATION_PAGE_ID = process.env.NOTION_EDUCATION_PAGE_ID;
 
 const publicDir = path.join(process.cwd(), "public", "images", "notion");
 if (!fs.existsSync(publicDir)) {
@@ -57,7 +58,10 @@ async function fetchNotionBlocks(blockId) {
             },
         });
         
-        if (!response.ok) break;
+        if (!response.ok) {
+            const error = await response.text();
+            throw new Error(`Notion blocks API error: ${response.status} ${error}`);
+        }
         
         const data = await response.json();
         const blocks = data.results || [];
@@ -247,27 +251,107 @@ async function buildWiki() {
     return items;
 }
 
+async function buildEducation() {
+    console.log("Fetching Education...");
+    
+    // For Education, we fetch the children of EDUCATION_PAGE_ID
+    // These children are expected to be "child_page" blocks
+    const results = await fetchNotionBlocks(EDUCATION_PAGE_ID);
+    const subPages = results.filter(block => block.type === 'child_page');
+
+    console.log(`Found ${subPages.length} subpages in Education.`);
+
+    const items = await Promise.all(subPages.map(async (pageBlock) => {
+        const pageId = pageBlock.id;
+        const pageTitle = pageBlock.child_page.title;
+        const slug = pageTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+
+        // Fetch the full page object to get cover/icon
+        const page = await notion.pages.retrieve({ page_id: pageId });
+
+        const item = {
+            id: pageId,
+            title: pageTitle,
+            slug: slug,
+            categories: ["Education"],
+            summary: "", // Will extract from blocks
+            imageUrl: "/images/logo.png",
+            blocks: []
+        };
+
+        // Get Blocks
+        console.log(`Fetching blocks for education page: ${pageTitle}`);
+        item.blocks = await fetchNotionBlocks(pageId);
+
+        // Fallback description from blocks
+        const firstParagraph = item.blocks.find(b => b.type === 'paragraph');
+        if (firstParagraph && firstParagraph.paragraph.rich_text.length > 0) {
+            item.summary = firstParagraph.paragraph.rich_text.map(t => t.plain_text).join("").substring(0, 160) + "...";
+        }
+        
+        // Fetch Cover Image
+        let imageUrl = page.cover?.external?.url || page.cover?.file?.url;
+        if (!imageUrl) {
+            const imageBlock = item.blocks.find((b) => b.type === "image");
+            if (imageBlock) {
+                imageUrl = imageBlock.image?.external?.url || imageBlock.image?.file?.url;
+            }
+        }
+
+        // Only use icon as absolute last resort if it's an image, not emoji
+        if (!imageUrl && page.icon?.type !== 'emoji') {
+            imageUrl = page.icon?.external?.url || page.icon?.file?.url;
+        }
+
+        // Scan blocks for local images
+        await replaceImageBlocksWithLocalPaths(item.blocks);
+
+        if (imageUrl) {
+            item.imageUrl = await downloadAndCacheImage(imageUrl, pageId, "notion");
+        }
+
+        return item;
+    }));
+
+    return items;
+}
+
 async function main() {
     if (!process.env.NOTION_API_KEY) {
         console.error("Missing NOTION_API_KEY");
         process.exit(1);
     }
     
+    const data = {
+        roadmap: [],
+        wiki: [],
+        education: []
+    };
+
     try {
-        const roadmap = await buildRoadmap();
-        const wiki = await buildWiki();
+        data.roadmap = await buildRoadmap();
+    } catch (e) {
+        console.error("Failed to build roadmap:", e.message);
+    }
 
-        const data = {
-            roadmap,
-            wiki
-        };
+    try {
+        data.wiki = await buildWiki();
+    } catch (e) {
+        console.error("Failed to build wiki:", e.message);
+    }
 
+    try {
+        data.education = await buildEducation();
+    } catch (e) {
+        console.error("Failed to build education:", e.message);
+    }
+
+    try {
         const dataPath = path.join(process.cwd(), "src", "data", "notion-data.json");
         fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
-        
-        console.log("Successfully fetched all Notion data to src/data/notion-data.json!");
+        console.log("Successfully fetched Notion data to src/data/notion-data.json!");
     } catch (e) {
-        console.error("Failed executing build step", e);
+        console.error("Failed saving Notion data:", e);
         process.exit(1);
     }
 }

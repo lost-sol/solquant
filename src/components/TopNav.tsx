@@ -27,6 +27,12 @@ export default function TopNav() {
             >
                 Indicators
             </Link>
+            <Link
+                href="/education"
+                className={`transition-colors ${isActive("/education") ? "text-solquant-gold font-bold" : "hover:text-solquant-gold"}`}
+            >
+                Education
+            </Link>
 
             <a
                 href="https://x.com/Sol_Quant"

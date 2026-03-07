@@ -61,26 +61,28 @@ export default async function WikiArticlePage({ params }: Props) {
                 </div>
             )}
 
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-4">
-                <div>
-                    <h1 className="text-4xl md:text-5xl tracking-tight mb-0">{articleMeta.title}</h1>
-                    <p className="font-mono text-sm text-gray-500 mt-2">
-                        {((articleMeta as any).categories || []).length > 0
-                            ? `Suites: ${((articleMeta as any).categories || []).join(", ")}`
-                            : `Suite: ${(articleMeta as any).category || "General"}`}
-                    </p>
-                </div>
+            <div className="flex flex-col gap-4 mb-4">
+                <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                    <div className="flex flex-col">
+                        <span className="inline-flex items-center self-start px-2.5 py-0.5 rounded-full text-xs font-mono font-bold bg-solquant-gold/10 text-solquant-gold border border-solquant-gold/20 uppercase tracking-widest mb-3">
+                            {Array.isArray((articleMeta as any).categories) && (articleMeta as any).categories.length > 0
+                                ? (articleMeta as any).categories.join(", ")
+                                : (articleMeta as any).category || "General"}
+                        </span>
+                        <h1 className="text-4xl md:text-5xl tracking-tight mb-0">{articleMeta.title}</h1>
+                    </div>
 
-                {articleMeta.indicatorUrl && (
-                    <a
-                        href={articleMeta.indicatorUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center px-4 py-2 bg-solquant-gold/10 border border-solquant-gold/30 rounded-lg text-solquant-gold hover:bg-solquant-gold/20 hover:border-solquant-gold transition-all font-mono text-sm mb-1"
-                    >
-                        <span className="mr-2">🔗</span> Open on TradingView
-                    </a>
-                )}
+                    {articleMeta.indicatorUrl && (
+                        <a
+                            href={articleMeta.indicatorUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center px-4 py-2 bg-solquant-gold/10 border border-solquant-gold/30 rounded-lg text-solquant-gold hover:bg-solquant-gold/20 hover:border-solquant-gold transition-all font-mono text-sm mb-1"
+                        >
+                            <span className="mr-2">🔗</span> Open on TradingView
+                        </a>
+                    )}
+                </div>
             </div>
 
             <div className="h-px bg-border mb-8"></div>

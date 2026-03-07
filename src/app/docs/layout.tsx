@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getWikiArticles } from "@/lib/notion";
+import SidebarLink from "@/components/SidebarLink";
 
 export const revalidate = 60; // ISR
 
@@ -46,12 +47,11 @@ export default async function DocsLayout({
                                 <ul className="space-y-2">
                                     {items.map((item: any) => (
                                         <li key={item.id}>
-                                            <Link
+                                            <SidebarLink
                                                 href={`/docs/${item.slug}`}
-                                                className="text-sm hover:text-solquant-gold transition-colors text-gray-300 block py-1"
                                             >
                                                 {item.title}
-                                            </Link>
+                                            </SidebarLink>
                                         </li>
                                     ))}
                                 </ul>

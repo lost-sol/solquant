@@ -73,14 +73,28 @@ export default async function WikiArticlePage({ params }: Props) {
                     </div>
 
                     {articleMeta.indicatorUrl && (
-                        <a
-                            href={articleMeta.indicatorUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center px-4 py-2 bg-solquant-gold/10 border border-solquant-gold/30 rounded-lg text-solquant-gold hover:bg-solquant-gold/20 hover:border-solquant-gold transition-all font-mono text-sm mb-1"
-                        >
-                            <span className="mr-2">🔗</span> Open on TradingView
-                        </a>
+                        <div className="flex flex-col gap-2">
+                            {((articleMeta as any).categories?.some((c: string) => c.includes('Suite A')) || (articleMeta as any).categories?.some((c: string) => c.includes('Suite B'))) && (
+                                <a
+                                    href={(articleMeta as any).categories?.some((c: string) => c.includes('Suite A')) 
+                                        ? "https://whop.com/checkout/plan_agr70Bot9uI3q" 
+                                        : "https://whop.com/checkout/plan_aeREgPjnII4uE"}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center justify-center px-4 py-3 bg-solquant-gold text-black rounded-2xl hover:bg-yellow-600 transition-all group/btn font-bold text-sm uppercase tracking-wide"
+                                >
+                                    Subscribe via Whop
+                                </a>
+                            )}
+                            <a
+                                href={articleMeta.indicatorUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center px-4 py-2 bg-solquant-gold/10 border border-solquant-gold/30 rounded-lg text-solquant-gold hover:bg-solquant-gold/20 hover:border-solquant-gold transition-all font-mono text-sm mb-1"
+                            >
+                                <span className="mr-2">🔗</span> Open on TradingView
+                            </a>
+                        </div>
                     )}
                 </div>
             </div>

@@ -121,7 +121,7 @@ export default async function Home() {
                         </div>
                         <div className="flex flex-col items-center w-full">
                             <Link
-                                href="https://whop.com/solquant"
+                                href="https://whop.com/checkout/plan_agr70Bot9uI3q"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group relative inline-flex w-full items-center justify-center px-8 py-3.5 font-bold text-black transition-all duration-200 bg-solquant-gold border border-transparent rounded-2xl hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-solquant-gold mt-2 uppercase tracking-wide text-sm"
@@ -139,7 +139,7 @@ export default async function Home() {
                         <div>
                             <div className="flex justify-between items-center mb-4">
                                 <h3 className="text-2xl font-bold">Precision Scalper Toolkit</h3>
-                                <span className="text-solquant-gold font-bold text-lg">$34.99/mo</span>
+                                <span className="text-solquant-gold font-bold text-lg">$19.99/mo</span>
                             </div>
                             <p className="text-gray-400 text-sm leading-relaxed mb-6">
                                 Master the MTF Trend tools and the Synthetic Max Pain model. For traders operating on low timeframes extracting edge from volatility.
@@ -176,7 +176,7 @@ export default async function Home() {
                         </div>
                         <div className="flex flex-col items-center w-full">
                             <Link
-                                href="https://whop.com/solquant"
+                                href="https://whop.com/checkout/plan_aeREgPjnII4uE"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group relative inline-flex w-full items-center justify-center px-8 py-3.5 font-bold text-black transition-all duration-200 bg-solquant-gold border border-transparent rounded-2xl hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-solquant-gold mt-2 uppercase tracking-wide text-sm"

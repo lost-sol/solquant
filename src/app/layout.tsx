@@ -56,9 +56,8 @@ export default function RootLayout({
                         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
                             <a href="/" className="flex items-center space-x-3 text-2xl font-bold tracking-tighter hover:opacity-80 transition-opacity">
                                 <Image src="/images/logo.png" alt="SolQuant Logo" width={40} height={40} className="object-contain" />
-                                <div className="font-mono">
-                                    <span className="text-white">Sol</span>
-                                    <span className="text-solquant-gold">Quant</span>
+                                <div className="font-mono text-solquant-gold">
+                                    SolQuant
                                 </div>
                             </a>
                             <TopNav />

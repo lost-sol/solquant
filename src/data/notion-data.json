@@ -33,6 +33,14 @@
       "imageUrl": "/images/notion/3182e378-b76a-8145-b27f-f88e0558e027_f47ca6e4.jpg"
     },
     {
+      "id": "31f2e378-b76a-8015-bc0f-cffc339c756c",
+      "title": "Strategy Updates",
+      "status": "Update",
+      "date": "",
+      "description": "Mean Reversion Testing is almost finished. Running a second round of blind testing and monte carlo shuffling to verify results on all tokens. Here's how $SOL is looking. Non standard timeframes outperform by a large margin.",
+      "imageUrl": "/images/notion/31f2e378-b76a-8015-bc0f-cffc339c756c_ba735dd5.jpg"
+    },
+    {
       "id": "31e2e378-b76a-8094-ab8d-d3e3d0ca498d",
       "title": "Genetic Programming Strategies",
       "status": "Update",

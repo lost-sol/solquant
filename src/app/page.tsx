@@ -22,9 +22,17 @@ export default async function Home() {
         <div className="flex flex-col items-center justify-center min-h-screen text-foreground">
             {/* Hero Section */}
             <section className="relative w-full px-6 py-32 flex flex-col items-center text-center space-y-8 animate-in fade-in zoom-in duration-700">
-                <div className="absolute inset-0 z-[-1] overflow-hidden opacity-20 pointer-events-none">
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/50 to-[#050505] z-10"></div>
-                    <Image src="/images/twitter-header.png" alt="Hero Background" fill className="object-cover object-center grayscale mix-blend-screen" priority />
+                <div className="absolute inset-0 z-[-1] overflow-hidden opacity-30 pointer-events-none">
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/60 to-[#050505] z-10"></div>
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="absolute inset-0 w-full h-full object-cover grayscale mix-blend-screen"
+                    >
+                        <source src="/timelapse_2.mp4" type="video/mp4" />
+                    </video>
                 </div>
                 <h1 className="text-5xl md:text-7xl tracking-tighter relative z-10">
                     Stop Guessing. <br className="hidden md:block" />
@@ -33,48 +41,39 @@ export default async function Home() {
                 <p className="max-w-3xl text-lg md:text-xl text-gray-400">
                     Most TradingView indicators lag behind the price. We build tools that show you the market’s true skeleton—the volume and leverage that actually move the needle before the candle even closes.
                 </p>
-                <div className="mt-8 flex flex-col items-center">
-                    <div className="relative w-full max-w-2xl rounded-2xl overflow-hidden border border-solquant-gold/20 shadow-[0_0_50px_rgba(212,175,55,0.15)] mb-10 group">
-                        <video
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                            className="w-full h-auto object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+            </section>
+
+            {/* Indicator Carousel */}
+            <div className="w-full overflow-hidden bg-[#050505] py-12 border-y border-white/5">
+                <div className="flex animate-scroll hover:[animation-play-state:paused] gap-12 px-6">
+                    {/* Double the items for infinite effect */}
+                    {[...wikiArticles, ...wikiArticles].map((article, idx) => (
+                        <Link 
+                            key={`${article.id}-${idx}`}
+                            href={`/docs/${article.slug}`}
+                            className="flex-shrink-0 group flex flex-col items-center space-y-4"
                         >
-                            <source src="/timelapse_2.mp4" type="video/mp4" />
-                        </video>
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/40 via-transparent to-transparent pointer-events-none"></div>
-                    </div>
-                    <Link
-                        href="https://whop.com/solquant"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group relative inline-flex items-center justify-center px-8 py-3.5 font-bold text-black transition-all duration-200 bg-solquant-gold border border-transparent rounded-2xl hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-solquant-gold uppercase tracking-wide text-sm"
-                    >
-                        Subscribe via Whop
-                    </Link>
-                    <p className="mt-4 text-xs text-gray-500 max-w-sm font-mono leading-relaxed">
-                        By clicking, you will be redirected to our secure store on Whop. Your purchase is subject to our <Link href="/terms" className="underline hover:text-solquant-gold transition-colors">Terms of Service</Link> and <Link href="/privacy" className="underline hover:text-solquant-gold transition-colors">Privacy Policy</Link>.
-                    </p>
+                            <div className="relative w-64 h-40 rounded-2xl overflow-hidden border border-white/10 group-hover:border-solquant-gold/50 transition-all duration-500 shadow-2xl">
+                                <Image 
+                                    src={article.screenshotUrl || article.imageUrl || '/images/logo.png'} 
+                                    alt={article.title} 
+                                    fill 
+                                    className="object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none"></div>
+                            </div>
+                            <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-gray-500 group-hover:text-solquant-gold transition-colors font-mono">
+                                {article.title}
+                            </span>
+                        </Link>
+                    ))}
                 </div>
-            </section>
-
-            {/* Who We Are */}
-            <section className="w-full max-w-4xl px-6 py-16 text-center">
-                <h2 className="text-3xl font-bold mb-8">Who We Are</h2>
-                <div className="py-8 px-4 border-t border-b border-solquant-gold/20">
-                    <p className="text-gray-300 leading-relaxed text-sm md:text-base max-w-3xl mx-auto">
-                        We’re systems architects, not hedge fund bros. SolQuant was born because retail technical analysis is often broken. We build high-precision tools for traders who are tired of basic RSI and want to see the market's 'wireframe' — the hidden structure of volume and time that dictates where price goes next. <Link href="/about" className="text-solquant-gold hover:text-yellow-600 transition-colors font-bold ml-1">more...</Link>
-                    </p>
-                </div>
-            </section>
-
+            </div>
 
             {/* Product Suites */}
             <section className="w-full max-w-7xl px-6 py-24">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight">The Product Suites</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Indicator Suites</h2>
                     <p className="mt-4 text-gray-400">Decode market mechanics with precision tools.</p>
                 </div>
 
@@ -191,6 +190,28 @@ export default async function Home() {
                 </div>
             </section>
 
+            {/* Strategies Section */}
+            <section className="w-full max-w-7xl px-6 py-24 border-t border-white/5">
+                <div className="text-center mb-16">
+                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Strategies</h2>
+                    <p className="mt-4 text-gray-400">Automated execution systems built for the modern market.</p>
+                </div>
+
+                <div className="relative group overflow-hidden rounded-3xl border border-white/10 bg-[#0a0a0a] p-12 text-center">
+                    <div className="absolute inset-0 bg-gradient-to-b from-solquant-gold/5 to-transparent pointer-events-none"></div>
+                    <div className="relative z-10">
+                        <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full bg-solquant-gold/10 border border-solquant-gold/20 text-solquant-gold text-xs font-bold uppercase tracking-widest">
+                            <span className="w-2 h-2 rounded-full bg-solquant-gold animate-pulse"></span>
+                            In Development
+                        </div>
+                        <h3 className="text-4xl font-bold mb-4">Coming Soon</h3>
+                        <p className="text-gray-400 max-w-xl mx-auto text-lg leading-relaxed">
+                            We are currently engineering a suite of automated trading strategies designed to leverage our proprietary indicators. Stay tuned for the official launch.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
             {/* The Development Lab (formerly Active Development) */}
             <section className="w-full max-w-[1920px] px-6 md:px-12 py-12">
                 <div className="p-4 md:p-8 rounded-2xl">
@@ -280,6 +301,16 @@ export default async function Home() {
                     >
                         Explore Free Indicators
                     </Link>
+                </div>
+            </section>
+
+            {/* Who We Are */}
+            <section className="w-full max-w-4xl px-6 py-16 text-center">
+                <h2 className="text-3xl font-bold mb-8">Who We Are</h2>
+                <div className="py-8 px-4 border-t border-b border-solquant-gold/20">
+                    <p className="text-gray-300 leading-relaxed text-sm md:text-base max-w-3xl mx-auto">
+                        We’re systems architects, not hedge fund bros. SolQuant was born because retail technical analysis is often broken. We build high-precision tools for traders who are tired of basic RSI and want to see the market's 'wireframe' — the hidden structure of volume and time that dictates where price goes next. <Link href="/about" className="text-solquant-gold hover:text-yellow-600 transition-colors font-bold ml-1">more...</Link>
+                    </p>
                 </div>
             </section>
 

@@ -7854,7 +7854,7 @@
       ],
       "summary": "Momentum oscillator (WaveTrend-style) for overbought/oversold, swings, and divergences.",
       "imageUrl": "/images/notion/2fd2e378-b76a-8080-bc2d-cbdff3a2af00_8313765a.jpg",
-      "screenshotUrl": "/images/notion/2fd2e378-b76a-8080-bc2d-cbdff3a2af00_screenshot_93aa6f97.jpg",
+      "screenshotUrl": "/images/notion/2fd2e378-b76a-8080-bc2d-cbdff3a2af00_screenshot_1aa248ea.jpg",
       "indicatorUrl": "https://www.tradingview.com/script/A3khWAuL-WaveTrend-Oscillator/",
       "blocks": [
         {
@@ -11275,7 +11275,7 @@
       ],
       "summary": "WaveTrend momentum overlaid with CVD Z-score style normalization for flow/imbalance confirmation.",
       "imageUrl": "/images/logo.png",
-      "screenshotUrl": "/images/notion/3082e378-b76a-8148-a348-d960fd819093_screenshot_6f4eee47.jpg",
+      "screenshotUrl": "/images/notion/3082e378-b76a-8148-a348-d960fd819093_screenshot_ec97aa2e.jpg",
       "indicatorUrl": "https://www.tradingview.com/script/r4ki62rW-WaveTrend-Oscillator-CVD-Z/",
       "blocks": [
         {

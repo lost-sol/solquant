@@ -50,8 +50,8 @@ export default function RootLayout({
             <body
                 className="antialiased bg-background text-foreground"
             >
-                <AnimatedBackground />
-                <div className="relative z-10 flex flex-col min-h-screen">
+                <div className="relative flex flex-col min-h-screen">
+                    <AnimatedBackground />
                     <header className="wireframe-box border-b border-border sticky top-0 z-50 bg-[#050505]/80 backdrop-blur-md">
                         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
                             <a href="/" className="flex items-center space-x-3 text-2xl font-bold tracking-tighter hover:opacity-80 transition-opacity">

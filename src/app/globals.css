@@ -61,3 +61,20 @@ h6 {
     box-shadow: 0 0 30px rgba(212, 175, 55, 0.6), inset 0 0 15px rgba(212, 175, 55, 0.2);
     transform: translateY(-2px);
 }
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-scroll {
+    animation: scroll 40s linear infinite;
+}
+
+.animate-scroll:hover {
+    animation-play-state: paused;
+}

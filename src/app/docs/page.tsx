@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getWikiArticles } from "@/lib/notion";
+
+export const metadata: Metadata = {
+    title: "SolQuant Indicators | Documentation",
+    description: "Welcome to the technical authority hub. Decode market mechanics with our high-precision technical analysis tools.",
+};
 
 export default async function DocsPage() {
     const articles = await getWikiArticles();

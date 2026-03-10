@@ -1,9 +1,64 @@
+import type { Metadata } from "next";
 import { getLiveRoadmap, getPageContent } from "@/lib/notion";
 import NotionRenderer from "@/components/NotionRenderer";
 import { notFound } from "next/navigation";
 
 type Props = {
     params: Promise<{ slug: string }>
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const resolvedParams = await params;
+    const roadmap = await getLiveRoadmap();
+    const roadmapItem = roadmap.find((item: any) => item.slug === resolvedParams.slug);
+
+    if (!roadmapItem) {
+        return {};
+    }
+
+    const title = `${roadmapItem.title} | SolQuant Development Lab`;
+    
+    // Robust description extraction
+    let description = roadmapItem.description || "";
+    if (!description && roadmapItem.blocks) {
+        const firstParagraph = roadmapItem.blocks.find((block: any) => block.type === 'paragraph');
+        if (firstParagraph?.paragraph?.rich_text) {
+            description = firstParagraph.paragraph.rich_text
+                .map((rt: any) => rt.plain_text)
+                .join('')
+                .substring(0, 160);
+        }
+    }
+
+    if (!description) {
+        description = "Explore coming features and institutional-grade tools in the SolQuant Development Lab.";
+    }
+
+    const imageUrl = roadmapItem.imageUrl || roadmapItem.previewImageUrls?.[0] || "/images/twitter-header.png";
+
+    return {
+        title,
+        description,
+        openGraph: {
+            title,
+            description,
+            type: "article",
+            images: [
+                {
+                    url: imageUrl,
+                    width: 1200,
+                    height: 630,
+                    alt: roadmapItem.title,
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+            images: [imageUrl],
+        },
+    };
 }
 
 export async function generateStaticParams() {

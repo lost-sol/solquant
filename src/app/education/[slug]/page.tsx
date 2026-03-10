@@ -1,9 +1,64 @@
+import type { Metadata } from "next";
 import { getEducationArticles, getPageContent } from "@/lib/notion";
 import NotionRenderer from "@/components/NotionRenderer";
 import { notFound } from "next/navigation";
 
 type Props = {
     params: Promise<{ slug: string }>
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const resolvedParams = await params;
+    const articles = await getEducationArticles();
+    const articleMeta = articles.find((a: any) => a.slug === resolvedParams.slug);
+
+    if (!articleMeta) {
+        return {};
+    }
+
+    const title = `${articleMeta.title} | SolQuant Education`;
+    
+    // Robust description extraction
+    let description = articleMeta.summary || "";
+    if (!description && articleMeta.blocks) {
+        const firstParagraph = articleMeta.blocks.find((block: any) => block.type === 'paragraph');
+        if (firstParagraph?.paragraph?.rich_text) {
+            description = firstParagraph.paragraph.rich_text
+                .map((rt: any) => rt.plain_text)
+                .join('')
+                .substring(0, 160);
+        }
+    }
+
+    if (!description) {
+        description = "Master technical analysis with SolQuant Education. Professional trading best practices and indicator mechanics.";
+    }
+
+    const imageUrl = articleMeta.imageUrl || "/images/twitter-header.png";
+
+    return {
+        title,
+        description,
+        openGraph: {
+            title,
+            description,
+            type: "article",
+            images: [
+                {
+                    url: imageUrl,
+                    width: 1200,
+                    height: 630,
+                    alt: articleMeta.title,
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+            images: [imageUrl],
+        },
+    };
 }
 
 export async function generateStaticParams() {

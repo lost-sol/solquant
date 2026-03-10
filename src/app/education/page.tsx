@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getEducationArticles } from "@/lib/notion";
+
+export const metadata: Metadata = {
+    title: "Trading Education & Best Practices | SolQuant",
+    description: "Master the psychological and mechanical edge required for professional trading. Explore our trading education articles.",
+};
 
 export default async function EducationPage() {
     const articles = await getEducationArticles();

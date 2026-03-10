@@ -39,6 +39,9 @@ export async function getPageContent(pageId: string) {
     
     const policyPage = (notionData as any).policies?.find((a: any) => a.id === pageId);
     if (policyPage) return policyPage.blocks;
+
+    const roadmapItem = (notionData.roadmap as any)?.find((a: any) => a.id === pageId);
+    if (roadmapItem) return roadmapItem.blocks;
     
     return [];
 }

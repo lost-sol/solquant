@@ -3,50 +3,844 @@
     {
       "id": "31a2e378-b76a-8085-ada6-f4a4cc99ede4",
       "title": "Strategies are Coming",
+      "slug": "strategies-are-coming",
       "status": "Strategy",
       "date": "2026-03-05",
-      "description": "Results from our custom backtester have been coming in and we’ve been hard at work eliminating repainting and data leaks to make these strategies true to real time results and double checking over fitment. We will be offering these to our subscribers very soon!",
-      "imageUrl": "/images/notion/31a2e378-b76a-8085-ada6-f4a4cc99ede4_b81277f2.jpg"
+      "description": "",
+      "imageUrl": "/images/notion/31a2e378-b76a-8085-ada6-f4a4cc99ede4_preview_0_b81277f2.jpg",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80f8-965b-fe7c6ee1c08a",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8085-ada6-f4a4cc99ede4"
+          },
+          "created_time": "2026-03-05T12:40:00.000Z",
+          "last_edited_time": "2026-03-05T12:40:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "image",
+          "image": {
+            "type": "external",
+            "external": {
+              "url": "/images/notion/31a2e378-b76a-80f8-965b-fe7c6ee1c08a_b81277f2.jpg"
+            }
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80db-8a96-cc9d168e3d75",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-8085-ada6-f4a4cc99ede4"
+          },
+          "created_time": "2026-03-05T12:40:00.000Z",
+          "last_edited_time": "2026-03-05T12:42:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Results from our custom backtester have been coming in and we’ve been hard at work eliminating repainting and data leaks to make these strategies true to real time results and double checking over fitment. We will be offering these to our subscribers very soon!",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Results from our custom backtester have been coming in and we’ve been hard at work eliminating repainting and data leaks to make these strategies true to real time results and double checking over fitment. We will be offering these to our subscribers very soon!",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        }
+      ],
+      "previewParagraphs": [
+        "Results from our custom backtester have been coming in and we’ve been hard at work eliminating repainting and data leaks to make these strategies true to real time results and double checking over fitment. We will be offering these to our subscribers very soon!"
+      ],
+      "previewImageUrls": [
+        "/images/notion/31a2e378-b76a-8085-ada6-f4a4cc99ede4_preview_0_b81277f2.jpg"
+      ]
     },
     {
       "id": "31a2e378-b76a-80fc-8ba9-cfe53c303921",
       "title": "Backtesting strategies",
+      "slug": "backtesting-strategies",
       "status": "Update",
       "date": "2026-03-04",
-      "description": "We've been running backtests on our indicators and testing strategies on years of data on $BTC, $ETH, $SOL and many others. It's been a busy couple of weeks. Announcements are coming soon!",
-      "imageUrl": "/images/notion/31a2e378-b76a-80fc-8ba9-cfe53c303921_92944508.jpg"
+      "description": "",
+      "imageUrl": "/images/notion/31a2e378-b76a-80fc-8ba9-cfe53c303921_preview_0_92944508.jpg",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-8059-aff7-d95c038fdfa3",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80fc-8ba9-cfe53c303921"
+          },
+          "created_time": "2026-03-05T04:47:00.000Z",
+          "last_edited_time": "2026-03-05T04:47:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "We've been running backtests on our indicators and testing strategies on years of data on ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "We've been running backtests on our indicators and testing strategies on years of data on ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "$BTC",
+                  "link": {
+                    "url": "https://x.com/search?q=%24BTC&src=cashtag_click"
+                  }
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "$BTC",
+                "href": "https://x.com/search?q=%24BTC&src=cashtag_click"
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": ", ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": ", ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "$ETH",
+                  "link": {
+                    "url": "https://x.com/search?q=%24ETH&src=cashtag_click"
+                  }
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "$ETH",
+                "href": "https://x.com/search?q=%24ETH&src=cashtag_click"
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": ", ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": ", ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "$SOL",
+                  "link": {
+                    "url": "https://x.com/search?q=%24SOL&src=cashtag_click"
+                  }
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "$SOL",
+                "href": "https://x.com/search?q=%24SOL&src=cashtag_click"
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " and many others. It's been a busy couple of weeks. Announcements are coming soon!",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " and many others. It's been a busy couple of weeks. Announcements are coming soon!",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-80ac-a521-e70e5cf9886a",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80fc-8ba9-cfe53c303921"
+          },
+          "created_time": "2026-03-05T04:47:00.000Z",
+          "last_edited_time": "2026-03-05T04:47:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "image",
+          "image": {
+            "type": "external",
+            "external": {
+              "url": "/images/notion/31a2e378-b76a-80ac-a521-e70e5cf9886a_92944508.jpg"
+            }
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31a2e378-b76a-809b-97d4-eed796e47381",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31a2e378-b76a-80fc-8ba9-cfe53c303921"
+          },
+          "created_time": "2026-03-05T04:47:00.000Z",
+          "last_edited_time": "2026-03-05T04:47:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [],
+            "color": "default"
+          },
+          "archived": false
+        }
+      ],
+      "previewParagraphs": [
+        "We've been running backtests on our indicators and testing strategies on years of data on $BTC, $ETH, $SOL and many others. It's been a busy couple of weeks. Announcements are coming soon!"
+      ],
+      "previewImageUrls": [
+        "/images/notion/31a2e378-b76a-80fc-8ba9-cfe53c303921_preview_0_92944508.jpg"
+      ]
     },
     {
       "id": "3192e378-b76a-80a2-8325-ed4dc155f921",
       "title": "Website Soft launch",
+      "slug": "website-soft-launch",
       "status": "Update",
       "date": "2026-03-04",
-      "description": "We've soft launched. Still working on getting all the documentation on there but we finally have a permanent home for everything. We're cooking. Updates will be rolling out every day. https://solquant.xyz",
-      "imageUrl": "/images/notion/3192e378-b76a-80a2-8325-ed4dc155f921_bd1a0835.jpg"
+      "description": "",
+      "imageUrl": "/images/notion/3192e378-b76a-80a2-8325-ed4dc155f921_preview_0_bd1a0835.jpg",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "3192e378-b76a-8001-abc1-e129dbc0430a",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3192e378-b76a-80a2-8325-ed4dc155f921"
+          },
+          "created_time": "2026-03-04T23:54:00.000Z",
+          "last_edited_time": "2026-03-04T23:54:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "We've soft launched. Still working on getting all the documentation on there but we finally have a permanent home for everything. We're cooking. Updates will be rolling out every day. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "We've soft launched. Still working on getting all the documentation on there but we finally have a permanent home for everything. We're cooking. Updates will be rolling out every day. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "https://solquant.xyz",
+                  "link": {
+                    "url": "https://t.co/szT4fzYVtd"
+                  }
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "https://solquant.xyz",
+                "href": "https://t.co/szT4fzYVtd"
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3192e378-b76a-8081-9b4f-faaf8e2946b5",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3192e378-b76a-80a2-8325-ed4dc155f921"
+          },
+          "created_time": "2026-03-04T23:54:00.000Z",
+          "last_edited_time": "2026-03-04T23:55:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "image",
+          "image": {
+            "type": "external",
+            "external": {
+              "url": "/images/notion/3192e378-b76a-8081-9b4f-faaf8e2946b5_bd1a0835.jpg"
+            }
+          },
+          "archived": false
+        }
+      ],
+      "previewParagraphs": [
+        "We've soft launched. Still working on getting all the documentation on there but we finally have a permanent home for everything. We're cooking. Updates will be rolling out every day. https://solquant.xyz"
+      ],
+      "previewImageUrls": [
+        "/images/notion/3192e378-b76a-80a2-8325-ed4dc155f921_preview_0_bd1a0835.jpg"
+      ]
     },
     {
       "id": "3182e378-b76a-8145-b27f-f88e0558e027",
       "title": "Micro Macro indicator UX improvements",
+      "slug": "micro-macro-indicator-ux-improvements",
       "status": "Indicator",
       "date": "2026-03-03",
       "description": "Updating and making Micro Macro indicator easier to use in prep for release",
-      "imageUrl": "/images/notion/3182e378-b76a-8145-b27f-f88e0558e027_f47ca6e4.jpg"
+      "imageUrl": "/images/notion/3182e378-b76a-8145-b27f-f88e0558e027_preview_0_f47ca6e4.jpg",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "3182e378-b76a-806c-bde0-d9edd978ffd1",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3182e378-b76a-8145-b27f-f88e0558e027"
+          },
+          "created_time": "2026-03-03T20:39:00.000Z",
+          "last_edited_time": "2026-03-03T20:39:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Updating and making Micro Macro indicator easier to use in prep for release",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Updating and making Micro Macro indicator easier to use in prep for release",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3182e378-b76a-8058-919b-fba39b729cc3",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3182e378-b76a-8145-b27f-f88e0558e027"
+          },
+          "created_time": "2026-03-03T20:39:00.000Z",
+          "last_edited_time": "2026-03-03T22:35:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "image",
+          "image": {
+            "type": "external",
+            "external": {
+              "url": "/images/notion/3182e378-b76a-8058-919b-fba39b729cc3_f47ca6e4.jpg"
+            }
+          },
+          "archived": false
+        }
+      ],
+      "previewParagraphs": [
+        "Updating and making Micro Macro indicator easier to use in prep for release"
+      ],
+      "previewImageUrls": [
+        "/images/notion/3182e378-b76a-8145-b27f-f88e0558e027_preview_0_f47ca6e4.jpg"
+      ]
     },
     {
       "id": "31f2e378-b76a-8015-bc0f-cffc339c756c",
       "title": "Strategy Updates",
+      "slug": "strategy-updates",
       "status": "Update",
       "date": "",
-      "description": "Mean Reversion Testing is almost finished. Running a second round of blind testing and monte carlo shuffling to verify results on all tokens. Here's how $SOL is looking. Non standard timeframes outperform by a large margin.",
-      "imageUrl": "/images/notion/31f2e378-b76a-8015-bc0f-cffc339c756c_ba735dd5.jpg"
+      "description": "",
+      "imageUrl": "/images/notion/31f2e378-b76a-8015-bc0f-cffc339c756c_preview_0_ba735dd5.jpg",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-8083-a5ed-dc9b7b39fe0d",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-8015-bc0f-cffc339c756c"
+          },
+          "created_time": "2026-03-10T12:06:00.000Z",
+          "last_edited_time": "2026-03-10T12:06:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "image",
+          "image": {
+            "type": "external",
+            "external": {
+              "url": "/images/notion/31f2e378-b76a-8083-a5ed-dc9b7b39fe0d_ba735dd5.jpg"
+            }
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-8004-a657-e89cd8a486f6",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-8015-bc0f-cffc339c756c"
+          },
+          "created_time": "2026-03-10T12:06:00.000Z",
+          "last_edited_time": "2026-03-10T12:06:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Mean Reversion Testing is almost finished. Running a second round of blind testing and monte carlo shuffling to verify results on all tokens. Here's how ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Mean Reversion Testing is almost finished. Running a second round of blind testing and monte carlo shuffling to verify results on all tokens. Here's how ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "$SOL",
+                  "link": {
+                    "url": "https://x.com/search?q=%24SOL&src=cashtag_click"
+                  }
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "$SOL",
+                "href": "https://x.com/search?q=%24SOL&src=cashtag_click"
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " is looking. Non standard timeframes outperform by a large margin.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " is looking. Non standard timeframes outperform by a large margin.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-809f-99e7-e13106f12d87",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-8015-bc0f-cffc339c756c"
+          },
+          "created_time": "2026-03-10T12:06:00.000Z",
+          "last_edited_time": "2026-03-10T12:06:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-803b-b25d-dc2dec329d9c",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-8015-bc0f-cffc339c756c"
+          },
+          "created_time": "2026-03-10T12:06:00.000Z",
+          "last_edited_time": "2026-03-10T12:06:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "$SOL",
+                  "link": {
+                    "url": "https://x.com/search?q=%24SOL&src=cashtag_click"
+                  }
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "$SOL",
+                "href": "https://x.com/search?q=%24SOL&src=cashtag_click"
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " on 24m is a standout and when scaling with leverage PNL grows faster than drawdown. Results at 10x had 43,911% return with 61% drawdown in TradingView. Python blind test shows 991% with 40% drawdown.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " on 24m is a standout and when scaling with leverage PNL grows faster than drawdown. Results at 10x had 43,911% return with 61% drawdown in TradingView. Python blind test shows 991% with 40% drawdown.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80c9-a3a0-fd5917091797",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-8015-bc0f-cffc339c756c"
+          },
+          "created_time": "2026-03-10T12:06:00.000Z",
+          "last_edited_time": "2026-03-10T12:06:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "image",
+          "image": {
+            "type": "external",
+            "external": {
+              "url": "/images/notion/31f2e378-b76a-80c9-a3a0-fd5917091797_e00044a8.jpg"
+            }
+          },
+          "archived": false
+        }
+      ],
+      "previewParagraphs": [
+        "Mean Reversion Testing is almost finished. Running a second round of blind testing and monte carlo shuffling to verify results on all tokens. Here's how $SOL is looking. Non standard timeframes outperform by a large margin.",
+        "$SOL on 24m is a standout and when scaling with leverage PNL grows faster than drawdown. Results at 10x had 43,911% return with 61% drawdown in TradingView. Python blind test shows 991% with 40% drawdown."
+      ],
+      "previewImageUrls": [
+        "/images/notion/31f2e378-b76a-8015-bc0f-cffc339c756c_preview_0_ba735dd5.jpg",
+        "/images/notion/31f2e378-b76a-8015-bc0f-cffc339c756c_preview_1_e00044a8.jpg"
+      ]
     },
     {
       "id": "31e2e378-b76a-8094-ab8d-d3e3d0ca498d",
       "title": "Genetic Programming Strategies",
+      "slug": "genetic-programming-strategies",
       "status": "Update",
       "date": "",
-      "description": "Currently running evolutionary strategies on BTC ETH SOL and SUI. This is a great way to discover strategies that are truly differentiated. These start with math not existing indicators and through natural selection the math evolves to the market. I will share insights and results after the full run (several days to run)",
-      "imageUrl": "/images/notion/31e2e378-b76a-8094-ab8d-d3e3d0ca498d_cbff96d6.jpg"
+      "description": "",
+      "imageUrl": "/images/notion/31e2e378-b76a-8094-ab8d-d3e3d0ca498d_preview_0_cbff96d6.jpg",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "31e2e378-b76a-8068-9272-c58b1bfcc010",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31e2e378-b76a-8094-ab8d-d3e3d0ca498d"
+          },
+          "created_time": "2026-03-09T15:38:00.000Z",
+          "last_edited_time": "2026-03-09T15:38:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "image",
+          "image": {
+            "type": "external",
+            "external": {
+              "url": "/images/notion/31e2e378-b76a-8068-9272-c58b1bfcc010_cbff96d6.jpg"
+            }
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31e2e378-b76a-80d6-9ba3-eb23c10c0ce6",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31e2e378-b76a-8094-ab8d-d3e3d0ca498d"
+          },
+          "created_time": "2026-03-09T15:38:00.000Z",
+          "last_edited_time": "2026-03-09T15:41:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Currently running evolutionary strategies on BTC ETH SOL and SUI. This is a great way to discover strategies that are truly differentiated. These start with math not existing indicators and through natural selection the math evolves to the market. I will share insights and results after the full run (several days to run)",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Currently running evolutionary strategies on BTC ETH SOL and SUI. This is a great way to discover strategies that are truly differentiated. These start with math not existing indicators and through natural selection the math evolves to the market. I will share insights and results after the full run (several days to run)",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        }
+      ],
+      "previewParagraphs": [
+        "Currently running evolutionary strategies on BTC ETH SOL and SUI. This is a great way to discover strategies that are truly differentiated. These start with math not existing indicators and through natural selection the math evolves to the market. I will share insights and results after the full run (several days to run)"
+      ],
+      "previewImageUrls": [
+        "/images/notion/31e2e378-b76a-8094-ab8d-d3e3d0ca498d_preview_0_cbff96d6.jpg"
+      ]
     }
   ],
   "wiki": [
@@ -37142,6 +37936,1967 @@
               }
             },
             "color": "gray_background"
+          },
+          "archived": false
+        }
+      ]
+    },
+    {
+      "id": "31f2e378-b76a-806d-a124-c3d298fc57d3",
+      "title": "Bollinger MTF",
+      "slug": "bollinger-mtf",
+      "tags": [],
+      "categories": [
+        "Community"
+      ],
+      "summary": "",
+      "imageUrl": "/images/logo.png",
+      "screenshotUrl": "/images/notion/31f2e378-b76a-806d-a124-c3d298fc57d3_screenshot_7d7a7fc4.jpg",
+      "indicatorUrl": "https://www.tradingview.com/script/dBO9GTRO-Bollinger-MTF/",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-806e-be63-e0faab92246d",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The Bollinger MTF indicator is a versatile volatility and trend analysis tool that allows traders to overlay Bollinger Bands from multiple timeframes onto a single chart. This provides a comprehensive view of market structure, identifying key support and resistance levels across various durations—from intraday scalping ranges to long-term institutional cycles.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The Bollinger MTF indicator is a versatile volatility and trend analysis tool that allows traders to overlay Bollinger Bands from multiple timeframes onto a single chart. This provides a comprehensive view of market structure, identifying key support and resistance levels across various durations—from intraday scalping ranges to long-term institutional cycles.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-8049-8792-cff60b77c83a",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "By centralizing multi-timeframe (MTF) Bollinger Bands, this indicator eliminates the need to switch tabs constantly, allowing for better alignment checks and regime identification.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "By centralizing multi-timeframe (MTF) Bollinger Bands, this indicator eliminates the need to switch tabs constantly, allowing for better alignment checks and regime identification.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80dc-9412-ce67a88421fc",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "WHAT MAKES THIS ORIGINAL",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "WHAT MAKES THIS ORIGINAL",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-8012-83cb-d969f66c4d17",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "1. Comprehensive MTF Integration",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "1. Comprehensive MTF Integration",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-805d-912e-f7f79d84667f",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Unlike standard Bollinger Band indicators that only show a single timeframe, this tool supports up to seven simultaneous overlays:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Unlike standard Bollinger Band indicators that only show a single timeframe, this tool supports up to seven simultaneous overlays:",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-806e-a6e3-fc71d2ce336d",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Chart BB:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Chart BB:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Matches the current chart resolution.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Matches the current chart resolution.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-8003-9869-e210921acf83",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Intraday:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Intraday:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 15-minute and 1-hour.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 15-minute and 1-hour.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80fe-ad31-d716ce72f07d",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Swing:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Swing:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 4-hour and Daily.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 4-hour and Daily.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-8072-864f-f1b993da504d",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Macro:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Macro:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Weekly and Monthly.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Weekly and Monthly.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80e4-b1bb-f89750804755",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "2. Dynamic High-Visibility Design",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "2. Dynamic High-Visibility Design",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-803a-81dd-c16612ecc2a7",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Each timeframe is assigned a distinct, curated color palette with adjustable fills. This allows for clear \"nesting\" of bands, making it easy to identify when price is compressed within multiple timeframe extremes or expanding into a broad trend.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Each timeframe is assigned a distinct, curated color palette with adjustable fills. This allows for clear \"nesting\" of bands, making it easy to identify when price is compressed within multiple timeframe extremes or expanding into a broad trend.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80c0-855f-e9b5ac350359",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "3. Optimized Data Fetching",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "3. Optimized Data Fetching",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-8026-b154-e72ad8ceb3d8",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The script uses efficient security calls with ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The script uses efficient security calls with ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "barmerge.gaps_off",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": true,
+                  "color": "default"
+                },
+                "plain_text": "barmerge.gaps_off",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " to ensure that higher-timeframe data is correctly aligned with the current chart without creating visual distortion or repainting artifacts on historical bars.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " to ensure that higher-timeframe data is correctly aligned with the current chart without creating visual distortion or repainting artifacts on historical bars.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80b0-b7d6-f01b051544e8",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "divider",
+          "divider": {},
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-8041-8674-cfb836a6361f",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "USAGE",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "USAGE",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-8046-a1dc-e416dea4eda8",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Volatility Compression (Squeeze)",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Volatility Compression (Squeeze)",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-809e-a0cc-e4f2a25dcefe",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Look for areas where multiple timeframe bands are tightening simultaneously. This indicates a period of low volatility often followed by an explosive move. If the 4h and Daily bands are both squeezing, the subsequent breakout is likely to be significant.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Look for areas where multiple timeframe bands are tightening simultaneously. This indicates a period of low volatility often followed by an explosive move. If the 4h and Daily bands are both squeezing, the subsequent breakout is likely to be significant.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80b2-936f-ef5855b2b47e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Trend Alignment",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Trend Alignment",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-8069-a5fe-e8294fdbdd3b",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "A strong trend is often confirmed when price remains positioned between the basis line and the upper/lower bands of multiple timeframes. For example, a \"Power Trend\" occurs when price respects the 1h BB Upper while staying above the 4h BB Basis.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "A strong trend is often confirmed when price remains positioned between the basis line and the upper/lower bands of multiple timeframes. For example, a \"Power Trend\" occurs when price respects the 1h BB Upper while staying above the 4h BB Basis.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80c5-8ff3-fadf83547784",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Mean Reversion Levels",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Mean Reversion Levels",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-8063-af52-e49a7798c6eb",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The outer bands of higher timeframes (Daily/Weekly) act as significant exhaustion points. When price reaches a Weekly Band extreme during an intraday move, the probability of a reversal or consolidation increase substantially.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The outer bands of higher timeframes (Daily/Weekly) act as significant exhaustion points. When price reaches a Weekly Band extreme during an intraday move, the probability of a reversal or consolidation increase substantially.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-8063-ae88-ecfc0323f1d1",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "divider",
+          "divider": {},
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-808b-9433-fedcaca0e15e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "DETAILS",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "DETAILS",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-8004-ac0e-f0af6324f50f",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Calculation Logic",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Calculation Logic",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-8057-88cf-f3aaa95d28ea",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The core engine utilizes the standard ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The core engine utilizes the standard ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "ta.bb",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": true,
+                  "color": "default"
+                },
+                "plain_text": "ta.bb",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " function, calculating the Simple Moving Average (SMA) and Standard Deviation (StdDev) for each requested timeframe. The results are then synchronized to the current chart using ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " function, calculating the Simple Moving Average (SMA) and Standard Deviation (StdDev) for each requested timeframe. The results are then synchronized to the current chart using ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "request.security",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": true,
+                  "color": "default"
+                },
+                "plain_text": "request.security",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": ".",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": ".",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80f4-8034-e74d11cf3132",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Display Logic",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Display Logic",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80c3-94f3-c2f0c5a764ab",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The script features advanced plotting controls where each timeframe's visibility, color, and center-line display can be toggled independently. This allows for a clean workspace where only the most relevant tiers are visible.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The script features advanced plotting controls where each timeframe's visibility, color, and center-line display can be toggled independently. This allows for a clean workspace where only the most relevant tiers are visible.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-803b-bd71-d14f1b5b9463",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "divider",
+          "divider": {},
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80a8-94c1-f71fee44ef06",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "SETTINGS",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "SETTINGS",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80b8-969d-ff209ddd3e3f",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "General BB Settings",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "General BB Settings",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80d6-aec7-ca9f9e473833",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Length:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Length:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " The lookback period for the SMA and StdDev calculation (Default: 20).",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " The lookback period for the SMA and StdDev calculation (Default: 20).",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80c6-9d44-e0f266f87aee",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "StdDev:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "StdDev:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " The multiplier for the bands (Default: 2.0).",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " The multiplier for the bands (Default: 2.0).",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-8093-a8d1-e8af40705388",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_3",
+          "heading_3": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Timeframe Toggles",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Timeframe Toggles",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-8032-9aeb-f22cb9d51d17",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Each timeframe section (Chart, 15m, 1h, 4h, 1d, 1w, 1M) includes:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Each timeframe section (Chart, 15m, 1h, 4h, 1d, 1w, 1M) includes:",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80ea-9607-fbe961b1c5d0",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Toggle:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Toggle:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Enable or disable the specific timeframe.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Enable or disable the specific timeframe.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80c6-b30b-e1aa83a77b24",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Colors:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Colors:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Independent selection for lines and fills.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Independent selection for lines and fills.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-8082-9289-c4868378e910",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Center Line:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Center Line:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Optional toggle to show the basis (SMA) line.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Optional toggle to show the basis (SMA) line.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80ae-b23f-d7724b6187e4",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "divider",
+          "divider": {},
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-80a9-8f0f-c5363bf5c201",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "DISCLAIMER",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "DISCLAIMER",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31f2e378-b76a-802b-92d9-f4b32bc68dae",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31f2e378-b76a-806d-a124-c3d298fc57d3"
+          },
+          "created_time": "2026-03-10T13:45:00.000Z",
+          "last_edited_time": "2026-03-10T13:45:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "This indicator is for informational purposes only and does not constitute financial advice. Trading involves significant risk. Always use a holistic approach that includes risk management and additional technical or fundamental confirmation.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "This indicator is for informational purposes only and does not constitute financial advice. Trading involves significant risk. Always use a holistic approach that includes risk management and additional technical or fundamental confirmation.",
+                "href": null
+              }
+            ],
+            "color": "default"
           },
           "archived": false
         }

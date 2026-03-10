@@ -157,34 +157,53 @@ async function buildRoadmap() {
         const item = {
             id: page.id,
             title: page.properties.Entry?.title[0]?.plain_text || "Untitled",
+            slug: (page.properties.Entry?.title[0]?.plain_text || "Untitled").toLowerCase().replace(/[^a-z0-9]+/g, '-'),
             status: page.properties.Category?.multi_select?.[0]?.name || "Update",
             date: page.properties.Date?.date?.start || "",
             description: page.properties.Notes?.rich_text[0]?.plain_text || "",
-            imageUrl: "/images/logo.png"
+            imageUrl: "/images/logo.png",
+            blocks: []
         };
 
-        const blocksData = await fetchNotionBlocks(page.id, false);
+        const blocksData = await fetchNotionBlocks(page.id);
+        item.blocks = blocksData;
 
-        // Fallback description from blocks if Notes is empty
-        if (!item.description) {
-            const firstParagraph = blocksData.find(b => b.type === 'paragraph');
-            if (firstParagraph && firstParagraph.paragraph.rich_text.length > 0) {
-                item.description = firstParagraph.paragraph.rich_text.map(t => t.plain_text).join("");
+        // Extract up to 2 preview paragraphs
+        const paragraphs = blocksData
+            .filter(b => b.type === 'paragraph' && b.paragraph.rich_text.length > 0)
+            .slice(0, 2)
+            .map(b => b.paragraph.rich_text.map(t => t.plain_text).join(""));
+        item.previewParagraphs = paragraphs;
+
+        // Extract up to 2 preview images
+        const previewImages = [];
+        
+        // Priority 1: Cover or Icon (if it's an image)
+        let mainImageUrl = page.icon?.external?.url || page.icon?.file?.url || page.cover?.external?.url || page.cover?.file?.url;
+        if (mainImageUrl) previewImages.push(mainImageUrl);
+
+        // Priority 2: Image blocks from content
+        const imageBlocks = blocksData.filter(b => b.type === 'image');
+        for (const block of imageBlocks) {
+            if (previewImages.length >= 2) break;
+            const blockUrl = block.image?.file?.url || block.image?.external?.url;
+            if (blockUrl && !previewImages.includes(blockUrl)) {
+                previewImages.push(blockUrl);
             }
         }
+        
+        // Localize all preview images and store in item
+        item.previewImageUrls = await Promise.all(
+            previewImages.map((url, idx) => downloadAndCacheImage(url, `${page.id}_preview_${idx}`, "notion"))
+        );
 
-        let imageUrl = page.icon?.external?.url || page.icon?.file?.url || page.cover?.external?.url || page.cover?.file?.url;
-
-        if (!imageUrl) {
-            const imageBlock = blocksData.find((b) => b.type === "image");
-            if (imageBlock) {
-                imageUrl = imageBlock.image?.file?.url || imageBlock.image?.external?.url;
-            }
+        // Set the primary imageUrl for backward compatibility/summary
+        if (item.previewImageUrls.length > 0) {
+            item.imageUrl = item.previewImageUrls[0];
         }
 
-        if (imageUrl) {
-            item.imageUrl = await downloadAndCacheImage(imageUrl, page.id, "notion");
-        }
+        // Scan ALL blocks for local images for the detail page
+        await replaceImageBlocksWithLocalPaths(item.blocks);
 
         return item;
     }));

@@ -238,7 +238,7 @@ export default async function Home() {
                             }
 
                             return (
-                                <div key={item.id} className="break-inside-avoid mb-6 lg:mb-8 group">
+                                <Link key={item.id} href={`/lab/${item.slug}`} className="break-inside-avoid mb-6 lg:mb-8 group block">
                                     <div className="flex flex-col p-6 bg-[#0a0a0a] border border-white/5 hover:border-solquant-gold/30 transition-all duration-300 gap-4 rounded-2xl group-hover:bg-[#111111] shadow-xl hover:scale-[1.02]">
                                         <div className="flex flex-col gap-2">
                                             <div className="flex items-start justify-between gap-2">
@@ -254,22 +254,47 @@ export default async function Home() {
                                             )}
                                         </div>
 
-                                        {item.description && (
-                                            <p className="text-sm text-gray-400 leading-relaxed">{item.description}</p>
-                                        )}
+                                        <div className="space-y-4">
+                                            {item.previewParagraphs && item.previewParagraphs.length > 0 ? (
+                                                <div className="space-y-3">
+                                                    {item.previewParagraphs.map((p: string, i: number) => (
+                                                        <p key={i} className="text-sm text-gray-400 leading-relaxed line-clamp-3">{p}</p>
+                                                    ))}
+                                                </div>
+                                            ) : (
+                                                item.description && (
+                                                    <p className="text-sm text-gray-400 leading-relaxed line-clamp-3">{item.description}</p>
+                                                )
+                                            )}
 
-                                        {(item.imageUrl && item.imageUrl !== '/images/logo.png') && (
-                                            <div className="relative w-full rounded-xl overflow-hidden border border-white/10 bg-black shadow-inner">
-                                                <img
-                                                    src={item.imageUrl}
-                                                    alt={item.title}
-                                                    className="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
-                                                />
-                                                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none"></div>
-                                            </div>
-                                        )}
+                                            {item.previewImageUrls && item.previewImageUrls.length > 0 ? (
+                                                <div className={`grid gap-4 ${item.previewImageUrls.length > 1 ? 'grid-cols-1' : 'grid-cols-1'}`}>
+                                                    {item.previewImageUrls.map((url: string, i: number) => (
+                                                        <div key={i} className="relative w-full rounded-xl overflow-hidden border border-white/10 bg-black shadow-inner">
+                                                            <img
+                                                                src={url}
+                                                                alt={item.title}
+                                                                className="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                                                            />
+                                                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none"></div>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            ) : (
+                                                (item.imageUrl && item.imageUrl !== '/images/logo.png') && (
+                                                    <div className="relative w-full rounded-xl overflow-hidden border border-white/10 bg-black shadow-inner">
+                                                        <img
+                                                            src={item.imageUrl}
+                                                            alt={item.title}
+                                                            className="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                                                        />
+                                                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none"></div>
+                                                    </div>
+                                                )
+                                            )}
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             );
                         })}
                     </div>

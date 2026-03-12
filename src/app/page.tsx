@@ -1,23 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getLiveRoadmap, getWikiArticles } from "@/lib/notion";
+import { getRoadmap, getWikiArticles, getEducationArticles, getStrategies } from "@/lib/notion";
 import FAQ from "@/components/FAQ";
 
 export default async function Home() {
-    const [roadmapItemsRaw, wikiArticles] = await Promise.all([
-        getLiveRoadmap(),
-        getWikiArticles()
+    const [roadmapItems, wikiArticles, strategies] = await Promise.all([
+        getRoadmap(),
+        getWikiArticles(),
+        getStrategies()
     ]);
-
-    // Mock fallback if Notion API is not configured or fails
-    const mockRoadmap = [
-        { id: "1", title: "Updating Liquidation Heatmap to Pine Script V6", status: "In Progress", imageUrl: "/images/screenshots/screenshot1.png" },
-        { id: "2", title: "Testing Max Pain Algorithm (Python Parity Run)", status: "In Progress", imageUrl: "/images/screenshots/screenshot2.png" },
-        { id: "3", title: "Grid Strategy Backtest Sweep", status: "In Progress", imageUrl: "/images/twitter-header.png" }
-    ];
-
-    const roadmapItems = roadmapItemsRaw.length > 0 ? roadmapItemsRaw : mockRoadmap;
-
     return (
         <div className="flex flex-col items-center justify-center min-h-screen text-foreground">
             {/* Hero Section */}
@@ -71,37 +62,49 @@ export default async function Home() {
             </div>
 
             {/* Product Suites */}
-            <section className="w-full max-w-7xl px-6 py-24">
+            <section id="suites" className="w-full max-w-[1800px] px-6 py-24 mx-auto border-t border-white/5">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Indicator Suites</h2>
-                    <p className="mt-4 text-gray-400">Decode market mechanics with precision tools.</p>
+                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Choose your level. Own your edge.</h2>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {/* Suite A */}
-                    <div className="bg-[#0a0a0a] p-8 flex flex-col justify-between transition-all duration-300 group rounded-2xl gold-glow border border-white/5">
-                        <div>
-                            <div className="flex justify-between items-center mb-4">
-                                <h3 className="text-2xl font-bold">The Liquidation Specialist</h3>
-                                <span className="text-solquant-gold font-bold text-lg">$39.99/mo</span>
-                            </div>
-                            <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                                Focus on liquidity using the Liquidation Levels heatmap. Stop being the exit liquidity and start trading alongside institutional footprint.
-                            </p>
-                            <div className="relative w-full h-56 mb-6 rounded-2xl overflow-hidden border border-white/10 opacity-90 group-hover:opacity-100 transition-opacity">
-                                <Image src="/images/liquidation.jpg" alt="Liquidation Specialist" fill className="object-cover" />
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {/* Suite A: Trader */}
+                    <div className="relative group overflow-hidden rounded-3xl border border-solquant-gold/30 bg-[#0a0a0a]/60 backdrop-blur-xl transition-all duration-500 hover:border-solquant-gold/60 hover:shadow-[0_0_50px_rgba(212,175,55,0.25)] flex flex-col h-full shadow-[0_0_30px_rgba(212,175,55,0.1)]">
+                        <div className="absolute inset-0 bg-gradient-to-br from-solquant-gold/5 via-transparent to-transparent opacity-30 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        
+                        {/* Suite Image Header */}
+                        <div className="relative w-full h-56 overflow-hidden">
+                            <Image
+                                src="/images/scalper.jpg"
+                                alt="Trader"
+                                fill
+                                className="object-cover opacity-70 group-hover:opacity-90 transition-all duration-700 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/20 to-transparent"></div>
+                        </div>
+
+
+                        <div className="px-8 pb-8 -mt-14 relative z-10 flex-grow flex flex-col">
+                             <div className="mb-8">
+                                <div className="flex items-center justify-between mb-4">
+                                    <h3 className="text-3xl font-bold tracking-tight group-hover:text-solquant-gold transition-colors">Trader</h3>
+                                    <span className="text-solquant-gold font-bold text-3xl whitespace-nowrap font-mono">$19.99/mo</span>
+                                </div>
+                                <p className="text-gray-400 text-sm leading-relaxed">
+                                    Seven precision indicators. One coherent system for reading trend, momentum, and market structure.
+                                </p>
                             </div>
 
-                            <div className="space-y-3 mb-6">
-                                <h4 className="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Included Indicators</h4>
-                                <div className="grid grid-cols-2 gap-2">
-                                    {wikiArticles.filter((a: any) => a.categories?.some((c: string) => c.includes('Suite A'))).map((article: any) => (
+                            <div className="space-y-4 mb-10">
+                                <h4 className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold">Trader Indicators</h4>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                    {wikiArticles.filter((a: any) => a.categories?.some((c: string) => c === 'Trader')).map((article: any) => (
                                         <Link
                                             key={article.id}
                                             href={`/docs/${article.slug}`}
-                                            className="flex items-center gap-3 p-2 rounded-xl bg-white/[0.04] border border-white/10 hover:bg-solquant-gold/20 hover:border-solquant-gold/50 transition-all duration-300 group/item"
+                                            className="flex items-center gap-2 p-1.5 rounded-2xl bg-white/[0.03] border border-white/5 hover:bg-solquant-gold/10 hover:border-solquant-gold/30 transition-all duration-300 group/item"
                                         >
-                                            <div className="relative w-10 h-10 rounded-lg overflow-hidden border border-white/10 flex-shrink-0">
+                                            <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-white/10 flex-shrink-0">
                                                 <Image
                                                     src={article.screenshotUrl || article.imageUrl || '/images/logo.png'}
                                                     alt={article.title}
@@ -109,111 +112,376 @@ export default async function Home() {
                                                     className="object-cover"
                                                 />
                                             </div>
-                                            <span className="text-sm font-medium text-gray-300 group-hover/item:text-solquant-gold transition-colors">{article.title}</span>
-                                            <svg className="w-3.5 h-3.5 ml-auto text-gray-600 group-hover/item:text-solquant-gold transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="9 5l7 7-7 7" />
+                                            <span className="text-xs font-semibold text-gray-300 group-hover/item:text-solquant-gold transition-colors">{article.title}</span>
+                                            <svg className="w-4 h-4 ml-auto text-gray-600 group-hover/item:text-solquant-gold transition-transform group-hover/item:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                                             </svg>
                                         </Link>
                                     ))}
                                 </div>
                             </div>
-                        </div>
-                        <div className="flex flex-col items-center w-full">
-                            <Link
-                                href="https://whop.com/checkout/plan_agr70Bot9uI3q"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group relative inline-flex w-full items-center justify-center px-8 py-3.5 font-bold text-black transition-all duration-200 bg-solquant-gold border border-transparent rounded-2xl hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-solquant-gold mt-2 uppercase tracking-wide text-sm"
-                            >
-                                Subscribe via Whop
-                            </Link>
-                            <p className="mt-2 text-[11px] text-gray-500 font-mono leading-relaxed text-center">
-                                By clicking, you will be redirected to our secure store on Whop. Your purchase is subject to our <Link href="/terms" className="underline hover:text-solquant-gold transition-colors">Terms of Service</Link> and <Link href="/privacy" className="underline hover:text-solquant-gold transition-colors">Privacy Policy</Link>.
-                            </p>
+
+                            <div className="mt-auto pt-6 flex flex-col items-center w-full">
+                                <Link
+                                    href="https://whop.com/solquant/tradercore/"
+                                    target="_blank"
+
+                                    rel="noopener noreferrer"
+                                    className="w-full inline-flex items-center justify-center gap-3 px-8 py-4.5 rounded-2xl bg-solquant-gold text-black font-black text-xs uppercase tracking-[0.2em] shadow-[0_0_30px_rgba(212,175,55,0.2)] hover:shadow-[0_0_50px_rgba(212,175,55,0.4)] hover:scale-[1.02] transition-all duration-300 group/btn"
+                                >
+                                    <span>Subscribe via Whop</span>
+                                    <svg className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </Link>
+                                <p className="mt-6 text-[10px] text-gray-500 font-medium leading-relaxed text-center max-w-[90%]">
+                                    By clicking, you will be redirected to our secure store on Whop. Your purchase is subject to our <Link href="/terms" className="text-gray-400 underline hover:text-solquant-gold transition-colors">Terms of Service</Link> and <Link href="/privacy" className="text-gray-400 underline hover:text-solquant-gold transition-colors">Privacy Policy</Link>.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    {/* Suite B */}
-                    <div className="bg-[#0a0a0a] p-8 flex flex-col justify-between transition-all duration-300 group rounded-2xl gold-glow border border-white/5">
-                        <div>
-                            <div className="flex justify-between items-center mb-4">
-                                <h3 className="text-2xl font-bold">Precision Scalper Toolkit</h3>
-                                <span className="text-solquant-gold font-bold text-lg">$19.99/mo</span>
-                            </div>
-                            <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                                Master the MTF Trend tools and the Synthetic Max Pain model. For traders operating on low timeframes extracting edge from volatility.
-                            </p>
-                            <div className="relative w-full h-56 mb-6 rounded-2xl overflow-hidden border border-white/10 opacity-90 group-hover:opacity-100 transition-opacity">
-                                <Image src="/images/scalper.jpg" alt="Precision Scalper" fill className="object-cover" />
+                    {/* Suite B: Pro Trader */}
+                    <div className="relative group overflow-hidden rounded-3xl border border-solquant-gold/30 bg-[#0a0a0a]/60 backdrop-blur-xl transition-all duration-500 hover:border-solquant-gold/60 hover:shadow-[0_0_50px_rgba(212,175,55,0.25)] flex flex-col h-full shadow-[0_0_30px_rgba(212,175,55,0.1)]">
+                        <div className="absolute inset-0 bg-gradient-to-br from-solquant-gold/5 via-transparent to-transparent opacity-30 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        
+                        {/* Suite Image Header */}
+                        <div className="relative w-full h-56 overflow-hidden">
+                            <Image
+                                src="/images/liquidation.jpg"
+                                alt="Pro Trader"
+                                fill
+                                className="object-cover opacity-70 group-hover:opacity-90 transition-all duration-700 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/20 to-transparent"></div>
+                        </div>
+
+
+                        <div className="px-8 pb-8 -mt-14 relative z-10 flex-grow flex flex-col">
+                             <div className="mb-8">
+                                <div className="flex items-center justify-between mb-4">
+                                    <h3 className="text-3xl font-bold tracking-tight group-hover:text-solquant-gold transition-colors">Pro Trader</h3>
+                                    <span className="text-solquant-gold font-bold text-3xl whitespace-nowrap font-mono">$39.99/mo</span>
+                                </div>
+                                <p className="text-gray-400 text-sm leading-relaxed">
+                                    See where leveraged positions are stacked before they get hunted. Stop being the exit liquidity — start trading the levels institutions actually care about.
+                                </p>
                             </div>
 
-                            <div className="space-y-3 mb-6">
-                                <h4 className="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Included Indicators</h4>
-                                <div className="grid grid-cols-2 gap-2">
-                                    {wikiArticles.filter((a: any) => a.categories?.some((c: string) => c.includes('Suite B'))).map((article: any) => (
-                                        <Link
-                                            key={article.id}
-                                            href={`/docs/${article.slug}`}
-                                            className="flex items-center gap-3 p-2 rounded-xl bg-white/[0.04] border border-white/10 hover:bg-solquant-gold/20 hover:border-solquant-gold/50 transition-all duration-300 group/item"
-                                        >
-                                            <div className="relative w-10 h-10 rounded-lg overflow-hidden border border-white/10 flex-shrink-0">
-                                                <Image
-                                                    src={article.screenshotUrl || article.imageUrl || '/images/logo.png'}
-                                                    alt={article.title}
-                                                    fill
-                                                    className="object-cover"
-                                                />
-                                            </div>
-                                            <span className="text-sm font-medium text-gray-300 group-hover/item:text-solquant-gold transition-colors">{article.title}</span>
-                                            <svg className="w-3.5 h-3.5 ml-auto text-gray-600 group-hover/item:text-solquant-gold transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="9 5l7 7-7 7" />
-                                            </svg>
-                                        </Link>
-                                    ))}
+                            <div className="space-y-6 mb-10">
+                                <div className="space-y-4">
+                                    <h4 className="text-[10px] uppercase tracking-[0.2em] text-solquant-gold font-bold">Pro Trader</h4>
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                        {wikiArticles.filter((a: any) => a.categories?.some((c: string) => c === 'Pro Trader') && !a.categories?.some((c: string) => c === 'Trader')).map((article: any) => (
+                                            <Link
+                                                key={article.id}
+                                                href={`/docs/${article.slug}`}
+                                                className="flex items-center gap-2 p-1.5 rounded-2xl bg-white/[0.03] border border-white/5 hover:bg-solquant-gold/10 hover:border-solquant-gold/30 transition-all duration-300 group/item"
+                                            >
+                                                <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-white/10 flex-shrink-0">
+                                                    <Image
+                                                        src={article.screenshotUrl || article.imageUrl || '/images/logo.png'}
+                                                        alt={article.title}
+                                                        fill
+                                                        className="object-cover"
+                                                    />
+                                                </div>
+                                                <span className="text-xs font-semibold text-gray-300 group-hover/item:text-solquant-gold transition-colors">{article.title}</span>
+                                                <svg className="w-4 h-4 ml-auto text-gray-600 group-hover/item:text-solquant-gold transition-transform group-hover/item:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <div className="space-y-4">
+                                    <h4 className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold">Trader Indicators</h4>
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                        {wikiArticles.filter((a: any) => a.categories?.some((c: string) => c === 'Trader')).map((article: any) => (
+                                            <Link
+                                                key={article.id}
+                                                href={`/docs/${article.slug}`}
+                                                className="flex items-center gap-2 p-1.5 rounded-2xl bg-white/[0.03] border border-white/5 hover:bg-solquant-gold/10 hover:border-solquant-gold/30 transition-all duration-300 group/item"
+                                            >
+                                                <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-white/10 flex-shrink-0">
+                                                    <Image
+                                                        src={article.screenshotUrl || article.imageUrl || '/images/logo.png'}
+                                                        alt={article.title}
+                                                        fill
+                                                        className="object-cover"
+                                                    />
+                                                </div>
+                                                <span className="text-xs font-semibold text-gray-300 group-hover/item:text-solquant-gold transition-colors">{article.title}</span>
+                                                <svg className="w-4 h-4 ml-auto text-gray-600 group-hover/item:text-solquant-gold transition-transform group-hover/item:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </Link>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
+
+                            <div className="mt-auto pt-6 flex flex-col items-center w-full">
+                                <Link
+                                    href="https://whop.com/solquant/solquant-pro-trader/"
+                                    target="_blank"
+
+                                    rel="noopener noreferrer"
+                                    className="w-full inline-flex items-center justify-center gap-3 px-8 py-4.5 rounded-2xl bg-solquant-gold text-black font-black text-xs uppercase tracking-[0.2em] shadow-[0_0_30px_rgba(212,175,55,0.2)] hover:shadow-[0_0_50px_rgba(212,175,55,0.4)] hover:scale-[1.02] transition-all duration-300 group/btn"
+                                >
+                                    <span>Subscribe via Whop</span>
+                                    <svg className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </Link>
+                                <p className="mt-6 text-[10px] text-gray-500 font-medium leading-relaxed text-center max-w-[90%]">
+                                    By clicking, you will be redirected to our secure store on Whop. Your purchase is subject to our <Link href="/terms" className="text-gray-400 underline hover:text-solquant-gold transition-colors">Terms of Service</Link> and <Link href="/privacy" className="text-gray-400 underline hover:text-solquant-gold transition-colors">Privacy Policy</Link>.
+                                </p>
+                            </div>
                         </div>
-                        <div className="flex flex-col items-center w-full">
-                            <Link
-                                href="https://whop.com/checkout/plan_aeREgPjnII4uE"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group relative inline-flex w-full items-center justify-center px-8 py-3.5 font-bold text-black transition-all duration-200 bg-solquant-gold border border-transparent rounded-2xl hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-solquant-gold mt-2 uppercase tracking-wide text-sm"
-                            >
-                                Subscribe via Whop
-                            </Link>
-                            <p className="mt-2 text-[9px] text-gray-500 font-mono leading-relaxed text-center">
-                                By clicking, you will be redirected to our secure store on Whop. Your purchase is subject to our <Link href="/terms" className="underline hover:text-solquant-gold transition-colors">Terms of Service</Link> and <Link href="/privacy" className="underline hover:text-solquant-gold transition-colors">Privacy Policy</Link>.
-                            </p>
+                    </div>
+ 
+                    {/* Suite C: Strategist */}
+                    <div className="relative group overflow-hidden rounded-3xl border border-solquant-gold/30 bg-[#0a0a0a]/60 backdrop-blur-xl transition-all duration-500 hover:border-solquant-gold/60 hover:shadow-[0_0_50px_rgba(212,175,55,0.25)] flex flex-col h-full shadow-[0_0_30px_rgba(212,175,55,0.1)]">
+                        <div className="absolute inset-0 bg-gradient-to-br from-solquant-gold/5 via-transparent to-transparent opacity-30 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        
+                        {/* Suite Image Header */}
+                        <div className="relative w-full h-56 overflow-hidden">
+                            <Image
+                                src="/images/notion/3202e378-b76a-8012-b003-eadc4c2d6337_cf7527d4.jpg"
+                                alt="Strategist"
+                                fill
+                                className="object-cover opacity-70 group-hover:opacity-90 transition-all duration-700 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/20 to-transparent"></div>
+                        </div>
+
+                        <div className="px-8 pb-8 -mt-14 relative z-10 flex-grow flex flex-col">
+                             <div className="mb-8">
+                                <div className="flex items-center justify-between mb-4">
+                                    <h3 className="text-3xl font-bold tracking-tight group-hover:text-solquant-gold transition-colors">Strategist</h3>
+                                    <span className="text-solquant-gold font-bold text-3xl whitespace-nowrap font-mono">$59.99/mo</span>
+                                </div>
+                                <p className="text-gray-400 text-sm leading-relaxed">
+                                    Everything in Pro Trader, plus backtested strategy signals built on the same indicators. Stop building the system. Start running it.
+                                </p>
+                            </div>
+
+                            <div className="space-y-6 mb-10">
+                                {/* Strategist Signals */}
+                                <div className="space-y-4">
+                                    <h4 className="text-[10px] uppercase tracking-[0.2em] text-solquant-gold font-bold">Strategist</h4>
+                                    <div className="grid grid-cols-1 gap-2">
+                                        {strategies.slice(0, 3).map((strategy: any) => (
+                                            <Link
+                                                key={strategy.id}
+                                                href={`/strategies/${strategy.slug}`}
+                                                className="flex items-center gap-2 p-1.5 rounded-2xl bg-white/[0.03] border border-white/5 hover:bg-solquant-gold/10 hover:border-solquant-gold/30 transition-all duration-300 group/item"
+                                            >
+                                                <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-white/10 flex-shrink-0">
+                                                    <Image
+                                                        src={strategy.imageUrl && strategy.imageUrl !== '/images/logo.png' ? strategy.imageUrl : '/images/liquidation.jpg'}
+                                                        alt={strategy.title}
+                                                        fill
+                                                        className="object-cover"
+                                                    />
+                                                </div>
+                                                <div className="flex flex-col">
+                                                    <span className="text-xs font-semibold text-gray-300 group-hover/item:text-solquant-gold transition-colors line-clamp-1">{strategy.title}</span>
+                                                    {strategy.stats?.net_profit_pct && (
+                                                        <span className="text-[10px] font-mono text-solquant-gold">+{strategy.stats.net_profit_pct.toFixed(0)}% Profit</span>
+                                                    )}
+                                                </div>
+                                                <svg className="w-4 h-4 ml-auto text-gray-600 group-hover/item:text-solquant-gold transition-transform group-hover/item:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                {/* Pro Trader Indicators */}
+                                <div className="space-y-4">
+                                    <h4 className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold">Pro Trader Indicators</h4>
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                        {wikiArticles.filter((a: any) => a.categories?.some((c: string) => c === 'Pro Trader') && !a.categories?.some((c: string) => c === 'Trader')).map((article: any) => (
+                                            <Link
+                                                key={article.id}
+                                                href={`/docs/${article.slug}`}
+                                                className="flex items-center gap-2 p-1.5 rounded-2xl bg-white/[0.03] border border-white/5 hover:bg-solquant-gold/10 hover:border-solquant-gold/30 transition-all duration-300 group/item"
+                                            >
+                                                <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-white/10 flex-shrink-0">
+                                                    <Image
+                                                        src={article.screenshotUrl || article.imageUrl || '/images/logo.png'}
+                                                        alt={article.title}
+                                                        fill
+                                                        className="object-cover"
+                                                    />
+                                                </div>
+                                                <span className="text-xs font-semibold text-gray-300 group-hover/item:text-solquant-gold transition-colors">{article.title}</span>
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                {/* Trader Indicators */}
+                                <div className="space-y-4">
+                                    <h4 className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold">Trader Indicators</h4>
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                        {wikiArticles.filter((a: any) => a.categories?.some((c: string) => c === 'Trader')).map((article: any) => (
+                                            <Link
+                                                key={article.id}
+                                                href={`/docs/${article.slug}`}
+                                                className="flex items-center gap-2 p-1.5 rounded-2xl bg-white/[0.03] border border-white/5 hover:bg-solquant-gold/10 hover:border-solquant-gold/30 transition-all duration-300 group/item"
+                                            >
+                                                <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-white/10 flex-shrink-0">
+                                                    <Image
+                                                        src={article.screenshotUrl || article.imageUrl || '/images/logo.png'}
+                                                        alt={article.title}
+                                                        fill
+                                                        className="object-cover"
+                                                    />
+                                                </div>
+                                                <span className="text-xs font-semibold text-gray-300 group-hover/item:text-solquant-gold transition-colors">{article.title}</span>
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="mt-auto pt-6 flex flex-col items-center w-full">
+                                <div className="w-full inline-flex items-center justify-center gap-3 px-8 py-4.5 rounded-2xl bg-white/5 border border-white/10 text-gray-500 font-black text-xs uppercase tracking-[0.2em] cursor-not-allowed">
+                                    <span>COMING SOON</span>
+                                </div>
+                                <p className="mt-6 text-[10px] text-gray-500 font-medium leading-relaxed text-center max-w-[90%]">
+                                    Engineering backtested execution systems. Launching shortly for inner circle members.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Strategies Section */}
-            <section className="w-full max-w-7xl px-6 py-24 border-t border-white/5">
+            <section id="strategies" className="w-full max-w-screen-2xl px-6 py-24 mx-auto border-t border-white/5">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Strategies</h2>
-                    <p className="mt-4 text-gray-400">Automated execution systems built for the modern market.</p>
-                </div>
-
-                <div className="relative group overflow-hidden rounded-3xl border border-white/10 bg-[#0a0a0a] p-12 text-center">
-                    <div className="absolute inset-0 bg-gradient-to-b from-solquant-gold/5 to-transparent pointer-events-none"></div>
-                    <div className="relative z-10">
-                        <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full bg-solquant-gold/10 border border-solquant-gold/20 text-solquant-gold text-xs font-bold uppercase tracking-widest">
-                            <span className="w-2 h-2 rounded-full bg-solquant-gold animate-pulse"></span>
-                            In Development
-                        </div>
-                        <h3 className="text-4xl font-bold mb-4">Coming Soon</h3>
-                        <p className="text-gray-400 max-w-xl mx-auto text-lg leading-relaxed">
-                            We are currently engineering a suite of automated trading strategies designed to leverage our proprietary indicators. Stay tuned for the official launch.
-                        </p>
+                    <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-solquant-gold/10 border border-solquant-gold/20 text-solquant-gold text-xs font-bold uppercase tracking-widest">
+                        <span className="w-2 h-2 rounded-full bg-solquant-gold animate-pulse"></span>
+                        Coming Soon
                     </div>
+                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Trading Strategies</h2>
+                    <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
+                        Automated execution systems built for the modern market. Backtested rigorously, engineered for performance.
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {strategies.map((strategy: any) => (
+                        <div key={strategy.id} className="relative group overflow-hidden rounded-3xl border border-white/5 bg-[#0a0a0a]/40 backdrop-blur-xl transition-all duration-500 hover:border-solquant-gold/40 hover:bg-[#0a0a0a]/60 flex flex-col shadow-2xl">
+                            <div className="absolute inset-0 bg-gradient-to-br from-solquant-gold/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                            
+                            {/* Strategy Image/Thumbnail Header */}
+                            <div className="relative w-full h-48 overflow-hidden">
+                                <Image
+                                    src={strategy.imageUrl && strategy.imageUrl !== '/images/logo.png' ? strategy.imageUrl : '/images/liquidation.jpg'}
+                                    alt={strategy.title}
+                                    fill
+                                    className="object-cover opacity-60 group-hover:opacity-90 transition-all duration-700 group-hover:scale-105"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/20 to-transparent"></div>
+                                <div className="absolute top-6 left-6 flex items-center gap-3">
+                                    <span className="text-[10px] font-bold text-solquant-gold bg-black/60 backdrop-blur-md px-3 py-1 border border-solquant-gold/30 rounded-full uppercase tracking-widest shadow-xl">
+                                        COMING SOON
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div className="px-8 pb-8 -mt-12 relative z-10 flex-grow">
+                                <div className="flex items-end justify-between mb-6">
+                                    <div>
+                                        <h3 className="text-3xl font-bold tracking-tight mb-2 group-hover:text-solquant-gold transition-colors">{strategy.title}</h3>
+                                        <p className="text-gray-400 text-sm leading-relaxed line-clamp-2 max-w-[80%]">
+                                            {strategy.summary || "Advanced execution logic engineered for maximum consistency and risk-adjusted returns."}
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                {strategy.stats ? (
+                                    <div className="space-y-4">
+                                        {strategy.stats.start_date && (
+                                            <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white/[0.03] border border-white/5 w-fit">
+                                                <svg className="w-3.5 h-3.5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                                </svg>
+                                                <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider">
+                                                    {strategy.stats.start_date} — {strategy.stats.end_date}
+                                                </span>
+                                            </div>
+                                        )}
+                                        <div className="grid grid-cols-2 gap-4">
+                                        <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 hover:bg-white/[0.05] transition-colors">
+                                            <span className="text-[10px] uppercase tracking-widest text-gray-500 font-bold block mb-1">Net Profit</span>
+                                            <span className="text-2xl font-black text-solquant-gold tracking-tight">
+                                                +{strategy.stats.net_profit_pct.toFixed(0)}%
+                                            </span>
+                                        </div>
+                                        <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 hover:bg-white/[0.05] transition-colors">
+                                            <span className="text-[10px] uppercase tracking-widest text-gray-500 font-bold block mb-1">Win Rate</span>
+                                            <span className="text-2xl font-black text-white tracking-tight">
+                                                {strategy.stats.win_rate.toFixed(1)}%
+                                            </span>
+                                        </div>
+                                        <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 hover:bg-white/[0.05] transition-colors">
+                                            <span className="text-[10px] uppercase tracking-widest text-gray-500 font-bold block mb-1">Max Drawdown</span>
+                                            <span className="text-2xl font-black text-red-500/80 tracking-tight">
+                                                -{Math.abs(strategy.stats.max_drawdown_pct).toFixed(1)}%
+                                            </span>
+                                        </div>
+                                        <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 hover:bg-white/[0.05] transition-colors">
+                                            <span className="text-[10px] uppercase tracking-widest text-gray-500 font-bold block mb-1">Total Trades</span>
+                                            <span className="text-2xl font-black text-white tracking-tight">
+                                                {strategy.stats.total_trades}
+                                            </span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                ) : (
+                                    <div className="py-8 text-center border-y border-white/5 opacity-50 italic text-sm">
+                                        Performance verification in progress...
+                                    </div>
+                                )}
+                            </div>
+
+                            <div className="px-8 pb-8">
+                                <Link 
+                                    href={`/strategies/${strategy.slug}`}
+                                    className="w-full inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-solquant-gold text-black font-black text-xs uppercase tracking-[0.2em] shadow-[0_0_30px_rgba(212,175,55,0.2)] hover:shadow-[0_0_50px_rgba(212,175,55,0.4)] hover:scale-[1.02] transition-all duration-300 group/btn"
+                                >
+                                    <span>View Performance Logic</span>
+                                    <svg className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </Link>
+                            </div>
+                        </div>
+                    ))}
+                    
+                    {strategies.length === 0 && (
+                        <div className="col-span-full relative group overflow-hidden rounded-3xl border border-white/10 bg-[#0a0a0a] p-12 text-center">
+                            <div className="absolute inset-0 bg-gradient-to-b from-solquant-gold/5 to-transparent pointer-events-none"></div>
+                            <div className="relative z-10">
+                                <h3 className="text-3xl font-bold mb-4">Engineering in Progress</h3>
+                                <p className="text-gray-400 max-w-xl mx-auto text-lg leading-relaxed">
+                                    We are currently refining our next generation of trading strategies. Check back shortly for updated backtest results.
+                                </p>
+                            </div>
+                        </div>
+                    )}
                 </div>
             </section>
 
             {/* The Development Lab (formerly Active Development) */}
-            <section className="w-full max-w-[1920px] px-6 md:px-12 py-12">
+            <section className="w-full max-w-screen-2xl px-6 md:px-12 py-12">
                 <div className="p-4 md:p-8 rounded-2xl">
                     <div className="text-center mb-16 max-w-3xl mx-auto">
                         <div className="inline-flex items-center gap-3 mb-4">
@@ -302,30 +570,34 @@ export default async function Home() {
             </section>
 
             {/* Community Library */}
-            <section className="w-full max-w-6xl px-6 py-12 mb-24">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold mb-4">The Community Library</h2>
-                    <p className="max-w-2xl mx-auto text-gray-400">
-                        Start with our free "Lite" tools to understand the SolQuant edge before stepping into the Inner Circle.
-                    </p>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
-                    {wikiArticles.filter((a: any) => a.categories?.includes('Community')).map((article: any) => (
-                        <Link key={article.id} href={`/docs/${article.slug}`} className="group bg-[#0a0a0a] border border-white/5 p-4 hover:border-solquant-gold/50 transition-all duration-300 block rounded-2xl">
-                            <div className="relative w-full h-32 mb-4 rounded-xl overflow-hidden border border-white/10 opacity-70 group-hover:opacity-100 transition-opacity">
-                                <img src={article.screenshotUrl || article.imageUrl} alt={article.title} className="w-full h-full object-cover" />
-                            </div>
-                            <h4 className="font-mono font-bold text-center text-sm group-hover:text-solquant-gold transition-colors">{article.title}</h4>
+            <section className="w-full py-24 bg-gradient-to-b from-black to-[#0a0a0a] relative overflow-hidden border-t border-white/5">
+                <div className="w-full max-w-screen-2xl px-6 mx-auto relative z-10">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl font-bold mb-4">The Community Library</h2>
+                        <p className="max-w-2xl mx-auto text-gray-400">
+                            Start with our free "Lite" tools to understand the SolQuant edge before stepping into the Inner Circle.
+                        </p>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+                        {wikiArticles.filter((a: any) => a.categories?.includes('Community')).map((article: any) => (
+                            <Link key={article.id} href={`/docs/${article.slug}`} className="group bg-[#0a0a0a] border border-white/5 p-4 hover:border-solquant-gold/50 transition-all duration-300 block rounded-2xl">
+                                <div className="relative w-full h-32 mb-4 rounded-xl overflow-hidden border border-white/10 opacity-70 group-hover:opacity-100 transition-opacity">
+                                    <img src={article.screenshotUrl || article.imageUrl} alt={article.title} className="w-full h-full object-cover" />
+                                </div>
+                                <h4 className="font-mono font-bold text-center text-sm group-hover:text-solquant-gold transition-colors">{article.title}</h4>
+                            </Link>
+                        ))}
+                    </div>
+                    
+                    <div className="text-center">
+                        <Link
+                            href="/docs"
+                            className="inline-flex items-center justify-center px-8 py-4 border border-border hover:bg-white/5 transition-colors text-sm uppercase tracking-wide rounded-2xl"
+                        >
+                            Explore Free Indicators
                         </Link>
-                    ))}
-                </div>
-                <div className="text-center">
-                    <Link
-                        href="/docs"
-                        className="inline-flex items-center justify-center px-8 py-4 border border-border hover:bg-white/5 transition-colors text-sm uppercase tracking-wide rounded-2xl"
-                    >
-                        Explore Free Indicators
-                    </Link>
+                    </div>
                 </div>
             </section>
 

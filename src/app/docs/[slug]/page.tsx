@@ -119,21 +119,24 @@ export default async function WikiArticlePage({ params }: Props) {
             <div className="flex flex-col gap-4 mb-4">
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
                     <div className="flex flex-col">
-                        <span className="inline-flex items-center self-start px-2.5 py-0.5 rounded-full text-xs font-mono font-bold bg-solquant-gold/10 text-solquant-gold border border-solquant-gold/20 uppercase tracking-widest mb-3">
-                            {Array.isArray((articleMeta as any).categories) && (articleMeta as any).categories.length > 0
-                                ? (articleMeta as any).categories.join(", ")
-                                : (articleMeta as any).category || "General"}
-                        </span>
+                        <div className="flex flex-wrap gap-2 mb-3">
+                            {(Array.isArray((articleMeta as any).categories) ? (articleMeta as any).categories : [(articleMeta as any).category || "General"]).map((cat: string) => (
+                                <span key={cat} className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-mono font-bold bg-solquant-gold/10 text-solquant-gold border border-solquant-gold/20 uppercase tracking-widest">
+                                    {cat}
+                                </span>
+                            ))}
+                        </div>
                         <h1 className="text-4xl md:text-5xl tracking-tight mb-0">{articleMeta.title}</h1>
                     </div>
 
                     {articleMeta.indicatorUrl && (
                         <div className="flex flex-col gap-2">
-                            {((articleMeta as any).categories?.some((c: string) => c.includes('Suite A')) || (articleMeta as any).categories?.some((c: string) => c.includes('Suite B'))) && (
+                            {((articleMeta as any).categories?.some((c: string) => c === 'Pro Trader') || (articleMeta as any).categories?.some((c: string) => c === 'Trader')) && (
                                 <a
-                                    href={(articleMeta as any).categories?.some((c: string) => c.includes('Suite A')) 
-                                        ? "https://whop.com/checkout/plan_agr70Bot9uI3q" 
-                                        : "https://whop.com/checkout/plan_aeREgPjnII4uE"}
+                                    href={(articleMeta as any).categories?.some((c: string) => c === 'Pro Trader') 
+                                        ? "https://whop.com/solquant/solquant-pro-trader/" 
+                                        : "https://whop.com/solquant/tradercore/"}
+
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center justify-center px-4 py-3 bg-solquant-gold text-black rounded-2xl hover:bg-yellow-600 transition-all group/btn font-bold text-sm uppercase tracking-wide"

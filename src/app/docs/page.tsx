@@ -51,9 +51,30 @@ export default async function DocsPage() {
                                 <p className="text-sm font-mono text-gray-400 mb-4 flex-grow leading-relaxed line-clamp-2">
                                     {article.summary || "Select to view detailed mechanics and configuration."}
                                 </p>
-                                <span className={`text-xs font-mono px-2 py-1 rounded self-start ${pillColor}`}>
-                                    {itemCategories.join(", ")}
-                                </span>
+                                <div className="flex flex-wrap gap-2 mb-4">
+                                    {itemCategories.map((cat: string) => {
+                                        const isPrecision = cat.includes('Precision');
+                                        const isLiquidation = cat.includes('Liquidation');
+                                        const isTrader = cat === 'Trader';
+                                        const isProTrader = cat === 'Pro Trader';
+                                        
+                                        const pillColor = isPrecision
+                                            ? 'bg-[#6b4785]/20 text-[#d1b3e0] border border-[#6b4785]/40'
+                                            : isLiquidation
+                                                ? 'bg-[#987a38]/20 text-[#e0c085] border border-[#987a38]/40'
+                                                : isTrader
+                                                    ? 'bg-blue-500/10 text-blue-400 border border-blue-500/20'
+                                                    : isProTrader
+                                                        ? 'bg-solquant-gold/10 text-solquant-gold border border-solquant-gold/20'
+                                                        : 'bg-white/5 text-gray-400 border border-white/10';
+
+                                        return (
+                                            <span key={cat} className={`text-[10px] uppercase tracking-widest font-bold px-2 py-0.5 rounded ${pillColor}`}>
+                                                {cat}
+                                            </span>
+                                        );
+                                    })}
+                                </div>
                             </div>
                         </Link>
                     );

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getLiveRoadmap, getPageContent } from "@/lib/notion";
+import { getRoadmap, getPageContent } from "@/lib/notion";
 import NotionRenderer from "@/components/NotionRenderer";
 import { notFound } from "next/navigation";
 
@@ -9,7 +9,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const resolvedParams = await params;
-    const roadmap = await getLiveRoadmap();
+    const roadmap = await getRoadmap();
     const roadmapItem = roadmap.find((item: any) => item.slug === resolvedParams.slug);
 
     if (!roadmapItem) {
@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-    const roadmap = await getLiveRoadmap();
+    const roadmap = await getRoadmap();
     return roadmap.map((item: any) => ({
         slug: item.slug,
     }));
@@ -70,7 +70,7 @@ export async function generateStaticParams() {
 
 export default async function RoadmapDetailPage({ params }: Props) {
     const resolvedParams = await params;
-    const roadmap = await getLiveRoadmap();
+    const roadmap = await getRoadmap();
 
     // Find the item by slug
     const roadmapItem = roadmap.find((item: any) => item.slug === resolvedParams.slug);

@@ -22,12 +22,26 @@ export default async function DocsLayout({
 
     // Group by category (handles multiple categories per article)
     const categories: Record<string, any[]> = {};
+    
+    // First pass: add to Trader category if present
+    articles.forEach((article: any) => {
+        const itemCategories = article.categories || [article.category || "General"];
+        if (itemCategories.includes("Trader")) {
+            if (!categories["Trader"]) categories["Trader"] = [];
+            categories["Trader"].push(article);
+        }
+    });
+
+    // Second pass: add to other categories ONLY if not already in Trader (to avoid duplicates)
     articles.forEach((article: any) => {
         const itemCategories = article.categories || [article.category || "General"];
         itemCategories.forEach((cat: string) => {
-            if (!categories[cat]) categories[cat] = [];
+            if (cat === "Trader") return; // Already handled
+            
+            // Deduplication rule: if in Pro Trader but also in Trader, skip Pro Trader listing
+            if (cat === "Pro Trader" && itemCategories.includes("Trader")) return;
 
-            // Check if already added to this category to avoid duplicates
+            if (!categories[cat]) categories[cat] = [];
             if (!categories[cat].some(item => item.id === article.id)) {
                 categories[cat].push(article);
             }

@@ -1,0 +1,22 @@
+{
+  "Liquidation Sweep": {
+    "net_profit": 5520.47,
+    "net_profit_pct": 5520.47,
+    "total_trades": 34,
+    "win_rate": 76.47,
+    "max_drawdown": 3157.11,
+    "max_drawdown_pct": 55.8,
+    "start_date": "Dec 29, 2025",
+    "end_date": "Mar 10, 2026"
+  },
+  "Mean Reversion MTF": {
+    "net_profit": 4464.88,
+    "net_profit_pct": 4464.88,
+    "total_trades": 60,
+    "win_rate": 61.67,
+    "max_drawdown": 1732.25,
+    "max_drawdown_pct": 31.51,
+    "start_date": "Apr 02, 2025",
+    "end_date": "Feb 25, 2026"
+  }
+}

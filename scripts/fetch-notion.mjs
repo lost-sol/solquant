@@ -12,6 +12,7 @@ const notion = new Client({
 
 const ROADMAP_DATABASE_ID = process.env.NOTION_ROADMAP_DATABASE_ID;
 const WIKI_DATABASE_ID = process.env.NOTION_WIKI_DATABASE_ID;
+const STRATEGY_DATABASE_ID = process.env.NOTION_STRATEGY_DATABASE_ID;
 const EDUCATION_PAGE_ID = process.env.NOTION_EDUCATION_PAGE_ID;
 
 const publicDir = path.join(process.cwd(), "public", "images", "notion");
@@ -369,6 +370,89 @@ async function buildPolicies() {
     return items;
 }
 
+async function buildStrategies() {
+    console.log("Fetching Strategies...");
+    
+    // First, get the backtest stats
+    let stats = {};
+    const { execSync } = await import('child_process');
+    const fs = await import('fs');
+    const path = await import('path');
+    
+    // Try to read pre-calculated stats first
+    const statsPath = path.join(process.cwd(), 'src/data/backtest-stats.json');
+    if (fs.existsSync(statsPath)) {
+        try {
+            stats = JSON.parse(fs.readFileSync(statsPath, 'utf8'));
+            console.log("Loaded pre-calculated backtest stats.");
+        } catch (e) {
+            console.error("Failed to parse backtest-stats.json:", e.message);
+        }
+    }
+    
+    // Fallback/Update if needed (optional, but keep it robust)
+    if (Object.keys(stats).length === 0) {
+        try {
+            console.log("Running Python backtest stats extraction...");
+            const pythonOutput = execSync(`/usr/bin/python3 scripts/extract_backtest_stats.py`, { 
+                encoding: 'utf8'
+            });
+            stats = JSON.parse(pythonOutput);
+            console.log("Successfully extracted backtest stats via Python");
+        } catch (error) {
+            console.error("Failed to extract backtest stats via Python:", error.message);
+        }
+    }
+
+    const response = await fetchNotionDatabase(STRATEGY_DATABASE_ID, {});
+    
+    const items = await Promise.all(response.results.map(async (page) => {
+        const title = page.properties['Indicator Name']?.title[0]?.plain_text || "Untitled";
+        const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+        
+        const item = {
+            id: page.id,
+            title: title,
+            slug: slug,
+            summary: page.properties['Description']?.rich_text[0]?.plain_text || page.properties['Core Concept']?.rich_text[0]?.plain_text || "",
+            imageUrl: "/images/logo.png",
+            blocks: [],
+            stats: stats[title] || null
+        };
+
+        // Get Blocks
+        console.log(`Fetching blocks for strategy page: ${title}`);
+        item.blocks = await fetchNotionBlocks(page.id);
+        
+        // Fetch Image (Cover or Screenshot property or first image block)
+        let imageUrl = page.cover?.external?.url || page.cover?.file?.url;
+        
+        // Check 'Screenshot' property
+        if (!imageUrl) {
+            const screenshotProp = page.properties['Screenshot'];
+            if (screenshotProp?.files?.length > 0) {
+                imageUrl = screenshotProp.files[0].file?.url || screenshotProp.files[0].external?.url;
+            }
+        }
+        if (!imageUrl) {
+            const imageBlock = item.blocks.find((b) => b.type === "image");
+            if (imageBlock) {
+                imageUrl = imageBlock.image?.external?.url || imageBlock.image?.file?.url;
+            }
+        }
+
+        // Scan blocks for local images
+        await replaceImageBlocksWithLocalPaths(item.blocks);
+
+        if (imageUrl) {
+            item.imageUrl = await downloadAndCacheImage(imageUrl, page.id, "notion");
+        }
+
+        return item;
+    }));
+    return items;
+}
+
 async function main() {
     if (!process.env.NOTION_API_KEY) {
         console.error("Missing NOTION_API_KEY");
@@ -379,6 +463,7 @@ async function main() {
         roadmap: [],
         wiki: [],
         education: [],
+        strategies: [],
         policies: []
     };
 
@@ -404,6 +489,12 @@ async function main() {
         data.policies = await buildPolicies();
     } catch (e) {
         console.error("Failed to build policies:", e.message);
+    }
+
+    try {
+        data.strategies = await buildStrategies();
+    } catch (e) {
+        console.error("Failed to build strategies:", e.message);
     }
 
     try {

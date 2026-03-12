@@ -10,7 +10,7 @@ export const notion = new Client({
 import notionData from '@/data/notion-data.json';
 
 // Helper to fetch roadmap items
-export async function getLiveRoadmap() {
+export async function getRoadmap() {
     return notionData.roadmap || [];
 }
 
@@ -29,6 +29,11 @@ export async function getPolicies() {
     return (notionData as any).policies || [];
 }
 
+// Helper to fetch strategies
+export async function getStrategies() {
+    return (notionData as any).strategies || [];
+}
+
 // Helper to fetch a single page content, including nested blocks
 export async function getPageContent(pageId: string) {
     const wikiArticle = notionData.wiki.find((a: any) => a.id === pageId);
@@ -42,6 +47,9 @@ export async function getPageContent(pageId: string) {
 
     const roadmapItem = (notionData.roadmap as any)?.find((a: any) => a.id === pageId);
     if (roadmapItem) return roadmapItem.blocks;
+
+    const strategy = (notionData as any).strategies?.find((a: any) => a.id === pageId);
+    if (strategy) return strategy.blocks;
     
     return [];
 }

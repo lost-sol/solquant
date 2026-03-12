@@ -850,7 +850,7 @@
       "slug": "liquidation-levels",
       "tags": [],
       "categories": [
-        "Suite A - Liquidation Specialist"
+        "Pro Trader"
       ],
       "summary": "Highlights likely liquidation zones (forced close levels) based on leverage assumptions and price swings.",
       "imageUrl": "/images/notion/2f72e378-b76a-808b-9251-eee12df4db67_e205a8a3.jpg",
@@ -4899,7 +4899,8 @@
       "slug": "trend-mtf",
       "tags": [],
       "categories": [
-        "Suite B - Precision Scalper"
+        "Trader",
+        "Pro Trader"
       ],
       "summary": "Multi-timeframe trend state aggregation for directional bias and alignment checks.",
       "imageUrl": "/images/notion/2f92e378-b76a-802f-82ea-e6e456645750_fbf4d2cc.jpg",
@@ -8652,7 +8653,8 @@
       "slug": "wavetrend-oscillator",
       "tags": [],
       "categories": [
-        "Suite B - Precision Scalper"
+        "Trader",
+        "Pro Trader"
       ],
       "summary": "Momentum oscillator (WaveTrend-style) for overbought/oversold, swings, and divergences.",
       "imageUrl": "/images/notion/2fd2e378-b76a-8080-bc2d-cbdff3a2af00_8313765a.jpg",
@@ -12073,7 +12075,8 @@
       "slug": "wavetrend-oscillator-cvd-z",
       "tags": [],
       "categories": [
-        "Suite B - Precision Scalper"
+        "Trader",
+        "Pro Trader"
       ],
       "summary": "WaveTrend momentum overlaid with CVD Z-score style normalization for flow/imbalance confirmation.",
       "imageUrl": "/images/logo.png",
@@ -17574,7 +17577,8 @@
       "slug": "synthetic-max-pain",
       "tags": [],
       "categories": [
-        "Suite B - Precision Scalper"
+        "Trader",
+        "Pro Trader"
       ],
       "summary": "Estimates a “max pain”/pinning zone using a synthetic model (not official options OI).",
       "imageUrl": "/images/logo.png",
@@ -21917,7 +21921,8 @@
       "slug": "heikenashi-trend",
       "tags": [],
       "categories": [
-        "Suite B - Precision Scalper"
+        "Trader",
+        "Pro Trader"
       ],
       "summary": "Heikin Ashi-based trend state to reduce noise and keep you in moves longer.",
       "imageUrl": "/images/logo.png",
@@ -24350,8 +24355,8 @@
       "slug": "foundation-ta",
       "tags": [],
       "categories": [
-        "Suite B - Precision Scalper",
-        "Suite A - Liquidation Specialist"
+        "Trader",
+        "Pro Trader"
       ],
       "summary": "Core toolkit indicator bundling foundational TA signals (trend, momentum, levels).",
       "imageUrl": "/images/logo.png",
@@ -32197,7 +32202,8 @@
       "slug": "pvsra-volume-trend",
       "tags": [],
       "categories": [
-        "Suite B - Precision Scalper"
+        "Trader",
+        "Pro Trader"
       ],
       "summary": "",
       "imageUrl": "/images/notion/31a2e378-b76a-805d-bb92-ef75ee472a63_501d0738.jpg",
@@ -43298,6 +43304,1630 @@
           "archived": false
         }
       ]
+    },
+    {
+      "id": "3202e378-b76a-8078-bac1-c8c8162efc8d",
+      "title": "The Japanese Method for Trading Discipline",
+      "slug": "the-japanese-method-for-trading-discipline",
+      "categories": [
+        "Education"
+      ],
+      "summary": "Based on the Kaizen approach to eliminating bad trading habits....",
+      "imageUrl": "/images/logo.png",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80fe-abed-e0adc66f5e87",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Based on the Kaizen approach to eliminating bad trading habits.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": true,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Based on the Kaizen approach to eliminating bad trading habits.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-8060-8935-c37b6520798e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T12:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "1. The Core Philosophy: \"The Gap\"",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "1. The Core Philosophy: \"The Gap\"",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-8062-b7de-fb1c6509cb35",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Trading discipline isn't about willpower; it’s about biology. When you lose, your brain enters a \"threat\" state and seeks immediate relief. Discipline is simply the ability to create a ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Trading discipline isn't about willpower; it’s about biology. When you lose, your brain enters a \"threat\" state and seeks immediate relief. Discipline is simply the ability to create a ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "gap",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "gap",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " between an emotion (anger/fear) and your next action.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " between an emotion (anger/fear) and your next action.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-800a-90d5-e83b93966507",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T12:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "2. The 14-Day Kaizen Challenge",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "2. The 14-Day Kaizen Challenge",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-8090-90cd-efdc7b3611fe",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Don't try to \"fix\" your personality. Choose ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Don't try to \"fix\" your personality. Choose ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "one",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "one",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " bad habit and apply a micro-change for 14 days straight.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " bad habit and apply a micro-change for 14 days straight.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80f3-b743-d21deb2bf217",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "If you Revenge Trade:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "If you Revenge Trade:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " After every losing trade, you must stand up and drink exactly one sip of water.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " After every losing trade, you must stand up and drink exactly one sip of water.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80a9-aa0a-c30be48aa78e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "If you Overtrade:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "If you Overtrade:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Set a hard limit (e.g., 3 trades). Stop when you are 80% \"full\" of excitement—while you still ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Set a hard limit (e.g., 3 trades). Stop when you are 80% \"full\" of excitement—while you still ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "want",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": true,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "want",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " to trade.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " to trade.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80d7-8ea9-c152cf624494",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "If you Fomo/Rush:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "If you Fomo/Rush:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Count slowly from 1 to 5 before clicking the mouse on any entry.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Count slowly from 1 to 5 before clicking the mouse on any entry.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-8044-9345-e643a89065cc",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "If you Move Stops:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "If you Move Stops:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " After placing your stop, you must take a screenshot of the chart immediately.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " After placing your stop, you must take a screenshot of the chart immediately.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80cb-8ae3-f15236ffacfe",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T12:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "3. The Five Pillars of Mastery",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "3. The Five Pillars of Mastery",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80be-a733-ced20a4a067e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Ikigai (Purpose):",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Ikigai (Purpose):",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Trading is a tool for your life, not your identity. If it's your \"everything,\" every loss will feel like an insult.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Trading is a tool for your life, not your identity. If it's your \"everything,\" every loss will feel like an insult.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80f8-a23c-feb4306503d1",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Kaizen (1% Rule):",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Kaizen (1% Rule):",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Aim to be 1% less reactive today. If you usually break 10 rules a week, aim for 9.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Aim to be 1% less reactive today. If you usually break 10 rules a week, aim for 9.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80cf-b77c-f6a666294d9d",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Hara Hachi Bu (The 80% Rule):",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Hara Hachi Bu (The 80% Rule):",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Stop trading before you are emotionally exhausted. Leave the desk while you still feel \"hungry.\"",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Stop trading before you are emotionally exhausted. Leave the desk while you still feel \"hungry.\"",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80d9-b0d5-ecfb1ec5ff57",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Wabi-sabi (Imperfection):",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Wabi-sabi (Imperfection):",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " You ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " You ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "will",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": true,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "will",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " mess up. A \"pro\" isn't someone who never breaks a rule, but someone who returns to their plan the very next trade without a \"death spiral.\"",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " mess up. A \"pro\" isn't someone who never breaks a rule, but someone who returns to their plan the very next trade without a \"death spiral.\"",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80f3-a070-c3706736e214",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Gambaru (Consistency):",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Gambaru (Consistency):",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " On bad days, do the bare minimum. Open the chart, write one line in your journal, and close it. Don't lose momentum.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " On bad days, do the bare minimum. Open the chart, write one line in your journal, and close it. Don't lose momentum.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-803c-874d-ec51a841b4ab",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T12:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "4. Why This Works",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "4. Why This Works",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80f4-ae79-f9b0b5f42813",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Bypasses the \"Alarm\":",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Bypasses the \"Alarm\":",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Big changes (e.g., \"I will never lose my cool again\") scare the brain. Tiny changes (e.g., \"I will stand up\") are too small to resist.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Big changes (e.g., \"I will never lose my cool again\") scare the brain. Tiny changes (e.g., \"I will stand up\") are too small to resist.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80d7-80c8-e071dcf9030e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Dopamine Shift:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Dopamine Shift:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " You are training your brain to get a \"hit\" from ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " You are training your brain to get a \"hit\" from ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "self-control",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "self-control",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " rather than the \"hit\" from a winning trade.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " rather than the \"hit\" from a winning trade.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80da-a89a-e5f714966f6a",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Identity Shift:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Identity Shift:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Every time you keep a tiny 30-second promise to yourself, you provide evidence to your brain that you are a disciplined person.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Every time you keep a tiny 30-second promise to yourself, you provide evidence to your brain that you are a disciplined person.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80e8-8949-efe2b57ce747",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T12:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "5. The \"Comeback\" Rule",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "5. The \"Comeback\" Rule",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80c0-a933-c2fdeab601a3",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "If you have a catastrophic day where you break every rule:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "If you have a catastrophic day where you break every rule:",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-802d-90e5-ffcbec94ec58",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Do not",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Do not",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " analyze the trades immediately (you are too emotional).",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " analyze the trades immediately (you are too emotional).",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-8082-ac0b-cbac108db363",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Do not",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Do not",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " insult yourself (shame leads to more impulsive trading).",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " insult yourself (shame leads to more impulsive trading).",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-803e-912f-dfa6f93fc0d8",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Do",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Do",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " ask one question the next morning: ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " ask one question the next morning: ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "\"Did I come back to my process today?\"",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": true,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "\"Did I come back to my process today?\"",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-807d-ba4e-d58ec2e985c9",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T12:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "quote",
+          "quote": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "\"The market rewards the person who stays long enough for small progress to accumulate into big strength.\"",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "\"The market rewards the person who stays long enough for small progress to accumulate into big strength.\"",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        }
+      ]
+    }
+  ],
+  "strategies": [
+    {
+      "id": "3202e378-b76a-8012-b003-eadc4c2d6337",
+      "title": "Liquidation Sweep",
+      "slug": "liquidation-sweep",
+      "summary": "",
+      "imageUrl": "/images/notion/3202e378-b76a-8012-b003-eadc4c2d6337_cf7527d4.jpg",
+      "blocks": [],
+      "stats": {
+        "net_profit": 5520.47,
+        "net_profit_pct": 5520.47,
+        "total_trades": 34,
+        "win_rate": 76.47,
+        "max_drawdown": 3157.11,
+        "max_drawdown_pct": 55.8,
+        "start_date": "Dec 29, 2025",
+        "end_date": "Mar 10, 2026"
+      }
+    },
+    {
+      "id": "3202e378-b76a-804b-859e-f9696f2626b5",
+      "title": "Mean Reversion MTF",
+      "slug": "mean-reversion-mtf",
+      "summary": "",
+      "imageUrl": "/images/notion/3202e378-b76a-804b-859e-f9696f2626b5_b441b5c5.jpg",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "3202e378-b76a-8051-bf73-f850b6287831",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-804b-859e-f9696f2626b5"
+          },
+          "created_time": "2026-03-11T14:07:00.000Z",
+          "last_edited_time": "2026-03-11T14:07:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [],
+            "color": "default"
+          },
+          "archived": false
+        }
+      ],
+      "stats": {
+        "net_profit": 4464.88,
+        "net_profit_pct": 4464.88,
+        "total_trades": 60,
+        "win_rate": 61.67,
+        "max_drawdown": 1732.25,
+        "max_drawdown_pct": 31.51,
+        "start_date": "Apr 02, 2025",
+        "end_date": "Feb 25, 2026"
+      }
     }
   ],
   "policies": [

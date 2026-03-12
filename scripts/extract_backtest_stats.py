@@ -69,7 +69,9 @@ def extract_stats(file_path):
         return None
 
 def main():
-    base_dir = "/Users/zachwise/Desktop/Projects/SolQuant/backtest data/tradingview strategy examples"
+    # Use relative path for portability
+    base_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "..", "backtest data", "tradingview strategy examples")
+    base_dir = os.path.abspath(base_dir)
     files = {
         "Liquidation Sweep": "SQ_Liq_Sweep_V2_BINANCE_ETHUSDT.P_2026-03-11_1b7ce.xlsx",
         "Mean Reversion MTF": "Strategy_Mean_Reversion_MTF_BINANCE_SOLUSDT.P_2026-03-11_42996.xlsx"

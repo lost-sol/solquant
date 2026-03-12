@@ -467,20 +467,31 @@ async function main() {
         policies: []
     };
 
+    if (!ROADMAP_DATABASE_ID) console.warn("WARNING: NOTION_ROADMAP_DATABASE_ID is not set. Roadmap will be empty.");
+    if (!WIKI_DATABASE_ID) console.warn("WARNING: NOTION_WIKI_DATABASE_ID is not set. Wiki will be empty.");
+    if (!EDUCATION_PAGE_ID) console.warn("WARNING: NOTION_EDUCATION_PAGE_ID is not set. Education will be empty.");
+    if (!STRATEGY_DATABASE_ID) console.warn("WARNING: NOTION_STRATEGY_DATABASE_ID is not set. Strategies will be empty.");
+
     try {
-        data.roadmap = await buildRoadmap();
+        if (ROADMAP_DATABASE_ID) {
+            data.roadmap = await buildRoadmap();
+        }
     } catch (e) {
         console.error("Failed to build roadmap:", e.message);
     }
 
     try {
-        data.wiki = await buildWiki();
+        if (WIKI_DATABASE_ID) {
+            data.wiki = await buildWiki();
+        }
     } catch (e) {
         console.error("Failed to build wiki:", e.message);
     }
 
     try {
-        data.education = await buildEducation();
+        if (EDUCATION_PAGE_ID) {
+            data.education = await buildEducation();
+        }
     } catch (e) {
         console.error("Failed to build education:", e.message);
     }
@@ -492,7 +503,9 @@ async function main() {
     }
 
     try {
-        data.strategies = await buildStrategies();
+        if (STRATEGY_DATABASE_ID) {
+            data.strategies = await buildStrategies();
+        }
     } catch (e) {
         console.error("Failed to build strategies:", e.message);
     }

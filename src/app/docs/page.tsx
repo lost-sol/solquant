@@ -46,10 +46,10 @@ export default async function DocsPage() {
                             )}
                             <div className="p-5 flex flex-col flex-grow">
                                 <h3 className="font-bold text-lg text-white flex items-center mb-2 group-hover:text-[#e0a82e] transition-colors">
-                                    <span className="text-[#e0a82e] mr-2">📈</span> {article.title}
+                                    {article.title}
                                 </h3>
                                 <p className="text-sm font-mono text-gray-400 mb-4 flex-grow leading-relaxed line-clamp-2">
-                                    {article.summary || "Select to view detailed mechanics and configuration."}
+                                    {article.hook || article.summary || "Select to view detailed mechanics and configuration."}
                                 </p>
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {itemCategories.map((cat: string) => {

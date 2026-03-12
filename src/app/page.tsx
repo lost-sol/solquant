@@ -579,13 +579,22 @@ export default async function Home() {
                         </p>
                     </div>
                     
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
                         {wikiArticles.filter((a: any) => a.categories?.includes('Community')).map((article: any) => (
-                            <Link key={article.id} href={`/docs/${article.slug}`} className="group bg-[#0a0a0a] border border-white/5 p-4 hover:border-solquant-gold/50 transition-all duration-300 block rounded-2xl">
-                                <div className="relative w-full h-32 mb-4 rounded-xl overflow-hidden border border-white/10 opacity-70 group-hover:opacity-100 transition-opacity">
-                                    <img src={article.screenshotUrl || article.imageUrl} alt={article.title} className="w-full h-full object-cover" />
+                            <Link key={article.id} href={`/docs/${article.slug}`} className="group flex flex-col bg-[#0a0a0a] hover:bg-[#111111] border border-white/5 rounded-2xl overflow-hidden transition-all duration-300">
+                                {(article.screenshotUrl || article.imageUrl) && (
+                                    <div className="w-full h-40 bg-black relative border-b border-white/5 overflow-hidden">
+                                        <img src={article.screenshotUrl || article.imageUrl} alt={article.title} className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity" />
+                                    </div>
+                                )}
+                                <div className="p-5 flex flex-col flex-grow">
+                                    <h3 className="font-bold text-lg text-white mb-2 group-hover:text-solquant-gold transition-colors">
+                                        {article.title}
+                                    </h3>
+                                    <p className="text-sm font-mono text-gray-400 flex-grow leading-relaxed line-clamp-2">
+                                        {article.hook || article.summary || "Select to view detailed mechanics and configuration."}
+                                    </p>
                                 </div>
-                                <h4 className="font-mono font-bold text-center text-sm group-hover:text-solquant-gold transition-colors">{article.title}</h4>
                             </Link>
                         ))}
                     </div>

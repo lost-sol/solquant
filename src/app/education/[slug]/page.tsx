@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description = "Master technical analysis with SolQuant Education. Professional trading best practices and indicator mechanics.";
     }
 
-    const imageUrl = articleMeta.imageUrl || "/images/twitter-header.png";
+    const ogImageUrl = (articleMeta as any).ogImageUrl || articleMeta.imageUrl || "/images/twitter-header.png";
 
     return {
         title,
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             type: "article",
             images: [
                 {
-                    url: imageUrl,
+                    url: ogImageUrl,
                     width: 1200,
                     height: 630,
                     alt: articleMeta.title,
@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             card: "summary_large_image",
             title,
             description,
-            images: [imageUrl],
+            images: [ogImageUrl],
         },
     };
 }

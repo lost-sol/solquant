@@ -10,6 +10,188 @@ const notion = new Client({
     auth: process.env.NOTION_API_KEY,
 });
 
+// Import sharp for image processing
+let sharp;
+try {
+    sharp = (await import('sharp')).default;
+} catch (e) {
+    console.warn("WARNING: sharp not found. Image processing will be skipped.");
+}
+
+async function processMetadataImage(inputBuffer, title, id, hookText = null, ctaText = null) {
+    if (!sharp) return inputBuffer;
+
+    try {
+        console.log(`Generating metadata image for: ${title}`);
+
+        const width = 1200;
+        const height = 630;
+        const TEXT_LEFT = 70;
+        const TEXT_MAX_W = 1020; // safe text area leaving right margin
+
+        // ── Load Logo (strip white background) ───────────────────────────────
+        const logoPath = path.join(process.cwd(), "public", "images", "logo.png");
+        let logoOverlay = null;
+        if (fs.existsSync(logoPath)) {
+            // The logo PNG has a white background — remove it by converting
+            // white/near-white pixels to transparent using raw pixel manipulation.
+            logoOverlay = await sharp(logoPath)
+                .resize({ height: 80 })
+                .ensureAlpha()
+                .raw()
+                .toBuffer({ resolveWithObject: true })
+                .then(({ data, info }) => {
+                    const { width: w, height: h, channels } = info;
+                    for (let i = 0; i < w * h; i++) {
+                        const r = data[i * channels];
+                        const g = data[i * channels + 1];
+                        const b = data[i * channels + 2];
+                        // Treat near-white pixels as transparent
+                        if (r > 220 && g > 220 && b > 220) {
+                            data[i * channels + 3] = 0;
+                        }
+                    }
+                    return sharp(data, { raw: { width: w, height: h, channels } })
+                        .png()
+                        .toBuffer();
+                });
+        }
+
+        // ── Text wrapping helpers ─────────────────────────────────────────────
+        function estimateWidth(str, fontSize) {
+            // Slightly conservative estimate for bold/black uppercase text
+            return str.length * fontSize * 0.65;
+        }
+
+        function wrapText(rawText, maxWidth, startFontSize, minFontSize, maxLines, uppercase = true) {
+            const text = uppercase ? rawText.toUpperCase() : rawText;
+            const words = text.split(" ");
+            for (let fs = startFontSize; fs >= minFontSize; fs -= 2) {
+                const lines = [];
+                let current = "";
+                for (const word of words) {
+                    const test = current ? `${current} ${word}` : word;
+                    if (estimateWidth(test, fs) > maxWidth) {
+                        if (current) lines.push(current);
+                        current = word;
+                    } else {
+                        current = test;
+                    }
+                }
+                if (current) lines.push(current);
+                const allFit = lines.every(l => estimateWidth(l, fs) <= maxWidth + 10);
+                if (lines.length <= maxLines && allFit) return { lines, fontSize: fs };
+            }
+            // Hard fallback: single truncated line at minFontSize
+            const truncated = text.length > 70 ? text.substring(0, 68) + "..." : text;
+            return { lines: [truncated], fontSize: minFontSize };
+        }
+
+        // ── Measure text blocks ───────────────────────────────────────────────
+        const titleWrap = wrapText(title, TEXT_MAX_W, 68, 44, 2, true);
+        const hookWrap  = hookText ? wrapText(hookText, TEXT_MAX_W, 26, 20, 2, false) : null;
+
+        const tFS = titleWrap.fontSize;           // title font size
+        const tLH = tFS * 1.18;                   // title line height
+        const hFS = hookWrap ? hookWrap.fontSize : 0;
+        const hLH = hFS * 1.35;                   // hook line height
+
+        // ── Stack-height layout ───────────────────────────────────────────────
+        // Stack top-to-bottom: [TITLE LINES] → [HOOK LINES] → [CTA button]
+        // Anchored to a fixed distance from image bottom.
+
+        // Use CTA text from database, fallback to 'View Now'
+        const ctaLabel  = (ctaText && ctaText.trim().length > 0) ? ctaText.trim() : "View Now";
+        const CTA_H     = 52;
+        // Auto-size button width: ~14px per char at size-18 bold, plus 48px padding
+        const CTA_W     = Math.max(180, Math.min(580, ctaLabel.length * 14 + 48));
+        const GAP_HOOK  = 12;   // px between last title baseline and first hook baseline
+        const GAP_CTA   = 18;   // px between last hook (or title) baseline and CTA top
+
+        // Measure each layer height
+        const titleH = titleWrap.lines.length * tLH;
+        const hookH  = hookWrap ? hookWrap.lines.length * hLH : 0;
+        const totalStackH = titleH + (hookH ? GAP_HOOK + hookH : 0) + GAP_CTA + CTA_H;
+
+        // Anchor bottom of stack 28px above image bottom
+        const STACK_BOTTOM = height - 28;
+        const STACK_TOP    = STACK_BOTTOM - totalStackH;
+
+        // Title: first baseline
+        const title1stBaseline = STACK_TOP + tFS;
+
+        // Hook: first baseline = last title baseline + gap
+        const hook1stBaseline = title1stBaseline + (titleWrap.lines.length - 1) * tLH + GAP_HOOK + hFS * 0.85;
+
+        // CTA: anchored below last hook line (or last title line if no hook)
+        const lastTextBaseline = hookWrap
+            ? hook1stBaseline + (hookWrap.lines.length - 1) * hLH
+            : title1stBaseline + (titleWrap.lines.length - 1) * tLH;
+        const ctaTopY  = lastTextBaseline + GAP_CTA;
+        const ctaTextY = ctaTopY + CTA_H * 0.66;
+
+        // ── Build SVG elements ────────────────────────────────────────────────
+        const titleSVG = titleWrap.lines.map((line, i) => {
+            const y = title1stBaseline + i * tLH;
+            return `<text x="${TEXT_LEFT}" y="${y}" font-family="Arial Black, Arial, sans-serif" font-size="${tFS}" font-weight="900" fill="#FFFFFF" letter-spacing="-0.01em">${line}</text>`;
+        }).join("\n");
+
+        let hookSVG = "";
+        if (hookWrap && hookWrap.lines.length > 0) {
+            hookSVG = hookWrap.lines.map((line, i) => {
+                const y = hook1stBaseline + i * hLH;
+                return `<text x="${TEXT_LEFT}" y="${y}" font-family="Arial, sans-serif" font-size="${hFS}" font-weight="400" fill="rgba(255,255,255,0.78)" letter-spacing="0.01em">${line}</text>`;
+            }).join("\n");
+        }
+
+        const ctaSVG = `
+            <rect x="${TEXT_LEFT}" y="${ctaTopY}" width="${CTA_W}" height="${CTA_H}" rx="8" fill="#D4AF37"/>
+            <text x="${TEXT_LEFT + CTA_W / 2}" y="${ctaTextY}" font-family="Arial Black, Arial, sans-serif" font-size="18" font-weight="900" fill="#0a0a0a" text-anchor="middle" letter-spacing="0.04em">${ctaLabel}</text>
+        `;
+
+        const copyrightSVG = `<text x="${width - 70}" y="${height - 28}" font-family="Arial, sans-serif" font-size="16" font-weight="400" fill="rgba(255,255,255,0.5)" text-anchor="end" letter-spacing="0.05em">SOLQUANT.XYZ</text>`;
+
+        const svgOverlay = `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="scrim" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%"   stop-color="#000" stop-opacity="0.00"/>
+                    <stop offset="38%"  stop-color="#000" stop-opacity="0.10"/>
+                    <stop offset="65%"  stop-color="#000" stop-opacity="0.60"/>
+                    <stop offset="100%" stop-color="#000" stop-opacity="0.92"/>
+                </linearGradient>
+            </defs>
+            <rect width="${width}" height="${height}" fill="url(#scrim)"/>
+
+            ${titleSVG}
+            ${hookSVG}
+            ${ctaSVG}
+            ${copyrightSVG}
+        </svg>`;
+
+        const compositeLayers = [
+            { input: Buffer.from(svgOverlay), left: 0, top: 0 }
+        ];
+
+        // Logo: top-left corner of image
+        if (logoOverlay) {
+            compositeLayers.push({ input: logoOverlay, left: TEXT_LEFT, top: 36 });
+        }
+
+        const processedImage = await sharp(inputBuffer)
+            .resize(width, height, { fit: 'cover', position: 'center' })
+            .composite(compositeLayers)
+            .jpeg({ quality: 90 })
+            .toBuffer();
+
+        return processedImage;
+    } catch (e) {
+        console.error(`Failed to process image: ${e.message}`);
+        return inputBuffer;
+    }
+}
+
+
+
 const ROADMAP_DATABASE_ID = process.env.NOTION_ROADMAP_DATABASE_ID;
 const WIKI_DATABASE_ID = process.env.NOTION_WIKI_DATABASE_ID;
 const STRATEGY_DATABASE_ID = process.env.NOTION_STRATEGY_DATABASE_ID;
@@ -81,39 +263,76 @@ async function fetchNotionBlocks(blockId) {
     return allBlocks;
 }
 
-async function downloadAndCacheImage(url, id, folder = "notion") {
-    if (!url) return "/images/logo.png";
+async function downloadAndCacheImage(url, id, folder = "notion", title = "SolQuant", headlineText = null, ctaText = null, generateOg = false) {
+    if (!url) return { imageUrl: "/images/logo.png", ogImageUrl: "/images/logo.png" };
     try {
         const urlHash = crypto.createHash('md5').update(url.split('?')[0]).digest('hex').substring(0, 8);
-        const fileName = `${id}_${urlHash}.jpg`;
-        const filePath = path.join(publicDir, fileName);
-        const publicPath = `/images/${folder}/${fileName}`;
+        const baseFileName = `${id}_${urlHash}`;
+        const cleanFileName = `${baseFileName}.jpg`;
+        const ogFileName = `${baseFileName}-og.jpg`;
+        
+        const cleanPath = path.join(publicDir, cleanFileName);
+        const ogPath = path.join(publicDir, ogFileName);
+        
+        const publicCleanPath = `/images/${folder}/${cleanFileName}`;
+        const publicOgPath = `/images/${folder}/${ogFileName}`;
 
-        if (!fs.existsSync(filePath)) {
-            // Remove old versions of this image to save space
-            if (fs.existsSync(publicDir)) {
-                const files = fs.readdirSync(publicDir);
-                files.forEach(file => {
-                    if (file.startsWith(id) && file !== fileName) {
-                        try { fs.unlinkSync(path.join(publicDir, file)); } catch (e) { }
-                    }
-                });
-            }
-
-            const response = await fetch(url);
-            if (!response.ok) throw new Error(`Failed to fetch image: ${response.statusText}`);
-            const arrayBuffer = await response.arrayBuffer();
-            const buffer = Buffer.from(arrayBuffer);
-            fs.writeFileSync(filePath, buffer);
-            console.log(`Downloaded image: ${fileName}`);
-        } else {
-            console.log(`Using cached image: ${fileName}`);
+        // Ensure directory exists
+        if (!fs.existsSync(publicDir)) {
+            fs.mkdirSync(publicDir, { recursive: true });
         }
 
-        return publicPath;
+        // Check if we need to download/process
+        const cleanExists = fs.existsSync(cleanPath);
+        const ogExists = fs.existsSync(ogPath);
+        
+        if (!cleanExists || (generateOg && !ogExists) || (generateOg && sharp)) {
+            // If clean is missing, download. If OG is missing AND generateOg is true, download.
+            // If sharp is available AND generateOg is true, we ALWAYS re-process the OG image to ensure logic/branding is current.
+            
+            let originalBuffer;
+            if (!cleanExists || (generateOg && !ogExists)) {
+                console.log(`Downloading${generateOg ? " and branding" : ""} image: ${id}`);
+                const response = await fetch(url);
+                if (!response.ok) throw new Error(`Failed to fetch image: ${response.statusText}`);
+                const arrayBuffer = await response.arrayBuffer();
+                originalBuffer = Buffer.from(arrayBuffer);
+            } else {
+                // If cleanExists, we can use the existing clean file as the source for branding if we just need to re-brand
+                originalBuffer = fs.readFileSync(cleanPath);
+            }
+
+            // 1. Save clean version if it doesn't exist
+            if (!cleanExists) {
+                if (sharp) {
+                    await sharp(originalBuffer)
+                        .jpeg({ quality: 90 })
+                        .toFile(cleanPath);
+                } else {
+                    fs.writeFileSync(cleanPath, originalBuffer);
+                }
+            }
+
+            // 2. Generate and save branded OG version if requested
+            if (generateOg) {
+                if (sharp) {
+                    console.log(`  Branding OG image: ${ogFileName}`);
+                    const ogBuffer = await processMetadataImage(originalBuffer, title, id, headlineText, ctaText);
+                    fs.writeFileSync(ogPath, ogBuffer);
+                } else if (!ogExists) {
+                    // Fallback to copy clean if sharp unavailable and OG doesn't exist
+                    fs.copyFileSync(cleanPath, ogPath);
+                }
+            }
+        }
+
+        return {
+            imageUrl: publicCleanPath,
+            ogImageUrl: generateOg ? publicOgPath : publicCleanPath
+        };
     } catch (e) {
         console.error(`Failed to download image ${url}`, e);
-        return "/images/logo.png";
+        return { imageUrl: "/images/logo.png", ogImageUrl: "/images/logo.png" };
     }
 }
 
@@ -126,7 +345,7 @@ async function replaceImageBlocksWithLocalPaths(blocks) {
                 // Determine if it's hosted by Notion or AWS
                 const isNotionHosted = imageUrl.includes('amazonaws.com') || imageUrl.includes('notion-static.com') || imageUrl.includes('prod-files-secure');
                 // Always download to ensure statically available
-                const localPath = await downloadAndCacheImage(imageUrl, block.id, "notion");
+                const { imageUrl: localPath } = await downloadAndCacheImage(imageUrl, block.id, "notion");
                 // Mutate the block to use external url pointing to local path
                 block.image = {
                     type: "external",
@@ -194,13 +413,17 @@ async function buildRoadmap() {
         }
         
         // Localize all preview images and store in item
-        item.previewImageUrls = await Promise.all(
-            previewImages.map((url, idx) => downloadAndCacheImage(url, `${page.id}_preview_${idx}`, "notion"))
+        const previewResults = await Promise.all(
+            previewImages.map((url, idx) => downloadAndCacheImage(url, `${page.id}_preview_${idx}`, "notion", item.title, null, null, true))
         );
+
+        item.previewImageUrls = previewResults.map(r => r.imageUrl);
+        item.previewOgImageUrls = previewResults.map(r => r.ogImageUrl);
 
         // Set the primary imageUrl for backward compatibility/summary
         if (item.previewImageUrls.length > 0) {
             item.imageUrl = item.previewImageUrls[0];
+            item.ogImageUrl = item.previewOgImageUrls[0];
         }
 
         // Scan ALL blocks for local images for the detail page
@@ -222,6 +445,8 @@ async function buildWiki() {
         const tags = page.properties['Tags']?.multi_select?.map((t) => t.name) || [];
         const indicatorUrl = page.properties['Indicator URL']?.url || "";
         const screenshotProp = page.properties['Screenshot'];
+        const hook = page.properties['Hook']?.rich_text[0]?.plain_text;
+        const cta = page.properties['CTA']?.rich_text[0]?.plain_text;
         
         let rawScreenshotUrl = "";
         if (screenshotProp?.files?.[0]) {
@@ -238,6 +463,8 @@ async function buildWiki() {
             imageUrl: "/images/logo.png",
             screenshotUrl: "",
             indicatorUrl: indicatorUrl,
+            hook: hook,
+            cta: cta,
             blocks: []
         };
 
@@ -259,11 +486,17 @@ async function buildWiki() {
         await replaceImageBlocksWithLocalPaths(item.blocks);
 
         if (imageUrl) {
-            item.imageUrl = await downloadAndCacheImage(imageUrl, page.id, "notion");
+            const { imageUrl: cleanUrl, ogImageUrl } = await downloadAndCacheImage(imageUrl, page.id, "notion", item.title, hook, cta, true);
+            item.imageUrl = cleanUrl;
+            item.ogImageUrl = ogImageUrl;
         }
 
         if (rawScreenshotUrl) {
-            item.screenshotUrl = await downloadAndCacheImage(rawScreenshotUrl, `${page.id}_screenshot`, "notion");
+            const { imageUrl: cleanUrl, ogImageUrl } = await downloadAndCacheImage(rawScreenshotUrl, `${page.id}_screenshot`, "notion", item.title, hook, cta, true);
+            item.screenshotUrl = cleanUrl;
+            item.screenshotOgUrl = ogImageUrl;
+            // If we have a screenshot, it often makes a better OG image
+            item.ogImageUrl = ogImageUrl;
         }
 
         return item;
@@ -296,6 +529,8 @@ async function buildEducation() {
             categories: ["Education"],
             summary: "", // Will extract from blocks
             imageUrl: "/images/logo.png",
+            hook: page.properties.Hook?.rich_text[0]?.plain_text || "",
+            cta: page.properties.CTA?.rich_text[0]?.plain_text || "",
             blocks: []
         };
 
@@ -327,7 +562,9 @@ async function buildEducation() {
         await replaceImageBlocksWithLocalPaths(item.blocks);
 
         if (imageUrl) {
-            item.imageUrl = await downloadAndCacheImage(imageUrl, pageId, "notion");
+            const { imageUrl: cleanUrl, ogImageUrl } = await downloadAndCacheImage(imageUrl, pageId, "notion", item.title, item.hook, item.cta, true);
+            item.imageUrl = cleanUrl;
+            item.ogImageUrl = ogImageUrl;
         }
 
         return item;
@@ -354,6 +591,11 @@ async function buildPolicies() {
             id: pageId,
             title: pageTitle,
             slug: slug,
+            categories: ["Policy"],
+            summary: "",
+            imageUrl: "/images/logo.png",
+            hook: page.properties.Hook?.rich_text[0]?.plain_text || "",
+            cta: page.properties.CTA?.rich_text[0]?.plain_text || "",
             blocks: []
         };
 
@@ -363,6 +605,21 @@ async function buildPolicies() {
 
         // Scan blocks for local images
         await replaceImageBlocksWithLocalPaths(item.blocks);
+
+        // Fetch Cover Image
+        let imageUrl = page.cover?.external?.url || page.cover?.file?.url;
+        if (!imageUrl) {
+            const imageBlock = item.blocks.find((b) => b.type === "image");
+            if (imageBlock) {
+                imageUrl = imageBlock.image?.external?.url || imageBlock.image?.file?.url;
+            }
+        }
+
+        if (imageUrl) {
+            const { imageUrl: cleanUrl, ogImageUrl } = await downloadAndCacheImage(imageUrl, page.id, "notion", pageTitle, item.hook, item.cta, true);
+            item.imageUrl = cleanUrl;
+            item.ogImageUrl = ogImageUrl;
+        }
 
         return item;
     }));
@@ -409,6 +666,8 @@ async function buildStrategies() {
     const items = await Promise.all(response.results.map(async (page) => {
         const title = page.properties['Indicator Name']?.title[0]?.plain_text || "Untitled";
         const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+        const hook = page.properties['Hook']?.rich_text[0]?.plain_text;
+        const cta = page.properties['CTA']?.rich_text[0]?.plain_text;
         
         const item = {
             id: page.id,
@@ -416,6 +675,8 @@ async function buildStrategies() {
             slug: slug,
             summary: page.properties['Description']?.rich_text[0]?.plain_text || page.properties['Core Concept']?.rich_text[0]?.plain_text || "",
             imageUrl: "/images/logo.png",
+            hook: hook,
+            cta: cta,
             blocks: [],
             stats: stats[title] || null
         };
@@ -445,7 +706,9 @@ async function buildStrategies() {
         await replaceImageBlocksWithLocalPaths(item.blocks);
 
         if (imageUrl) {
-            item.imageUrl = await downloadAndCacheImage(imageUrl, page.id, "notion");
+            const { imageUrl: cleanUrl, ogImageUrl } = await downloadAndCacheImage(imageUrl, page.id, "notion", item.title, hook, cta, true);
+            item.imageUrl = cleanUrl;
+            item.ogImageUrl = ogImageUrl;
         }
 
         return item;

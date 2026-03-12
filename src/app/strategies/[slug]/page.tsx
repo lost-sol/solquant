@@ -3,10 +3,61 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import TopNav from '@/components/TopNav';
+import type { Metadata } from 'next';
 
-export default async function StrategyPage({ params }: { params: { slug: string } }) {
+type Props = {
+    params: Promise<{ slug: string }>
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const resolvedParams = await params;
     const strategies = await getStrategies();
-    const strategy = strategies.find((s: any) => s.slug === params.slug);
+    const strategy = strategies.find((s: any) => s.slug === resolvedParams.slug);
+
+    if (!strategy) {
+        return {};
+    }
+
+    const title = `${strategy.title} | SolQuant Strategies`;
+    const description = strategy.summary || "Institutional-grade quantitative models engineered to leverage proprietary liquidity data.";
+    const ogImageUrl = (strategy as any).ogImageUrl || strategy.imageUrl || "/images/twitter-header.png";
+
+    return {
+        title,
+        description,
+        openGraph: {
+            title,
+            description,
+            type: "article",
+            images: [
+                {
+                    url: ogImageUrl,
+                    width: 1200,
+                    height: 630,
+                    alt: strategy.title,
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+            images: [ogImageUrl],
+        },
+    };
+}
+
+export async function generateStaticParams() {
+    const strategies = await getStrategies();
+    return strategies.map((s: any) => ({
+        slug: s.slug,
+    }));
+}
+
+export default async function StrategyPage({ params }: Props) {
+    const resolvedParams = await params;
+    const strategies = await getStrategies();
+    const strategy = strategies.find((s: any) => s.slug === resolvedParams.slug);
 
     if (!strategy) {
         notFound();
@@ -24,11 +75,11 @@ export default async function StrategyPage({ params }: { params: { slug: string 
                     className="inline-flex items-center gap-2 text-gray-500 hover:text-solquant-gold transition-colors mb-8 text-sm uppercase tracking-widest font-bold"
                 >
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="15 19l-7-7 7-7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                     </svg>
                     Back to Strategies
                 </Link>
-
+ 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                     <div className="lg:col-span-2 space-y-12">
                         <div>
@@ -42,7 +93,7 @@ export default async function StrategyPage({ params }: { params: { slug: string 
                                 {strategy.summary}
                             </p>
                         </div>
-
+ 
                         {strategy.imageUrl && strategy.imageUrl !== '/images/logo.png' && (
                             <div className="relative w-full aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-black">
                                 <Image 
@@ -54,9 +105,8 @@ export default async function StrategyPage({ params }: { params: { slug: string 
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none"></div>
                             </div>
                         )}
-
+ 
                         <div className="prose prose-invert prose-solquant max-w-none">
-                            {/* Render blocks here if needed, or style them manually */}
                             <div className="space-y-8 text-gray-300">
                                 {blocks.map((block: any) => {
                                     if (block.type === 'paragraph') {
@@ -65,13 +115,12 @@ export default async function StrategyPage({ params }: { params: { slug: string 
                                     if (block.type === 'heading_2') {
                                         return <h2 key={block.id} className="text-2xl font-bold text-white pt-8">{block.heading_2.rich_text[0]?.plain_text}</h2>;
                                     }
-                                    // Add more block renderers as needed
                                     return null;
                                 })}
                             </div>
                         </div>
                     </div>
-
+ 
                     <div className="space-y-8">
                         {strategy.stats && (
                             <div className="bg-[#0a0a0a] border border-white/5 rounded-3xl p-8 sticky top-32">
@@ -94,7 +143,7 @@ export default async function StrategyPage({ params }: { params: { slug: string 
                                         <span className="text-2xl font-bold text-white">{strategy.stats.total_trades}</span>
                                     </div>
                                 </div>
-
+ 
                                 <div className="mt-8 p-4 rounded-xl bg-solquant-gold/5 border border-solquant-gold/20 text-xs text-solquant-gold/70 leading-relaxed italic">
                                     * Results based on backtest data from Binance Futures (ETHUSDT.P/SOLUSDT.P). Past performance does not guarantee future results.
                                 </div>

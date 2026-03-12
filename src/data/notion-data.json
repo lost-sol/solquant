@@ -87,7 +87,11 @@
       ],
       "previewImageUrls": [
         "/images/notion/31a2e378-b76a-8085-ada6-f4a4cc99ede4_preview_0_b81277f2.jpg"
-      ]
+      ],
+      "previewOgImageUrls": [
+        "/images/notion/31a2e378-b76a-8085-ada6-f4a4cc99ede4_preview_0_b81277f2-og.jpg"
+      ],
+      "ogImageUrl": "/images/notion/31a2e378-b76a-8085-ada6-f4a4cc99ede4_preview_0_b81277f2-og.jpg"
     },
     {
       "id": "31a2e378-b76a-80fc-8ba9-cfe53c303921",
@@ -310,7 +314,11 @@
       ],
       "previewImageUrls": [
         "/images/notion/31a2e378-b76a-80fc-8ba9-cfe53c303921_preview_0_92944508.jpg"
-      ]
+      ],
+      "previewOgImageUrls": [
+        "/images/notion/31a2e378-b76a-80fc-8ba9-cfe53c303921_preview_0_92944508-og.jpg"
+      ],
+      "ogImageUrl": "/images/notion/31a2e378-b76a-80fc-8ba9-cfe53c303921_preview_0_92944508-og.jpg"
     },
     {
       "id": "3192e378-b76a-80a2-8325-ed4dc155f921",
@@ -418,7 +426,11 @@
       ],
       "previewImageUrls": [
         "/images/notion/3192e378-b76a-80a2-8325-ed4dc155f921_preview_0_bd1a0835.jpg"
-      ]
+      ],
+      "previewOgImageUrls": [
+        "/images/notion/3192e378-b76a-80a2-8325-ed4dc155f921_preview_0_bd1a0835-og.jpg"
+      ],
+      "ogImageUrl": "/images/notion/3192e378-b76a-80a2-8325-ed4dc155f921_preview_0_bd1a0835-og.jpg"
     },
     {
       "id": "3182e378-b76a-8145-b27f-f88e0558e027",
@@ -507,7 +519,11 @@
       ],
       "previewImageUrls": [
         "/images/notion/3182e378-b76a-8145-b27f-f88e0558e027_preview_0_f47ca6e4.jpg"
-      ]
+      ],
+      "previewOgImageUrls": [
+        "/images/notion/3182e378-b76a-8145-b27f-f88e0558e027_preview_0_f47ca6e4-og.jpg"
+      ],
+      "ogImageUrl": "/images/notion/3182e378-b76a-8145-b27f-f88e0558e027_preview_0_f47ca6e4-og.jpg"
     },
     {
       "id": "31f2e378-b76a-8015-bc0f-cffc339c756c",
@@ -751,7 +767,12 @@
       "previewImageUrls": [
         "/images/notion/31f2e378-b76a-8015-bc0f-cffc339c756c_preview_0_ba735dd5.jpg",
         "/images/notion/31f2e378-b76a-8015-bc0f-cffc339c756c_preview_1_e00044a8.jpg"
-      ]
+      ],
+      "previewOgImageUrls": [
+        "/images/notion/31f2e378-b76a-8015-bc0f-cffc339c756c_preview_0_ba735dd5-og.jpg",
+        "/images/notion/31f2e378-b76a-8015-bc0f-cffc339c756c_preview_1_e00044a8-og.jpg"
+      ],
+      "ogImageUrl": "/images/notion/31f2e378-b76a-8015-bc0f-cffc339c756c_preview_0_ba735dd5-og.jpg"
     },
     {
       "id": "31e2e378-b76a-8094-ab8d-d3e3d0ca498d",
@@ -840,7 +861,11 @@
       ],
       "previewImageUrls": [
         "/images/notion/31e2e378-b76a-8094-ab8d-d3e3d0ca498d_preview_0_cbff96d6.jpg"
-      ]
+      ],
+      "previewOgImageUrls": [
+        "/images/notion/31e2e378-b76a-8094-ab8d-d3e3d0ca498d_preview_0_cbff96d6-og.jpg"
+      ],
+      "ogImageUrl": "/images/notion/31e2e378-b76a-8094-ab8d-d3e3d0ca498d_preview_0_cbff96d6-og.jpg"
     }
   ],
   "wiki": [
@@ -856,6 +881,8 @@
       "imageUrl": "/images/notion/2f72e378-b76a-808b-9251-eee12df4db67_e205a8a3.jpg",
       "screenshotUrl": "/images/notion/2f72e378-b76a-808b-9251-eee12df4db67_screenshot_5644bc7c.jpg",
       "indicatorUrl": "https://www.tradingview.com/script/zq54L34V-Liquidation-Levels/",
+      "hook": "Stop being exit liquidity. See exactly where the liquidations are before the sweep happens.",
+      "cta": "Get access to the TradingView indicator",
       "blocks": [
         {
           "object": "block",
@@ -4891,7 +4918,9 @@
           },
           "archived": false
         }
-      ]
+      ],
+      "ogImageUrl": "/images/notion/2f72e378-b76a-808b-9251-eee12df4db67_screenshot_5644bc7c-og.jpg",
+      "screenshotOgUrl": "/images/notion/2f72e378-b76a-808b-9251-eee12df4db67_screenshot_5644bc7c-og.jpg"
     },
     {
       "id": "2f92e378-b76a-802f-82ea-e6e456645750",
@@ -4906,6 +4935,8 @@
       "imageUrl": "/images/notion/2f92e378-b76a-802f-82ea-e6e456645750_fbf4d2cc.jpg",
       "screenshotUrl": "/images/notion/2f92e378-b76a-802f-82ea-e6e456645750_screenshot_dc9f5cd2.jpg",
       "indicatorUrl": "https://www.tradingview.com/script/xU1Juszh-Trend-MTF/",
+      "hook": "Trend context that scales with your chart — automatically.",
+      "cta": "Get access to the TradingView indicator",
       "blocks": [
         {
           "object": "block",
@@ -8645,7 +8676,9 @@
           },
           "archived": false
         }
-      ]
+      ],
+      "ogImageUrl": "/images/notion/2f92e378-b76a-802f-82ea-e6e456645750_screenshot_dc9f5cd2-og.jpg",
+      "screenshotOgUrl": "/images/notion/2f92e378-b76a-802f-82ea-e6e456645750_screenshot_dc9f5cd2-og.jpg"
     },
     {
       "id": "2fd2e378-b76a-8080-bc2d-cbdff3a2af00",
@@ -8660,6 +8693,8 @@
       "imageUrl": "/images/notion/2fd2e378-b76a-8080-bc2d-cbdff3a2af00_8313765a.jpg",
       "screenshotUrl": "/images/notion/2fd2e378-b76a-8080-bc2d-cbdff3a2af00_screenshot_1aa248ea.jpg",
       "indicatorUrl": "https://www.tradingview.com/script/A3khWAuL-WaveTrend-Oscillator/",
+      "hook": "One oscillator. Four timeframes. No chart switching.",
+      "cta": "Get access to the TradingView indicator",
       "blocks": [
         {
           "object": "block",
@@ -12067,7 +12102,9 @@
           },
           "archived": false
         }
-      ]
+      ],
+      "ogImageUrl": "/images/notion/2fd2e378-b76a-8080-bc2d-cbdff3a2af00_screenshot_1aa248ea-og.jpg",
+      "screenshotOgUrl": "/images/notion/2fd2e378-b76a-8080-bc2d-cbdff3a2af00_screenshot_1aa248ea-og.jpg"
     },
     {
       "id": "3082e378-b76a-8148-a348-d960fd819093",
@@ -12082,6 +12119,8 @@
       "imageUrl": "/images/logo.png",
       "screenshotUrl": "/images/notion/3082e378-b76a-8148-a348-d960fd819093_screenshot_ec97aa2e.jpg",
       "indicatorUrl": "https://www.tradingview.com/script/r4ki62rW-WaveTrend-Oscillator-CVD-Z/",
+      "hook": "Momentum and volume divergence in one pane. Finally.",
+      "cta": "Get access to the TradingView indicator",
       "blocks": [
         {
           "object": "block",
@@ -15297,7 +15336,9 @@
           },
           "archived": false
         }
-      ]
+      ],
+      "screenshotOgUrl": "/images/notion/3082e378-b76a-8148-a348-d960fd819093_screenshot_ec97aa2e-og.jpg",
+      "ogImageUrl": "/images/notion/3082e378-b76a-8148-a348-d960fd819093_screenshot_ec97aa2e-og.jpg"
     },
     {
       "id": "3082e378-b76a-816a-aaa9-dd7382ce8296",
@@ -15311,6 +15352,8 @@
       "imageUrl": "/images/notion/3082e378-b76a-816a-aaa9-dd7382ce8296_74f2bc00.jpg",
       "screenshotUrl": "/images/notion/3082e378-b76a-816a-aaa9-dd7382ce8296_screenshot_29658c09.jpg",
       "indicatorUrl": "https://www.tradingview.com/script/rIQs6Ppd-WaveTrend-Dashboard/",
+      "hook": "Scan momentum across every symbol and timeframe without switching charts.",
+      "cta": "Get the free TradingView indicator",
       "blocks": [
         {
           "object": "block",
@@ -17569,7 +17612,9 @@
           },
           "archived": false
         }
-      ]
+      ],
+      "ogImageUrl": "/images/notion/3082e378-b76a-816a-aaa9-dd7382ce8296_screenshot_29658c09-og.jpg",
+      "screenshotOgUrl": "/images/notion/3082e378-b76a-816a-aaa9-dd7382ce8296_screenshot_29658c09-og.jpg"
     },
     {
       "id": "3082e378-b76a-8171-ad0e-eaafbec26e43",
@@ -17584,6 +17629,8 @@
       "imageUrl": "/images/logo.png",
       "screenshotUrl": "/images/notion/3082e378-b76a-8171-ad0e-eaafbec26e43_screenshot_f9411fd9.jpg",
       "indicatorUrl": "https://www.tradingview.com/script/pAl9loDv-Synthetic-Max-Pain/",
+      "hook": "Where does price gravitate when the dust settles? Now you’ll know.",
+      "cta": "Get access to the TradingView indicator",
       "blocks": [
         {
           "object": "block",
@@ -21913,7 +21960,9 @@
           },
           "archived": false
         }
-      ]
+      ],
+      "screenshotOgUrl": "/images/notion/3082e378-b76a-8171-ad0e-eaafbec26e43_screenshot_f9411fd9-og.jpg",
+      "ogImageUrl": "/images/notion/3082e378-b76a-8171-ad0e-eaafbec26e43_screenshot_f9411fd9-og.jpg"
     },
     {
       "id": "3082e378-b76a-819b-b2ba-ebbe86c51996",
@@ -21928,6 +21977,8 @@
       "imageUrl": "/images/logo.png",
       "screenshotUrl": "/images/notion/3082e378-b76a-819b-b2ba-ebbe86c51996_screenshot_b0a1563d.jpg",
       "indicatorUrl": "https://www.tradingview.com/script/MrRlZY9i-HeikenAshi-Trend/",
+      "hook": "Heikin-Ashi, smoothed twice — so only the real trend shows through.",
+      "cta": "Get access to the TradingView indicator",
       "blocks": [
         {
           "object": "block",
@@ -24347,7 +24398,9 @@
           },
           "archived": false
         }
-      ]
+      ],
+      "screenshotOgUrl": "/images/notion/3082e378-b76a-819b-b2ba-ebbe86c51996_screenshot_b0a1563d-og.jpg",
+      "ogImageUrl": "/images/notion/3082e378-b76a-819b-b2ba-ebbe86c51996_screenshot_b0a1563d-og.jpg"
     },
     {
       "id": "3082e378-b76a-81ef-8212-ebaa364eefa5",
@@ -24362,6 +24415,8 @@
       "imageUrl": "/images/logo.png",
       "screenshotUrl": "/images/notion/3082e378-b76a-81ef-8212-ebaa364eefa5_screenshot_191beab5.jpg",
       "indicatorUrl": "https://www.tradingview.com/script/MtB9Cugg-Foundation-TA/",
+      "hook": "Four analysis layers. One indicator. Zero clutter.",
+      "cta": "Get access to the TradingView indicator",
       "blocks": [
         {
           "object": "block",
@@ -27565,7 +27620,9 @@
           },
           "archived": false
         }
-      ]
+      ],
+      "screenshotOgUrl": "/images/notion/3082e378-b76a-81ef-8212-ebaa364eefa5_screenshot_191beab5-og.jpg",
+      "ogImageUrl": "/images/notion/3082e378-b76a-81ef-8212-ebaa364eefa5_screenshot_191beab5-og.jpg"
     },
     {
       "id": "31a2e378-b76a-800a-9f0f-dac871605ce9",
@@ -27579,6 +27636,8 @@
       "imageUrl": "/images/notion/31a2e378-b76a-800a-9f0f-dac871605ce9_c107fd57.jpg",
       "screenshotUrl": "/images/notion/31a2e378-b76a-800a-9f0f-dac871605ce9_screenshot_c9582275.jpg",
       "indicatorUrl": "https://www.tradingview.com/script/m3OvInZs-CVD-Z-Score-SolQuant/",
+      "hook": "Is the buying real? CVD Z-Score tells you when volume is statistically significant.",
+      "cta": "Get the free TradingView indicator",
       "blocks": [
         {
           "object": "block",
@@ -30785,7 +30844,9 @@
           },
           "archived": false
         }
-      ]
+      ],
+      "ogImageUrl": "/images/notion/31a2e378-b76a-800a-9f0f-dac871605ce9_screenshot_c9582275-og.jpg",
+      "screenshotOgUrl": "/images/notion/31a2e378-b76a-800a-9f0f-dac871605ce9_screenshot_c9582275-og.jpg"
     },
     {
       "id": "31a2e378-b76a-802b-8055-d0c1ae94e16d",
@@ -30799,6 +30860,8 @@
       "imageUrl": "/images/logo.png",
       "screenshotUrl": "/images/notion/31a2e378-b76a-802b-8055-d0c1ae94e16d_screenshot_5c2ba735.jpg",
       "indicatorUrl": "https://www.tradingview.com/script/eJAqKBJF-Weekly-Cycles-SolQuant/",
+      "hook": "The market has a weekly rhythm. Here's how to trade it.",
+      "cta": "Get the free TradingView indicator",
       "blocks": [
         {
           "object": "block",
@@ -32194,7 +32257,9 @@
           },
           "archived": false
         }
-      ]
+      ],
+      "screenshotOgUrl": "/images/notion/31a2e378-b76a-802b-8055-d0c1ae94e16d_screenshot_5c2ba735-og.jpg",
+      "ogImageUrl": "/images/notion/31a2e378-b76a-802b-8055-d0c1ae94e16d_screenshot_5c2ba735-og.jpg"
     },
     {
       "id": "31a2e378-b76a-805d-bb92-ef75ee472a63",
@@ -32209,6 +32274,8 @@
       "imageUrl": "/images/notion/31a2e378-b76a-805d-bb92-ef75ee472a63_501d0738.jpg",
       "screenshotUrl": "/images/notion/31a2e378-b76a-805d-bb92-ef75ee472a63_screenshot_7143b721.jpg",
       "indicatorUrl": "https://www.tradingview.com/script/AgDre0r8-PVSRA-Volume-Trend/",
+      "hook": "Not all volume is equal. PVSRA tells you who's behind it.",
+      "cta": "Get access to the TradingView indicator",
       "blocks": [
         {
           "object": "block",
@@ -35719,7 +35786,9 @@
           },
           "archived": false
         }
-      ]
+      ],
+      "ogImageUrl": "/images/notion/31a2e378-b76a-805d-bb92-ef75ee472a63_screenshot_7143b721-og.jpg",
+      "screenshotOgUrl": "/images/notion/31a2e378-b76a-805d-bb92-ef75ee472a63_screenshot_7143b721-og.jpg"
     },
     {
       "id": "31a2e378-b76a-8062-9006-d0b1f4528f91",
@@ -35733,6 +35802,8 @@
       "imageUrl": "/images/logo.png",
       "screenshotUrl": "/images/notion/31a2e378-b76a-8062-9006-d0b1f4528f91_screenshot_576d806a.jpg",
       "indicatorUrl": "https://www.tradingview.com/script/K3f00Mv5-Watermark/",
+      "hook": "Your chart. Your brand. Clean and professional.",
+      "cta": "Get the free TradingView indicator",
       "blocks": [
         {
           "object": "block",
@@ -36570,7 +36641,9 @@
           },
           "archived": false
         }
-      ]
+      ],
+      "screenshotOgUrl": "/images/notion/31a2e378-b76a-8062-9006-d0b1f4528f91_screenshot_576d806a-og.jpg",
+      "ogImageUrl": "/images/notion/31a2e378-b76a-8062-9006-d0b1f4528f91_screenshot_576d806a-og.jpg"
     },
     {
       "id": "31a2e378-b76a-80ea-8471-cf3ea445a3fd",
@@ -36584,6 +36657,8 @@
       "imageUrl": "/images/logo.png",
       "screenshotUrl": "/images/notion/31a2e378-b76a-80ea-8471-cf3ea445a3fd_screenshot_af7733f1.jpg",
       "indicatorUrl": "https://www.tradingview.com/script/nu7EXd7f-Markets-SolQuant/",
+      "hook": "Know when London opens, New York wakes up, and the market makers go hunting.",
+      "cta": "Get the free TradingView indicator",
       "blocks": [
         {
           "object": "block",
@@ -37945,7 +38020,9 @@
           },
           "archived": false
         }
-      ]
+      ],
+      "screenshotOgUrl": "/images/notion/31a2e378-b76a-80ea-8471-cf3ea445a3fd_screenshot_af7733f1-og.jpg",
+      "ogImageUrl": "/images/notion/31a2e378-b76a-80ea-8471-cf3ea445a3fd_screenshot_af7733f1-og.jpg"
     },
     {
       "id": "31f2e378-b76a-806d-a124-c3d298fc57d3",
@@ -37959,6 +38036,8 @@
       "imageUrl": "/images/logo.png",
       "screenshotUrl": "/images/notion/31f2e378-b76a-806d-a124-c3d298fc57d3_screenshot_7d7a7fc4.jpg",
       "indicatorUrl": "https://www.tradingview.com/script/dBO9GTRO-Bollinger-MTF/",
+      "hook": "One Bollinger Band shows volatility on one timeframe. This stacks them across multiple timeframes simultaneously so you see the squeeze before it fires.",
+      "cta": "Get the free TradingView indicator",
       "blocks": [
         {
           "object": "block",
@@ -39906,7 +39985,9 @@
           },
           "archived": false
         }
-      ]
+      ],
+      "screenshotOgUrl": "/images/notion/31f2e378-b76a-806d-a124-c3d298fc57d3_screenshot_7d7a7fc4-og.jpg",
+      "ogImageUrl": "/images/notion/31f2e378-b76a-806d-a124-c3d298fc57d3_screenshot_7d7a7fc4-og.jpg"
     }
   ],
   "education": [
@@ -39919,6 +40000,8 @@
       ],
       "summary": "The primary goal of trading is survival. Staying in the game allows you to gain experience, find your \"edge,\" and participate in the massive, asymmetric moves t...",
       "imageUrl": "/images/notion/31c2e378-b76a-809c-8fd4-edd00e6208f2_6f93aaa7.jpg",
+      "hook": "",
+      "cta": "",
       "blocks": [
         {
           "object": "block",
@@ -41734,7 +41817,8 @@
           },
           "archived": false
         }
-      ]
+      ],
+      "ogImageUrl": "/images/notion/31c2e378-b76a-809c-8fd4-edd00e6208f2_6f93aaa7-og.jpg"
     },
     {
       "id": "31c2e378-b76a-8052-8ea4-e13014539047",
@@ -41745,6 +41829,8 @@
       ],
       "summary": "Liquidity cascades are self-reinforcing cycles where price movements trigger a wave of forced orders, which in turn drive the price further in the same directio...",
       "imageUrl": "/images/notion/31c2e378-b76a-8052-8ea4-e13014539047_2c32e396.jpg",
+      "hook": "",
+      "cta": "",
       "blocks": [
         {
           "object": "block",
@@ -43303,7 +43389,8 @@
           },
           "archived": false
         }
-      ]
+      ],
+      "ogImageUrl": "/images/notion/31c2e378-b76a-8052-8ea4-e13014539047_2c32e396-og.jpg"
     },
     {
       "id": "3202e378-b76a-8078-bac1-c8c8162efc8d",
@@ -43314,6 +43401,8 @@
       ],
       "summary": "Based on the Kaizen approach to eliminating bad trading habits....",
       "imageUrl": "/images/logo.png",
+      "hook": "",
+      "cta": "",
       "blocks": [
         {
           "object": "block",
@@ -44882,7 +44971,8 @@
         "max_drawdown_pct": 55.8,
         "start_date": "Dec 29, 2025",
         "end_date": "Mar 10, 2026"
-      }
+      },
+      "ogImageUrl": "/images/notion/3202e378-b76a-8012-b003-eadc4c2d6337_cf7527d4-og.jpg"
     },
     {
       "id": "3202e378-b76a-804b-859e-f9696f2626b5",
@@ -44927,7 +45017,8 @@
         "max_drawdown_pct": 31.51,
         "start_date": "Apr 02, 2025",
         "end_date": "Feb 25, 2026"
-      }
+      },
+      "ogImageUrl": "/images/notion/3202e378-b76a-804b-859e-f9696f2626b5_b441b5c5-og.jpg"
     }
   ],
   "policies": [
@@ -44935,6 +45026,13 @@
       "id": "31c2e378b76a8072a38be76a188248d2",
       "title": "Terms",
       "slug": "terms",
+      "categories": [
+        "Policy"
+      ],
+      "summary": "",
+      "imageUrl": "/images/logo.png",
+      "hook": "",
+      "cta": "",
       "blocks": [
         {
           "object": "block",
@@ -45645,6 +45743,13 @@
       "id": "31c2e378b76a80798de7de9b65b01aec",
       "title": "Privacy",
       "slug": "privacy",
+      "categories": [
+        "Policy"
+      ],
+      "summary": "",
+      "imageUrl": "/images/logo.png",
+      "hook": "",
+      "cta": "",
       "blocks": [
         {
           "object": "block",
@@ -46526,6 +46631,13 @@
       "id": "31c2e378b76a804b9f91c10ea9801588",
       "title": "About",
       "slug": "about",
+      "categories": [
+        "Policy"
+      ],
+      "summary": "",
+      "imageUrl": "/images/logo.png",
+      "hook": "",
+      "cta": "",
       "blocks": [
         {
           "object": "block",

@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         return {};
     }
 
-    const title = `${roadmapItem.title} | SolQuant Development Lab`;
+    const title = `${roadmapItem.title} | SolQuant Lab`;
     
     // Robust description extraction
     let description = roadmapItem.description || "";
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description = "Explore coming features and institutional-grade tools in the SolQuant Development Lab.";
     }
 
-    const imageUrl = roadmapItem.imageUrl || roadmapItem.previewImageUrls?.[0] || "/images/twitter-header.png";
+    const ogImageUrl = (roadmapItem as any).ogImageUrl || roadmapItem.imageUrl || roadmapItem.previewImageUrls?.[0] || "/images/twitter-header.png";
 
     return {
         title,
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             type: "article",
             images: [
                 {
-                    url: imageUrl,
+                    url: ogImageUrl,
                     width: 1200,
                     height: 630,
                     alt: roadmapItem.title,
@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             card: "summary_large_image",
             title,
             description,
-            images: [imageUrl],
+            images: [ogImageUrl],
         },
     };
 }

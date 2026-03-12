@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description = `Learn how to use the ${articleMeta.title} indicator on SolQuant. Technical analysis tools built for institutional precision.`;
     }
 
-    const imageUrl = articleMeta.screenshotUrl || articleMeta.imageUrl || "/images/twitter-header.png";
+    const ogImageUrl = articleMeta.ogImageUrl || articleMeta.screenshotOgUrl || articleMeta.screenshotUrl || articleMeta.imageUrl || "/images/twitter-header.png";
 
     return {
         title,
@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             type: "article",
             images: [
                 {
-                    url: imageUrl,
+                    url: ogImageUrl,
                     width: 1200,
                     height: 630,
                     alt: articleMeta.title,
@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             card: "summary_large_image",
             title,
             description,
-            images: [imageUrl],
+            images: [ogImageUrl],
         },
     };
 }

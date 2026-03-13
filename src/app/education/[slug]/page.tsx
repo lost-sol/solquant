@@ -97,9 +97,7 @@ export default async function EducationArticlePage({ params }: Props) {
 
             <div className="flex flex-col gap-4 mb-4">
                 <div className="flex flex-col">
-                    <span className="inline-flex items-center self-start px-2.5 py-0.5 rounded-full text-xs font-mono font-bold bg-solquant-gold/10 text-solquant-gold border border-solquant-gold/20 uppercase tracking-widest mb-3">
-                        Education
-                    </span>
+
                     <h1 className="text-4xl md:text-5xl tracking-tight mb-0">{articleMeta.title}</h1>
                 </div>
             </div>

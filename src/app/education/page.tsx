@@ -35,14 +35,12 @@ export default async function EducationPage() {
                         )}
                         <div className="p-5 flex flex-col flex-grow">
                             <h3 className="font-bold text-lg text-white flex items-center mb-2 group-hover:text-[#e0a82e] transition-colors">
-                                <span className="text-[#e0a82e] mr-2">📚</span> {article.title}
+                                {article.title}
                             </h3>
                             <p className="text-sm font-mono text-gray-400 mb-4 flex-grow leading-relaxed line-clamp-2">
                                 {article.summary || "Select to learn more about this best practice."}
                             </p>
-                            <span className="text-xs font-mono px-2 py-1 rounded self-start bg-white/10 text-gray-300">
-                                Education
-                            </span>
+
                         </div>
                     </Link>
                 ))}

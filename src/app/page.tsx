@@ -1,16 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getRoadmap, getWikiArticles, getEducationArticles, getStrategies } from "@/lib/notion";
+import { getRoadmap, getWikiArticles, getStrategies } from "@/lib/notion";
 import FAQ from "@/components/FAQ";
 import ExplorerCard from "@/components/explorer/ExplorerCard";
 import manifest from "@/data/backtest-explorer/manifest.json";
 
 export default async function Home() {
-    const [roadmapItems, wikiArticles, strategies, educationArticles] = await Promise.all([
+    const [roadmapItems, wikiArticles, strategies] = await Promise.all([
         getRoadmap(),
         getWikiArticles(),
-        getStrategies(),
-        getEducationArticles()
+        getStrategies()
     ]);
     return (
         <div className="flex flex-col items-center justify-center min-h-screen text-foreground">
@@ -404,43 +403,6 @@ export default async function Home() {
                 </div>
             </section>
 
-            {/* Educational Best Practices */}
-            <section id="education" className="w-full max-w-screen-2xl px-6 py-24 mx-auto border-t border-white/5">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Educational Best Practices</h2>
-                    <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-                        Master the psychological and mechanical edge required for professional trading. 
-                        Moving beyond indicators into pure execution and risk management.
-                    </p>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {educationArticles.map((article: any) => (
-                        <Link key={article.id} href={`/education/${article.slug}`} className="group flex flex-col bg-[#0a0a0a] hover:bg-[#111111] border border-white/5 rounded-2xl overflow-hidden transition-all duration-300 shadow-xl hover:scale-[1.02] hover:border-solquant-gold/30">
-                            {article.imageUrl && (
-                                <div className="w-full h-48 bg-black relative border-b border-white/5 overflow-hidden">
-                                    <img src={article.imageUrl} alt={article.title} className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity" />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none"></div>
-                                </div>
-                            )}
-                            <div className="p-6 flex flex-col flex-grow">
-                                <h3 className="font-bold text-xl text-white mb-3 group-hover:text-solquant-gold transition-colors">
-                                    {article.title}
-                                </h3>
-                                <p className="text-sm text-gray-400 flex-grow leading-relaxed line-clamp-3 mb-6">
-                                    {article.summary || article.hook || "Master the mechanics of professional trading edge."}
-                                </p>
-                                <div className="flex items-center text-xs font-bold text-solquant-gold uppercase tracking-widest mt-auto">
-                                    Read Article
-                                    <svg className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </Link>
-                    ))}
-                </div>
-            </section>
 
             {/* The Development Lab (formerly Active Development) */}
             <section className="w-full max-w-screen-2xl px-6 md:px-12 py-12">

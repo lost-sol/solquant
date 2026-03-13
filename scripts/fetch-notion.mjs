@@ -544,66 +544,73 @@ async function buildEducation() {
     // For Education, we fetch the children of EDUCATION_PAGE_ID
     // These children are expected to be "child_page" blocks
     const results = await fetchNotionBlocks(EDUCATION_PAGE_ID);
-    const subPages = results.filter(block => block.type === 'child_page');
+    const subPages = results.filter(block => block.type === 'child_page' && !block.archived && !block.in_trash);
 
-    console.log(`Found ${subPages.length} subpages in Education.`);
+    console.log(`Found ${subPages.length} active child pages in Education.`);
 
-    const items = await Promise.all(subPages.map(async (pageBlock) => {
+    const items = (await Promise.all(subPages.map(async (pageBlock) => {
         const pageId = pageBlock.id;
         const pageTitle = pageBlock.child_page.title;
         const slug = pageTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
-        // Fetch the full page object to get cover/icon
-        const page = await notion.pages.retrieve({ page_id: pageId });
+        try {
+            console.log(`  - Fetching education page: ${pageTitle} (${pageId})`);
+            
+            // Fetch the full page object to get cover/icon
+            const page = await notion.pages.retrieve({ page_id: pageId });
 
-        const item = {
-            id: pageId,
-            title: pageTitle,
-            slug: slug,
-            categories: ["Education"],
-            summary: "", // Will extract from blocks
-            imageUrl: "/images/logo.png",
-            hook: page.properties.Hook?.rich_text[0]?.plain_text || "",
-            cta: page.properties.CTA?.rich_text[0]?.plain_text || "",
-            blocks: []
-        };
+            const item = {
+                id: pageId,
+                title: pageTitle,
+                slug: slug,
+                categories: ["Education"],
+                summary: "", // Will extract from blocks
+                imageUrl: "/images/logo.png",
+                hook: page.properties.Hook?.rich_text[0]?.plain_text || "",
+                cta: page.properties.CTA?.rich_text[0]?.plain_text || "",
+                blocks: []
+            };
 
-        // Get Blocks
-        console.log(`Fetching blocks for education page: ${pageTitle}`);
-        item.blocks = await fetchNotionBlocks(pageId);
+            // Get Blocks
+            item.blocks = await fetchNotionBlocks(pageId);
 
-        // Fallback description from blocks
-        const firstParagraph = item.blocks.find(b => b.type === 'paragraph');
-        if (firstParagraph && firstParagraph.paragraph.rich_text.length > 0) {
-            item.summary = firstParagraph.paragraph.rich_text.map(t => t.plain_text).join("").substring(0, 160) + "...";
-        }
-        
-        // Fetch Cover Image
-        let imageUrl = page.cover?.external?.url || page.cover?.file?.url;
-        if (!imageUrl) {
-            const imageBlock = item.blocks.find((b) => b.type === "image");
-            if (imageBlock) {
-                imageUrl = imageBlock.image?.external?.url || imageBlock.image?.file?.url;
+            // Fallback description from blocks
+            const firstParagraph = item.blocks.find(b => b.type === 'paragraph');
+            if (firstParagraph && firstParagraph.paragraph.rich_text.length > 0) {
+                item.summary = firstParagraph.paragraph.rich_text.map(t => t.plain_text).join("").substring(0, 160) + "...";
             }
+            
+            // Fetch Cover Image
+            let imageUrl = page.cover?.external?.url || page.cover?.file?.url;
+            if (!imageUrl) {
+                const imageBlock = item.blocks.find((b) => b.type === "image");
+                if (imageBlock) {
+                    imageUrl = imageBlock.image?.external?.url || imageBlock.image?.file?.url;
+                }
+            }
+
+            // Only use icon as absolute last resort if it's an image, not emoji
+            if (!imageUrl && page.icon?.type !== 'emoji') {
+                imageUrl = page.icon?.external?.url || page.icon?.file?.url;
+            }
+
+            // Scan blocks for local images
+            await replaceImageBlocksWithLocalPaths(item.blocks);
+
+            if (imageUrl) {
+                const { imageUrl: cleanUrl, ogImageUrl } = await downloadAndCacheImage(imageUrl, pageId, "notion", item.title, item.hook, item.cta, true);
+                item.imageUrl = cleanUrl;
+                item.ogImageUrl = ogImageUrl;
+            }
+
+            return item;
+        } catch (e) {
+            console.error(`  FAILED to fetch education page "${pageTitle}":`, e.message);
+            return null;
         }
+    }))).filter(item => item !== null);
 
-        // Only use icon as absolute last resort if it's an image, not emoji
-        if (!imageUrl && page.icon?.type !== 'emoji') {
-            imageUrl = page.icon?.external?.url || page.icon?.file?.url;
-        }
-
-        // Scan blocks for local images
-        await replaceImageBlocksWithLocalPaths(item.blocks);
-
-        if (imageUrl) {
-            const { imageUrl: cleanUrl, ogImageUrl } = await downloadAndCacheImage(imageUrl, pageId, "notion", item.title, item.hook, item.cta, true);
-            item.imageUrl = cleanUrl;
-            item.ogImageUrl = ogImageUrl;
-        }
-
-        return item;
-    }));
-
+    console.log(`Successfully processed ${items.length} education articles.`);
     return items;
 }
 

@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-03-12T22:19:31.207938Z",
+  "strategies": [
+    {
+      "id": "mean-reversion",
+      "name": "Mean Reversion MTF",
+      "description": "Multi-timeframe Bollinger Band mean reversion with EMA trend filter, RSI, and ADX confirmation.",
+      "tokens": [
+        "SOL",
+        "ETH",
+        "SUI",
+        "BTC",
+        "HYPE",
+        "BNB"
+      ],
+      "status": "production",
+      "category": "mean-reversion",
+      "timeframe": "15m",
+      "best_token": "SOL",
+      "best_return_pct": 1549.53
+    },
+    {
+      "id": "smc",
+      "name": "Smart Money Concepts",
+      "description": "Order block and fair value gap strategy based on Smart Money Concepts with higher-timeframe structure filter.",
+      "tokens": [
+        "SUI",
+        "SOL",
+        "BTC",
+        "ETH",
+        "HYPE",
+        "BNB"
+      ],
+      "status": "beta",
+      "category": "smart-money",
+      "timeframe": "15m",
+      "best_token": "SUI",
+      "best_return_pct": 607.1
+    },
+    {
+      "id": "liquidation",
+      "name": "Liquidation Sweep",
+      "description": "Trades liquidation level sweeps detected from open interest and volume spikes at leveraged price offsets.",
+      "tokens": [
+        "SOL",
+        "ETH"
+      ],
+      "status": "experimental",
+      "category": "liquidation",
+      "timeframe": "15m",
+      "best_token": "SOL",
+      "best_return_pct": 52.69
+    },
+    {
+      "id": "confluence",
+      "name": "Confluence",
+      "description": "Multi-signal confluence strategy combining AlphaTrend, EMA filters, and SMMA for high-probability entries.",
+      "tokens": [
+        "SOL"
+      ],
+      "status": "experimental",
+      "category": "trend",
+      "timeframe": "5m",
+      "best_token": "SOL",
+      "best_return_pct": 47.12
+    },
+    {
+      "id": "trend-exhaustion",
+      "name": "Trend Exhaustion",
+      "description": "Detects trend exhaustion using momentum oscillators with multi-filter confirmation and ATR-based risk management.",
+      "tokens": [
+        "SUI",
+        "ETH",
+        "HYPE",
+        "SOL",
+        "BNB",
+        "BTC"
+      ],
+      "status": "beta",
+      "category": "trend",
+      "timeframe": "15m",
+      "best_token": "SUI",
+      "best_return_pct": 45.93
+    },
+    {
+      "id": "scalper-ltf",
+      "name": "Scalper LTF",
+      "description": "Low-timeframe scalping strategy using EMA crossovers, RSI, and Bollinger Band squeezes on 1-minute charts.",
+      "tokens": [
+        "SOL"
+      ],
+      "status": "experimental",
+      "category": "scalping",
+      "timeframe": "1m",
+      "best_token": "SOL",
+      "best_return_pct": 20.72
+    },
+    {
+      "id": "grid",
+      "name": "Grid Trading",
+      "description": "Grid-based DCA strategy that places orders at fixed intervals around a baseline price.",
+      "tokens": [
+        "SOL"
+      ],
+      "status": "experimental",
+      "category": "grid",
+      "timeframe": "15m",
+      "best_token": "SOL",
+      "best_return_pct": 0.31
+    }
+  ]
+}

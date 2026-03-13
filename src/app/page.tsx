@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { getRoadmap, getWikiArticles, getEducationArticles, getStrategies } from "@/lib/notion";
 import FAQ from "@/components/FAQ";
+import ExplorerCard from "@/components/explorer/ExplorerCard";
+import manifest from "@/data/backtest-explorer/manifest.json";
 
 export default async function Home() {
     const [roadmapItems, wikiArticles, strategies] = await Promise.all([
@@ -272,32 +274,35 @@ export default async function Home() {
                                 {/* Strategist Signals */}
                                 <div className="space-y-4">
                                     <h4 className="text-[10px] uppercase tracking-[0.2em] text-solquant-gold font-bold">Strategist</h4>
-                                    <div className="grid grid-cols-1 gap-2">
-                                        {strategies.slice(0, 3).map((strategy: any) => (
-                                            <Link
-                                                key={strategy.id}
-                                                href={`/strategies/${strategy.slug}`}
-                                                className="flex items-center gap-2 p-1.5 rounded-2xl bg-white/[0.03] border border-white/5 hover:bg-solquant-gold/10 hover:border-solquant-gold/30 transition-all duration-300 group/item"
-                                            >
-                                                <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-white/10 flex-shrink-0">
-                                                    <Image
-                                                        src={strategy.imageUrl && strategy.imageUrl !== '/images/logo.png' ? strategy.imageUrl : '/images/liquidation.jpg'}
-                                                        alt={strategy.title}
-                                                        fill
-                                                        className="object-cover"
-                                                    />
-                                                </div>
-                                                <div className="flex flex-col">
-                                                    <span className="text-xs font-semibold text-gray-300 group-hover/item:text-solquant-gold transition-colors line-clamp-1">{strategy.title}</span>
-                                                    {strategy.stats?.net_profit_pct && (
-                                                        <span className="text-[10px] font-mono text-solquant-gold">+{strategy.stats.net_profit_pct.toFixed(0)}% Profit</span>
-                                                    )}
-                                                </div>
-                                                <svg className="w-4 h-4 ml-auto text-gray-600 group-hover/item:text-solquant-gold transition-transform group-hover/item:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-                                                </svg>
-                                            </Link>
-                                        ))}
+                                    <div className="grid grid-cols-2 gap-2">
+                                        {manifest.strategies.map((strategy) => {
+                                            const notionStrategy = strategies.find((s: any) => s.title === strategy.name);
+                                            return (
+                                                <Link
+                                                    key={strategy.id}
+                                                    href={`/strategies/explore/${strategy.id}`}
+                                                    className="flex items-center gap-2 p-1.5 rounded-2xl bg-white/[0.03] border border-white/5 hover:bg-solquant-gold/10 hover:border-solquant-gold/30 transition-all duration-300 group/item"
+                                                >
+                                                    <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-white/10 flex-shrink-0">
+                                                        <Image
+                                                            src={notionStrategy?.imageUrl && notionStrategy.imageUrl !== '/images/logo.png' ? notionStrategy.imageUrl : '/images/liquidation.jpg'}
+                                                            alt={strategy.name}
+                                                            fill
+                                                            className="object-cover"
+                                                        />
+                                                    </div>
+                                                    <div className="flex flex-col min-w-0">
+                                                        <span className="text-[11px] font-semibold text-gray-300 group-hover/item:text-solquant-gold transition-colors line-clamp-1 leading-tight">{strategy.name}</span>
+                                                        {strategy.best_return_pct !== null && (
+                                                            <span className="text-[9px] font-mono text-solquant-gold">+{strategy.best_return_pct.toFixed(0)}% Profit</span>
+                                                        )}
+                                                    </div>
+                                                    <svg className="w-3.5 h-3.5 ml-auto text-gray-600 group-hover/item:text-solquant-gold transition-transform group-hover/item:translate-x-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                                                    </svg>
+                                                </Link>
+                                            );
+                                        })}
                                     </div>
                                 </div>
 
@@ -366,117 +371,17 @@ export default async function Home() {
             {/* Strategies Section */}
             <section id="strategies" className="w-full max-w-screen-2xl px-6 py-24 mx-auto border-t border-white/5">
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-solquant-gold/10 border border-solquant-gold/20 text-solquant-gold text-xs font-bold uppercase tracking-widest">
-                        <span className="w-2 h-2 rounded-full bg-solquant-gold animate-pulse"></span>
-                        Coming Soon
-                    </div>
+
                     <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Trading Strategies</h2>
                     <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
-                        Automated execution systems built for the modern market. Backtested rigorously, engineered for performance.
+                        Deep-dive into backtested performance across tokens, parameters, and market conditions.
+                        Full transparency on returns, drawdowns, and individual trades.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {strategies.map((strategy: any) => (
-                        <div key={strategy.id} className="relative group overflow-hidden rounded-3xl border border-white/5 bg-[#0a0a0a]/40 backdrop-blur-xl transition-all duration-500 hover:border-solquant-gold/40 hover:bg-[#0a0a0a]/60 flex flex-col shadow-2xl">
-                            <div className="absolute inset-0 bg-gradient-to-br from-solquant-gold/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                            
-                            {/* Strategy Image/Thumbnail Header */}
-                            <div className="relative w-full h-48 overflow-hidden">
-                                <Image
-                                    src={strategy.imageUrl && strategy.imageUrl !== '/images/logo.png' ? strategy.imageUrl : '/images/liquidation.jpg'}
-                                    alt={strategy.title}
-                                    fill
-                                    className="object-cover opacity-60 group-hover:opacity-90 transition-all duration-700 group-hover:scale-105"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/20 to-transparent"></div>
-                                <div className="absolute top-6 left-6 flex items-center gap-3">
-                                    <span className="text-[10px] font-bold text-solquant-gold bg-black/60 backdrop-blur-md px-3 py-1 border border-solquant-gold/30 rounded-full uppercase tracking-widest shadow-xl">
-                                        COMING SOON
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div className="px-8 pb-8 -mt-12 relative z-10 flex-grow">
-                                <div className="flex items-end justify-between mb-6">
-                                    <div>
-                                        <h3 className="text-3xl font-bold tracking-tight mb-2 group-hover:text-solquant-gold transition-colors">{strategy.title}</h3>
-                                        <p className="text-gray-400 text-sm leading-relaxed line-clamp-2 max-w-[80%]">
-                                            {strategy.summary || "Advanced execution logic engineered for maximum consistency and risk-adjusted returns."}
-                                        </p>
-                                    </div>
-                                </div>
-                                
-                                {strategy.stats ? (
-                                    <div className="space-y-4">
-                                        {strategy.stats.start_date && (
-                                            <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white/[0.03] border border-white/5 w-fit">
-                                                <svg className="w-3.5 h-3.5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                                </svg>
-                                                <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider">
-                                                    {strategy.stats.start_date} — {strategy.stats.end_date}
-                                                </span>
-                                            </div>
-                                        )}
-                                        <div className="grid grid-cols-2 gap-4">
-                                        <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 hover:bg-white/[0.05] transition-colors">
-                                            <span className="text-[10px] uppercase tracking-widest text-gray-500 font-bold block mb-1">Net Profit</span>
-                                            <span className="text-2xl font-black text-solquant-gold tracking-tight">
-                                                +{strategy.stats.net_profit_pct.toFixed(0)}%
-                                            </span>
-                                        </div>
-                                        <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 hover:bg-white/[0.05] transition-colors">
-                                            <span className="text-[10px] uppercase tracking-widest text-gray-500 font-bold block mb-1">Win Rate</span>
-                                            <span className="text-2xl font-black text-white tracking-tight">
-                                                {strategy.stats.win_rate.toFixed(1)}%
-                                            </span>
-                                        </div>
-                                        <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 hover:bg-white/[0.05] transition-colors">
-                                            <span className="text-[10px] uppercase tracking-widest text-gray-500 font-bold block mb-1">Max Drawdown</span>
-                                            <span className="text-2xl font-black text-red-500/80 tracking-tight">
-                                                -{Math.abs(strategy.stats.max_drawdown_pct).toFixed(1)}%
-                                            </span>
-                                        </div>
-                                        <div className="bg-white/[0.03] border border-white/5 rounded-2xl p-4 hover:bg-white/[0.05] transition-colors">
-                                            <span className="text-[10px] uppercase tracking-widest text-gray-500 font-bold block mb-1">Total Trades</span>
-                                            <span className="text-2xl font-black text-white tracking-tight">
-                                                {strategy.stats.total_trades}
-                                            </span>
-                                        </div>
-                                        </div>
-                                    </div>
-                                ) : (
-                                    <div className="py-8 text-center border-y border-white/5 opacity-50 italic text-sm">
-                                        Performance verification in progress...
-                                    </div>
-                                )}
-                            </div>
-
-                            <div className="px-8 pb-8">
-                                <Link 
-                                    href={`/strategies/${strategy.slug}`}
-                                    className="w-full inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-solquant-gold text-black font-black text-xs uppercase tracking-[0.2em] shadow-[0_0_30px_rgba(212,175,55,0.2)] hover:shadow-[0_0_50px_rgba(212,175,55,0.4)] hover:scale-[1.02] transition-all duration-300 group/btn"
-                                >
-                                    <span>View Performance Logic</span>
-                                    <svg className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                    </svg>
-                                </Link>
-                            </div>
-                        </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {manifest.strategies.map((strategy) => (
+                        <ExplorerCard key={strategy.id} strategy={strategy} />
                     ))}
-                    
-                    {strategies.length === 0 && (
-                        <div className="col-span-full relative group overflow-hidden rounded-3xl border border-white/10 bg-[#0a0a0a] p-12 text-center">
-                            <div className="absolute inset-0 bg-gradient-to-b from-solquant-gold/5 to-transparent pointer-events-none"></div>
-                            <div className="relative z-10">
-                                <h3 className="text-3xl font-bold mb-4">Engineering in Progress</h3>
-                                <p className="text-gray-400 max-w-xl mx-auto text-lg leading-relaxed">
-                                    We are currently refining our next generation of trading strategies. Check back shortly for updated backtest results.
-                                </p>
-                            </div>
-                        </div>
-                    )}
                 </div>
             </section>
 

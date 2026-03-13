@@ -167,10 +167,40 @@ export default function StrategyDetailClient({ data }: { data: StrategyData }) {
         {trades && trades.length > 0 && <TradeLog trades={trades} />}
 
         {/* Signal Description */}
-        <div>
-          <h3 className="text-lg font-bold mb-4">Signal Logic</h3>
-          <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-5">
-            <p className="text-gray-300 text-sm leading-relaxed">{data.strategy.signal_summary}</p>
+        <div className="space-y-12">
+          <div>
+            <h3 className="text-lg font-bold mb-4">Signal Logic</h3>
+            <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-5">
+              <p className="text-gray-300 text-sm leading-relaxed">{data.strategy.signal_summary}</p>
+            </div>
+          </div>
+
+          {/* Subscription CTA */}
+          <div className="flex flex-col items-center py-12 border-t border-white/5">
+            <div className="max-w-md w-full flex flex-col items-center space-y-6">
+              <div className="text-center space-y-2">
+                <h3 className="text-2xl font-bold tracking-tight">Access the Strategist Suite</h3>
+                <p className="text-gray-400 text-sm">
+                  Get full TradingView access to this strategy and the entire Strategist indicator suite.
+                </p>
+              </div>
+              
+              <Link
+                href="https://whop.com/solquant/strategist-d2/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center gap-3 px-8 py-4.5 rounded-2xl bg-solquant-gold text-black font-black text-xs uppercase tracking-[0.2em] shadow-[0_0_30px_rgba(212,175,55,0.2)] hover:shadow-[0_0_50px_rgba(212,175,55,0.4)] hover:scale-[1.02] transition-all duration-300 group/btn"
+              >
+                <span>Subscribe via Whop</span>
+                <svg className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+              
+              <p className="text-[10px] text-gray-500 font-medium leading-relaxed text-center">
+                By clicking, you will be redirected to our secure store on Whop. Your purchase is subject to our <Link href="/terms" className="text-gray-400 underline hover:text-solquant-gold transition-colors">Terms of Service</Link> and <Link href="/privacy" className="text-gray-400 underline hover:text-solquant-gold transition-colors">Privacy Policy</Link>.
+              </p>
+            </div>
           </div>
         </div>
 

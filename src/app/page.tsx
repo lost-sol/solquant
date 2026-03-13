@@ -275,7 +275,7 @@ export default async function Home() {
                                 <div className="space-y-4">
                                     <h4 className="text-[10px] uppercase tracking-[0.2em] text-solquant-gold font-bold">Strategist</h4>
                                     <div className="grid grid-cols-2 gap-2">
-                                        {manifest.strategies.map((strategy) => {
+                                        {manifest.strategies.slice(0, 3).map((strategy) => {
                                             const notionStrategy = strategies.find((s: any) => s.title === strategy.name);
                                             return (
                                                 <Link
@@ -303,6 +303,16 @@ export default async function Home() {
                                                 </Link>
                                             );
                                         })}
+                                        {/* "and more" link */}
+                                        <Link
+                                            href="#strategies"
+                                            className="flex items-center justify-center gap-2 p-1.5 rounded-2xl bg-white/[0.03] border border-white/5 hover:bg-solquant-gold/10 hover:border-solquant-gold/30 transition-all duration-300 group/item"
+                                        >
+                                            <span className="text-[11px] font-bold text-gray-400 group-hover:text-solquant-gold transition-colors uppercase tracking-widest">and more...</span>
+                                            <svg className="w-3.5 h-3.5 text-gray-600 group-hover:text-solquant-gold transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                                            </svg>
+                                        </Link>
                                     </div>
                                 </div>
 
@@ -356,11 +366,19 @@ export default async function Home() {
                             </div>
 
                             <div className="mt-auto pt-6 flex flex-col items-center w-full">
-                                <div className="w-full inline-flex items-center justify-center gap-3 px-8 py-4.5 rounded-2xl bg-white/5 border border-white/10 text-gray-500 font-black text-xs uppercase tracking-[0.2em] cursor-not-allowed">
-                                    <span>COMING SOON</span>
-                                </div>
+                                <Link
+                                    href="https://whop.com/solquant/strategist-d2/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full inline-flex items-center justify-center gap-3 px-8 py-4.5 rounded-2xl bg-solquant-gold text-black font-black text-xs uppercase tracking-[0.2em] shadow-[0_0_30px_rgba(212,175,55,0.2)] hover:shadow-[0_0_50px_rgba(212,175,55,0.4)] hover:scale-[1.02] transition-all duration-300 group/btn"
+                                >
+                                    <span>Subscribe via Whop</span>
+                                    <svg className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </Link>
                                 <p className="mt-6 text-[10px] text-gray-500 font-medium leading-relaxed text-center max-w-[90%]">
-                                    Engineering backtested execution systems. Launching shortly for inner circle members.
+                                    By clicking, you will be redirected to our secure store on Whop. Your purchase is subject to our <Link href="/terms" className="text-gray-400 underline hover:text-solquant-gold transition-colors">Terms of Service</Link> and <Link href="/privacy" className="text-gray-400 underline hover:text-solquant-gold transition-colors">Privacy Policy</Link>.
                                 </p>
                             </div>
                         </div>

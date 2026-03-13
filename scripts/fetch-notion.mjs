@@ -18,7 +18,7 @@ try {
     console.warn("WARNING: sharp not found. Image processing will be skipped.");
 }
 
-async function processMetadataImage(inputBuffer, title, id, hookText = null, ctaText = null) {
+async function processMetadataImage(inputBuffer, title, id, hookText = null, ctaText = null, stats = null) {
     if (!sharp) return inputBuffer;
 
     try {
@@ -111,7 +111,9 @@ async function processMetadataImage(inputBuffer, title, id, hookText = null, cta
         // Measure each layer height
         const titleH = titleWrap.lines.length * tLH;
         const hookH  = hookWrap ? hookWrap.lines.length * hLH : 0;
-        const totalStackH = titleH + (hookH ? GAP_HOOK + hookH : 0) + GAP_CTA + CTA_H;
+        const STATS_H = stats ? 85 : 0;
+        const GAP_STATS = stats ? 28 : 0;
+        const totalStackH = titleH + (hookH ? GAP_HOOK + hookH : 0) + (stats ? GAP_STATS + STATS_H : 0) + GAP_CTA + CTA_H;
 
         // Anchor bottom of stack 28px above image bottom
         const STACK_BOTTOM = height - 28;
@@ -127,7 +129,13 @@ async function processMetadataImage(inputBuffer, title, id, hookText = null, cta
         const lastTextBaseline = hookWrap
             ? hook1stBaseline + (hookWrap.lines.length - 1) * hLH
             : title1stBaseline + (titleWrap.lines.length - 1) * tLH;
-        const ctaTopY  = lastTextBaseline + GAP_CTA;
+        
+        // Stats: baseline if they exist
+        const statsBaseY = stats ? lastTextBaseline + GAP_STATS + 18 : 0;
+        
+        const ctaTopY  = stats 
+            ? statsBaseY + 40 + GAP_CTA 
+            : lastTextBaseline + GAP_CTA;
         const ctaTextY = ctaTopY + CTA_H * 0.66;
 
         // ── Build SVG elements ────────────────────────────────────────────────
@@ -143,6 +151,26 @@ async function processMetadataImage(inputBuffer, title, id, hookText = null, cta
                 return `<text x="${TEXT_LEFT}" y="${y}" font-family="Arial, sans-serif" font-size="${hFS}" font-weight="400" fill="rgba(255,255,255,0.78)" letter-spacing="0.01em">${line}</text>`;
             }).join("\n");
         }
+        
+        let statsSVG = "";
+        if (stats) {
+            const ret = stats.net_profit_pct !== undefined ? `${stats.net_profit_pct > 0 ? '+' : ''}${stats.net_profit_pct.toLocaleString(undefined, { maximumFractionDigits: 1 })}%` : "N/A";
+            const dd = stats.max_drawdown_pct !== undefined ? `${Math.abs(stats.max_drawdown_pct).toLocaleString(undefined, { maximumFractionDigits: 1 })}%` : "N/A";
+            const wr = stats.win_rate !== undefined ? `${stats.win_rate.toLocaleString(undefined, { maximumFractionDigits: 1 })}%` : "N/A";
+
+            statsSVG = `
+                <g transform="translate(${TEXT_LEFT}, ${statsBaseY})">
+                    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="rgba(255,255,255,0.6)" letter-spacing="0.1em">RETURN</text>
+                    <text x="0" y="42" font-family="Arial Black, Arial, sans-serif" font-size="42" font-weight="900" fill="#22c55e" letter-spacing="-0.02em">${ret}</text>
+                    
+                    <text x="350" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="rgba(255,255,255,0.6)" letter-spacing="0.1em">DRAWDOWN</text>
+                    <text x="350" y="42" font-family="Arial Black, Arial, sans-serif" font-size="42" font-weight="900" fill="#ef4444" letter-spacing="-0.02em">${dd}</text>
+                    
+                    <text x="700" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="rgba(255,255,255,0.6)" letter-spacing="0.1em">WINRATE</text>
+                    <text x="700" y="42" font-family="Arial Black, Arial, sans-serif" font-size="42" font-weight="900" fill="#D4AF37" letter-spacing="-0.02em">${wr}</text>
+                </g>
+            `;
+        }
 
         const ctaSVG = `
             <rect x="${TEXT_LEFT}" y="${ctaTopY}" width="${CTA_W}" height="${CTA_H}" rx="8" fill="#D4AF37"/>
@@ -154,16 +182,17 @@ async function processMetadataImage(inputBuffer, title, id, hookText = null, cta
         const svgOverlay = `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <linearGradient id="scrim" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%"   stop-color="#000" stop-opacity="0.00"/>
-                    <stop offset="38%"  stop-color="#000" stop-opacity="0.10"/>
-                    <stop offset="65%"  stop-color="#000" stop-opacity="0.60"/>
-                    <stop offset="100%" stop-color="#000" stop-opacity="0.92"/>
+                    <stop offset="0%"   stop-color="#000" stop-opacity="0.45"/>
+                    <stop offset="38%"  stop-color="#000" stop-opacity="0.65"/>
+                    <stop offset="65%"  stop-color="#000" stop-opacity="0.88"/>
+                    <stop offset="100%" stop-color="#000" stop-opacity="0.96"/>
                 </linearGradient>
             </defs>
             <rect width="${width}" height="${height}" fill="url(#scrim)"/>
 
             ${titleSVG}
             ${hookSVG}
+            ${statsSVG}
             ${ctaSVG}
             ${copyrightSVG}
         </svg>`;
@@ -263,10 +292,10 @@ async function fetchNotionBlocks(blockId) {
     return allBlocks;
 }
 
-async function downloadAndCacheImage(url, id, folder = "notion", title = "SolQuant", headlineText = null, ctaText = null, generateOg = false) {
-    if (!url) return { imageUrl: "/images/logo.png", ogImageUrl: "/images/logo.png" };
+async function downloadAndCacheImage(url, id, folder = "notion", title = "SolQuant", headlineText = null, ctaText = null, generateOg = false, localSrcPath = null, stats = null) {
+    if (!url && !localSrcPath) return { imageUrl: "/images/logo.png", ogImageUrl: "/images/logo.png" };
     try {
-        const urlHash = crypto.createHash('md5').update(url.split('?')[0]).digest('hex').substring(0, 8);
+        const urlHash = crypto.createHash('md5').update((url || localSrcPath).split('?')[0]).digest('hex').substring(0, 8);
         const baseFileName = `${id}_${urlHash}`;
         const cleanFileName = `${baseFileName}.jpg`;
         const ogFileName = `${baseFileName}-og.jpg`;
@@ -291,15 +320,20 @@ async function downloadAndCacheImage(url, id, folder = "notion", title = "SolQua
             // If sharp is available AND generateOg is true, we ALWAYS re-process the OG image to ensure logic/branding is current.
             
             let originalBuffer;
-            if (!cleanExists || (generateOg && !ogExists)) {
+            if (url && (!cleanExists || (generateOg && !ogExists))) {
                 console.log(`Downloading${generateOg ? " and branding" : ""} image: ${id}`);
                 const response = await fetch(url);
                 if (!response.ok) throw new Error(`Failed to fetch image: ${response.statusText}`);
                 const arrayBuffer = await response.arrayBuffer();
                 originalBuffer = Buffer.from(arrayBuffer);
-            } else {
+            } else if (localSrcPath && (!cleanExists || (generateOg && !ogExists))) {
+                console.log(`Branding local source image: ${id}`);
+                originalBuffer = fs.readFileSync(localSrcPath);
+            } else if (cleanExists) {
                 // If cleanExists, we can use the existing clean file as the source for branding if we just need to re-brand
                 originalBuffer = fs.readFileSync(cleanPath);
+            } else {
+                return { imageUrl: "/images/logo.png", ogImageUrl: "/images/logo.png" };
             }
 
             // 1. Save clean version if it doesn't exist
@@ -317,7 +351,7 @@ async function downloadAndCacheImage(url, id, folder = "notion", title = "SolQua
             if (generateOg) {
                 if (sharp) {
                     console.log(`  Branding OG image: ${ogFileName}`);
-                    const ogBuffer = await processMetadataImage(originalBuffer, title, id, headlineText, ctaText);
+                    const ogBuffer = await processMetadataImage(originalBuffer, title, id, headlineText, ctaText, stats);
                     fs.writeFileSync(ogPath, ogBuffer);
                 } else if (!ogExists) {
                     // Fallback to copy clean if sharp unavailable and OG doesn't exist
@@ -706,13 +740,96 @@ async function buildStrategies() {
         await replaceImageBlocksWithLocalPaths(item.blocks);
 
         if (imageUrl) {
-            const { imageUrl: cleanUrl, ogImageUrl } = await downloadAndCacheImage(imageUrl, page.id, "notion", item.title, hook, cta, true);
+            const { imageUrl: cleanUrl, ogImageUrl } = await downloadAndCacheImage(imageUrl, page.id, "notion", item.title, hook, cta, true, null, item.stats);
             item.imageUrl = cleanUrl;
             item.ogImageUrl = ogImageUrl;
         }
 
         return item;
     }));
+    return items;
+}
+
+async function buildExplorerStrategies(notionStrategies) {
+    console.log("Building Explorer Strategy Metadata...");
+    const manifestPath = path.join(process.cwd(), "src", "data", "backtest-explorer", "manifest.json");
+    if (!fs.existsSync(manifestPath)) {
+        console.warn("WARNING: manifest.json not found. Skipping explorer strategy metadata.");
+        return [];
+    }
+
+    const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf-8"));
+    const items = await Promise.all(manifest.strategies.map(async (strategy) => {
+        // Find matching Notion strategy by name/title
+        const match = notionStrategies.find(s => s.title.toLowerCase() === strategy.name.toLowerCase() || s.title.toLowerCase().includes(strategy.name.toLowerCase()));
+        
+        if (match) {
+            return {
+                id: strategy.id,
+                name: strategy.name,
+                ogImageUrl: match.ogImageUrl, // Reuse the one generated in buildStrategies if possible
+                hook: match.hook || strategy.description,
+                cta: match.cta || "View Now"
+            };
+        }
+
+        // Pull stats for explorer strategies from their specific JSON files
+        let explorerStats = null;
+        try {
+            const strategyDataPath = path.join(process.cwd(), "src", "data", "backtest-explorer", `${strategy.id}.json`);
+            if (fs.existsSync(strategyDataPath)) {
+                const strategyData = JSON.parse(fs.readFileSync(strategyDataPath, "utf-8"));
+                const bestToken = strategy.best_token;
+                // Find stats for the best token
+                if (strategyData.best_params && strategyData.best_params[bestToken]) {
+                    const metrics = strategyData.best_params[bestToken].metrics;
+                    explorerStats = {
+                        net_profit_pct: metrics.return_pct,
+                        max_drawdown_pct: metrics.max_dd_pct,
+                        win_rate: metrics.win_rate
+                    };
+                }
+            }
+        } catch (e) {
+            console.error(`Failed to load stats for explorer strategy ${strategy.id}:`, e.message);
+        }
+
+        // If no match (e.g. Trend Exhaustion), generate a branded version using the default header
+        console.log(`No Notion match for explorer strategy: ${strategy.name}. Generating branded fallback.`);
+        const defaultPath = path.join(process.cwd(), "public", "images", "twitter-header.png");
+        
+        try {
+            const { ogImageUrl } = await downloadAndCacheImage(
+                null, 
+                `explorer_${strategy.id}`, 
+                "notion", 
+                strategy.name, 
+                strategy.description, 
+                "View Backtest", 
+                true, 
+                defaultPath,
+                explorerStats
+            );
+            
+            return {
+                id: strategy.id,
+                name: strategy.name,
+                ogImageUrl: ogImageUrl,
+                hook: strategy.description,
+                cta: "View Backtest"
+            };
+        } catch (e) {
+            console.error(`Failed to generate fallback for ${strategy.name}:`, e.message);
+            return {
+                id: strategy.id,
+                name: strategy.name,
+                ogImageUrl: "/images/twitter-header.png",
+                hook: strategy.description,
+                cta: "View Backtest"
+            };
+        }
+    }));
+
     return items;
 }
 
@@ -727,6 +844,7 @@ async function main() {
         wiki: [],
         education: [],
         strategies: [],
+        explorer_strategies: [],
         policies: []
     };
 
@@ -768,6 +886,7 @@ async function main() {
     try {
         if (STRATEGY_DATABASE_ID) {
             data.strategies = await buildStrategies();
+            data.explorer_strategies = await buildExplorerStrategies(data.strategies);
         }
     } catch (e) {
         console.error("Failed to build strategies:", e.message);

@@ -39990,7 +39990,4970 @@
       "ogImageUrl": "/images/notion/31f2e378-b76a-806d-a124-c3d298fc57d3_screenshot_7d7a7fc4-og.jpg"
     }
   ],
-  "education": [],
+  "education": [
+    {
+      "id": "31c2e378-b76a-809c-8fd4-edd00e6208f2",
+      "title": "Risk Management",
+      "slug": "risk-management",
+      "categories": [
+        "Education"
+      ],
+      "summary": "The primary goal of trading is survival. Staying in the game allows you to gain experience, find your \"edge,\" and participate in the massive, asymmetric moves t...",
+      "imageUrl": "/images/notion/31c2e378-b76a-809c-8fd4-edd00e6208f2_6f93aaa7.jpg",
+      "hook": "",
+      "cta": "",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80d2-aa8e-e18aa1e5d0eb",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:37:00.000Z",
+          "last_edited_time": "2026-03-07T12:44:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The Core Philosophy: Survival First",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The Core Philosophy: Survival First",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "yellow"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80bd-b931-d1c143655435",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:37:00.000Z",
+          "last_edited_time": "2026-03-07T12:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The primary goal of trading is survival. Staying in the game allows you to gain experience, find your \"edge,\" and participate in the massive, asymmetric moves typical of crypto markets. If you blow up your account, the game ends immediately.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The primary goal of trading is survival. Staying in the game allows you to gain experience, find your \"edge,\" and participate in the massive, asymmetric moves typical of crypto markets. If you blow up your account, the game ends immediately.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80d4-a18f-de13b81cfa7e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:44:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Invalidation and Stop Loss Logic",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Invalidation and Stop Loss Logic",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "yellow"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80db-b539-d223cc276afa",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "A stop loss is not just an arbitrary number; it is a direct reflection of your trade thesis.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "A stop loss is not just an arbitrary number; it is a direct reflection of your trade thesis.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80bf-8974-e6b5acb1d99f",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The Thesis Link",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The Thesis Link",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8022-840a-f44302ad8971",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:44:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Every trade must have a clear ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Every trade must have a clear ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "\"invalidation point\"",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "\"invalidation point\"",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " where the original reason for taking the trade is proven wrong. If you buy because a specific level is support, your stop should be placed where that level fails.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " where the original reason for taking the trade is proven wrong. If you buy because a specific level is support, your stop should be placed where that level fails.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8077-8e3a-d0b8ac6adb47",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Precision Matching",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Precision Matching",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8079-86b1-ecaeced876fc",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The strictness of your stop should match the timeframe. Scalps require surgical precision and tight stops, while high-time-frame swing trades need more room to breathe.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The strictness of your stop should match the timeframe. Scalps require surgical precision and tight stops, while high-time-frame swing trades need more room to breathe.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8095-9981-e363125220b5",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Hard vs. Soft Stops",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Hard vs. Soft Stops",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8012-928c-c0ac14abf4a4",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Beginners should prioritize hard stops (automated market orders). Soft stops (mental exits) require high emotional discipline and experience to execute without hesitation.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Beginners should prioritize hard stops (automated market orders). Soft stops (mental exits) require high emotional discipline and experience to execute without hesitation.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80d1-a8ac-f109c100266f",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:44:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Position Sizing and Risk",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Position Sizing and Risk",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "yellow"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8007-8750-d0d1731bcbad",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Position size (how much you buy) and risk per trade (how much you lose if stopped out) are separate concepts.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Position size (how much you buy) and risk per trade (how much you lose if stopped out) are separate concepts.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-809e-a995-db229e895bc4",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The Calculation",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The Calculation",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-806b-aaf2-f0f1306bf808",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Position Size = (Portfolio Equity × Risk Percentage) / Distance to Invalidation.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Position Size = (Portfolio Equity × Risk Percentage) / Distance to Invalidation.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80bb-8c1b-cf7a54fb6ba6",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Variable Risking",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Variable Risking",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80db-a3a0-fed9e2d27e55",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Avoid risking a flat 1% on every trade. Use a spectrum: risk less on high-frequency, \"marginal\" setups and risk more on rare, high-conviction \"A+\" setups.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Avoid risking a flat 1% on every trade. Use a spectrum: risk less on high-frequency, \"marginal\" setups and risk more on rare, high-conviction \"A+\" setups.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-804a-84a2-c11fa8fb34ad",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Expected Value (EV)",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Expected Value (EV)",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-805c-904c-f1f555905b13",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Your risk should be tailored to the historical performance and average outcome of the specific setup you are trading.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Your risk should be tailored to the historical performance and average outcome of the specific setup you are trading.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-802f-82ae-cf1b2d329dc3",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:44:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Trade Management and \"Evolving R\"",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Trade Management and \"Evolving R\"",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "yellow"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-807f-881e-c498b395b6f8",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Risk-to-reward ratios are dynamic, not static.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Risk-to-reward ratios are dynamic, not static.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80d9-84ea-e7f165a90fbe",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The Concept",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The Concept",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8009-9833-e70fa272a04e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "As price moves toward your target, the \"Evolving R\" changes. If you are very close to your target but haven't moved your stop, you are essentially risking a large amount of unrealized profit to gain a tiny bit more.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "As price moves toward your target, the \"Evolving R\" changes. If you are very close to your target but haven't moved your stop, you are essentially risking a large amount of unrealized profit to gain a tiny bit more.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80dc-aaa1-e9af9c3e849f",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Preventing Round-Trips",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Preventing Round-Trips",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80ee-b081-c13297075eb5",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The goal of active management is to ensure a trade that is nearly complete does not return all the way to your original stop loss.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The goal of active management is to ensure a trade that is nearly complete does not return all the way to your original stop loss.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80bd-8efc-e8e9291bfe48",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The Beginner Trap",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The Beginner Trap",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8061-b325-fc6d703fe699",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:43:00.000Z",
+          "last_edited_time": "2026-03-07T12:43:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Early in a career, traders often over-manage trades based on emotion. \"Set and Forget\" is usually a better baseline for gathering clean data.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Early in a career, traders often over-manage trades based on emotion. \"Set and Forget\" is usually a better baseline for gathering clean data.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80bd-9bad-c838a786a036",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:37:00.000Z",
+          "last_edited_time": "2026-03-07T12:44:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Streaks and Market Regimes",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Streaks and Market Regimes",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "yellow"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80a9-a9dc-ff79eea37549",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:37:00.000Z",
+          "last_edited_time": "2026-03-07T12:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Winning and losing streaks provide clues about market conditions.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Winning and losing streaks provide clues about market conditions.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80ba-8a7d-db4d47e57450",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:37:00.000Z",
+          "last_edited_time": "2026-03-07T12:39:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Regime Shifts",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Regime Shifts",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-804c-8146-e930ed2b6f24",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:39:00.000Z",
+          "last_edited_time": "2026-03-07T12:39:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "If your \"ranging\" setups start losing while \"trending\" setups start winning, the market has likely shifted. Use this data to adjust which tools you use.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "If your \"ranging\" setups start losing while \"trending\" setups start winning, the market has likely shifted. Use this data to adjust which tools you use.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-806c-b43d-dadaf1e497ec",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:37:00.000Z",
+          "last_edited_time": "2026-03-07T12:39:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The \"Breakeven\" Fallacy",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The \"Breakeven\" Fallacy",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8030-96da-e0c232daf7a3",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:39:00.000Z",
+          "last_edited_time": "2026-03-07T12:39:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Moving a stop to breakeven is often a psychological coping mechanism rather than a logical one. By moving to breakeven, you are often choosing to sell at the exact support level where you were originally happy to buy.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Moving a stop to breakeven is often a psychological coping mechanism rather than a logical one. By moving to breakeven, you are often choosing to sell at the exact support level where you were originally happy to buy.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-809f-9004-ea33c7653798",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:37:00.000Z",
+          "last_edited_time": "2026-03-07T12:44:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Leverage and Crypto-Specific Risks",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Leverage and Crypto-Specific Risks",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "yellow"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8074-9672-e3c1ed154a07",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:37:00.000Z",
+          "last_edited_time": "2026-03-07T12:37:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Leverage is a tool for collateralization, not a shortcut to wealth.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Leverage is a tool for collateralization, not a shortcut to wealth.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8023-a90d-fa493fdc112b",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:37:00.000Z",
+          "last_edited_time": "2026-03-07T12:40:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Position Size is King",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Position Size is King",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80d4-884d-cd6293b0d2fa",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:40:00.000Z",
+          "last_edited_time": "2026-03-07T12:40:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Your PnL is dictated by your position size, not the leverage slider. Higher leverage simply means you are providing less collateral, moving your liquidation point closer to the current price.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Your PnL is dictated by your position size, not the leverage slider. Higher leverage simply means you are providing less collateral, moving your liquidation point closer to the current price.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8086-ba33-d00cef0ef36c",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:37:00.000Z",
+          "last_edited_time": "2026-03-07T12:40:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The Correlation Trap",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The Correlation Trap",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8048-9b74-ded68f7b0ffe",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:40:00.000Z",
+          "last_edited_time": "2026-03-07T12:40:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Crypto assets are highly correlated to the downside. Diversifying into ten different altcoins does not protect you if Bitcoin crashes, as they will likely all move together.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Crypto assets are highly correlated to the downside. Diversifying into ten different altcoins does not protect you if Bitcoin crashes, as they will likely all move together.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8005-9232-e264b7aa6716",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:37:00.000Z",
+          "last_edited_time": "2026-03-07T12:40:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Counterparty and Security Risk",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Counterparty and Security Risk",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-808b-abae-f31481d59af2",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-809c-8fd4-edd00e6208f2"
+          },
+          "created_time": "2026-03-07T12:40:00.000Z",
+          "last_edited_time": "2026-03-07T12:40:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Risk management extends to exchange uptime and personal security. Use hardware wallets, unique emails, and non-SMS 2FA to protect your capital from hacks and phishing.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Risk management extends to exchange uptime and personal security. Use hardware wallets, unique emails, and non-SMS 2FA to protect your capital from hacks and phishing.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        }
+      ],
+      "ogImageUrl": "/images/notion/31c2e378-b76a-809c-8fd4-edd00e6208f2_6f93aaa7-og.jpg"
+    },
+    {
+      "id": "31c2e378-b76a-8052-8ea4-e13014539047",
+      "title": "Liquidity and Market Makers",
+      "slug": "liquidity-and-market-makers",
+      "categories": [
+        "Education"
+      ],
+      "summary": "Liquidity cascades are self-reinforcing cycles where price movements trigger a wave of forced orders, which in turn drive the price further in the same directio...",
+      "imageUrl": "/images/notion/31c2e378-b76a-8052-8ea4-e13014539047_2c32e396.jpg",
+      "hook": "",
+      "cta": "",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-809a-b73e-f4a6f3015058",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Liquidity Cascades",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Liquidity Cascades",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80cf-9ae7-d9c71e65e0db",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Liquidity cascades are self-reinforcing cycles where price movements trigger a wave of forced orders, which in turn drive the price further in the same direction, triggering even more orders. In crypto, this is most commonly seen during \"long squeezes\" or \"short squeezes.\"",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Liquidity cascades are self-reinforcing cycles where price movements trigger a wave of forced orders, which in turn drive the price further in the same direction, triggering even more orders. In crypto, this is most commonly seen during \"long squeezes\" or \"short squeezes.\"",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-805c-934a-d3e67b0c3af6",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The Liquidity Loop",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The Liquidity Loop",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80d5-9c41-e0f21ec5c48c",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The process functions as a feedback loop. For example, in a downward cascade:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The process functions as a feedback loop. For example, in a downward cascade:",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8040-8b7a-e71bd3eb39f9",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:52:00.000Z",
+          "last_edited_time": "2026-03-07T12:53:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": true,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Initial Trigger",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Initial Trigger",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "children": [
+              {
+                "object": "block",
+                "id": "31c2e378-b76a-807f-9d29-dc9cbbd8a269",
+                "parent": {
+                  "type": "block_id",
+                  "block_id": "31c2e378-b76a-8040-8b7a-e71bd3eb39f9"
+                },
+                "created_time": "2026-03-07T12:52:00.000Z",
+                "last_edited_time": "2026-03-07T12:52:00.000Z",
+                "created_by": {
+                  "object": "user",
+                  "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+                },
+                "last_edited_by": {
+                  "object": "user",
+                  "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+                },
+                "has_children": false,
+                "in_trash": false,
+                "type": "paragraph",
+                "paragraph": {
+                  "rich_text": [
+                    {
+                      "type": "text",
+                      "text": {
+                        "content": "Price drops to a level where a cluster of \"Long\" positions have their liquidation prices.",
+                        "link": null
+                      },
+                      "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                      },
+                      "plain_text": "Price drops to a level where a cluster of \"Long\" positions have their liquidation prices.",
+                      "href": null
+                    }
+                  ],
+                  "color": "default"
+                },
+                "archived": false
+              }
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80a4-ba05-ff900255e95f",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:52:00.000Z",
+          "last_edited_time": "2026-03-07T12:53:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": true,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Forced Market Sell",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Forced Market Sell",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "children": [
+              {
+                "object": "block",
+                "id": "31c2e378-b76a-8009-8336-db69923c5d87",
+                "parent": {
+                  "type": "block_id",
+                  "block_id": "31c2e378-b76a-80a4-ba05-ff900255e95f"
+                },
+                "created_time": "2026-03-07T12:52:00.000Z",
+                "last_edited_time": "2026-03-07T12:52:00.000Z",
+                "created_by": {
+                  "object": "user",
+                  "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+                },
+                "last_edited_by": {
+                  "object": "user",
+                  "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+                },
+                "has_children": false,
+                "in_trash": false,
+                "type": "paragraph",
+                "paragraph": {
+                  "rich_text": [
+                    {
+                      "type": "text",
+                      "text": {
+                        "content": "The exchange forcibly closes these positions. A long liquidation is essentially a \"Market Sell\" order.",
+                        "link": null
+                      },
+                      "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                      },
+                      "plain_text": "The exchange forcibly closes these positions. A long liquidation is essentially a \"Market Sell\" order.",
+                      "href": null
+                    }
+                  ],
+                  "color": "default"
+                },
+                "archived": false
+              }
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8032-8867-cb6377dee824",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:52:00.000Z",
+          "last_edited_time": "2026-03-07T12:53:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": true,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Price Impact",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Price Impact",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "children": [
+              {
+                "object": "block",
+                "id": "31c2e378-b76a-8054-8af8-f2335c39e209",
+                "parent": {
+                  "type": "block_id",
+                  "block_id": "31c2e378-b76a-8032-8867-cb6377dee824"
+                },
+                "created_time": "2026-03-07T12:52:00.000Z",
+                "last_edited_time": "2026-03-07T12:52:00.000Z",
+                "created_by": {
+                  "object": "user",
+                  "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+                },
+                "last_edited_by": {
+                  "object": "user",
+                  "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+                },
+                "has_children": false,
+                "in_trash": false,
+                "type": "paragraph",
+                "paragraph": {
+                  "rich_text": [
+                    {
+                      "type": "text",
+                      "text": {
+                        "content": "Because these are urgent market orders, they consume the available \"Limit Buy\" orders in the book.",
+                        "link": null
+                      },
+                      "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                      },
+                      "plain_text": "Because these are urgent market orders, they consume the available \"Limit Buy\" orders in the book.",
+                      "href": null
+                    }
+                  ],
+                  "color": "default"
+                },
+                "archived": false
+              }
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80dd-974e-e3da09d0ef7b",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:52:00.000Z",
+          "last_edited_time": "2026-03-07T12:53:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": true,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The Chain Reaction",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The Chain Reaction",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "children": [
+              {
+                "object": "block",
+                "id": "31c2e378-b76a-809f-9c45-eccf81004504",
+                "parent": {
+                  "type": "block_id",
+                  "block_id": "31c2e378-b76a-80dd-974e-e3da09d0ef7b"
+                },
+                "created_time": "2026-03-07T12:52:00.000Z",
+                "last_edited_time": "2026-03-07T12:52:00.000Z",
+                "created_by": {
+                  "object": "user",
+                  "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+                },
+                "last_edited_by": {
+                  "object": "user",
+                  "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+                },
+                "has_children": false,
+                "in_trash": false,
+                "type": "paragraph",
+                "paragraph": {
+                  "rich_text": [
+                    {
+                      "type": "text",
+                      "text": {
+                        "content": "This sudden selling pressure drives the price down further, hitting the liquidation prices of the next layer of long positions.",
+                        "link": null
+                      },
+                      "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                      },
+                      "plain_text": "This sudden selling pressure drives the price down further, hitting the liquidation prices of the next layer of long positions.",
+                      "href": null
+                    }
+                  ],
+                  "color": "default"
+                },
+                "archived": false
+              }
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80a9-a455-d9939df30196",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:52:00.000Z",
+          "last_edited_time": "2026-03-07T12:53:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": true,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Acceleration",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Acceleration",
+                "href": null
+              }
+            ],
+            "color": "default",
+            "children": [
+              {
+                "object": "block",
+                "id": "31c2e378-b76a-8003-a9fc-d3f9b5e2cf92",
+                "parent": {
+                  "type": "block_id",
+                  "block_id": "31c2e378-b76a-80a9-a455-d9939df30196"
+                },
+                "created_time": "2026-03-07T12:52:00.000Z",
+                "last_edited_time": "2026-03-07T12:52:00.000Z",
+                "created_by": {
+                  "object": "user",
+                  "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+                },
+                "last_edited_by": {
+                  "object": "user",
+                  "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+                },
+                "has_children": false,
+                "in_trash": false,
+                "type": "paragraph",
+                "paragraph": {
+                  "rich_text": [
+                    {
+                      "type": "text",
+                      "text": {
+                        "content": "This cycle repeats rapidly (cascades), causing price to \"teleport\" or move much further than it would under normal organic trading.",
+                        "link": null
+                      },
+                      "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                      },
+                      "plain_text": "This cycle repeats rapidly (cascades), causing price to \"teleport\" or move much further than it would under normal organic trading.",
+                      "href": null
+                    }
+                  ],
+                  "color": "default"
+                },
+                "archived": false
+              }
+            ]
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-807e-9d6b-cf3fadcbbb7b",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The Role of Savvy Traders and Market Makers",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The Role of Savvy Traders and Market Makers",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8046-869c-cd60405738f5",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Cascades are often exacerbated by two other groups:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Cascades are often exacerbated by two other groups:",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8068-8c5b-d484506b02a4",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:53:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Predatory Traders:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Predatory Traders:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " \nSavvy participants who \"smell\" a cluster of trapped orders will add further market pressure to trigger the cascade, hoping to buy the eventual \"flush\" at a massive discount.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " \nSavvy participants who \"smell\" a cluster of trapped orders will add further market pressure to trigger the cascade, hoping to buy the eventual \"flush\" at a massive discount.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8038-81fe-fcfa47bcef7b",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:53:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Liquidity Withdrawal:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Liquidity Withdrawal:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " \nMarket makers, recognizing the toxicity of a one-sided cascade, will often \"quote wider\" or pull their limit orders entirely to avoid getting steamrolled, which makes the price drop even faster due to a lack of support.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " \nMarket makers, recognizing the toxicity of a one-sided cascade, will often \"quote wider\" or pull their limit orders entirely to avoid getting steamrolled, which makes the price drop even faster due to a lack of support.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8056-8dba-f768f2fa3b61",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "divider",
+          "divider": {},
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80f9-8a6a-d8bdf096ecdb",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Market Makers",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Market Makers",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-801e-b081-cba9d55ef681",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Market makers are professional liquidity providers. Their primary role is to ensure there is always a \"Bid\" and an \"Ask\" available for other traders to interact with.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Market makers are professional liquidity providers. Their primary role is to ensure there is always a \"Bid\" and an \"Ask\" available for other traders to interact with.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80af-a7b9-dacfc5ef38f2",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "How They Make Money: The Spread",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "How They Make Money: The Spread",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8084-9792-c6f0c19353b3",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Market makers don't typically bet on whether the price goes up or down. Instead, they \"capture the spread.\" They post a limit order to buy (the Bid) and a limit order to sell (the Ask). Their profit is the difference between these two prices, provided they can flip their \"inventory\" quickly.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Market makers don't typically bet on whether the price goes up or down. Instead, they \"capture the spread.\" They post a limit order to buy (the Bid) and a limit order to sell (the Ask). Their profit is the difference between these two prices, provided they can flip their \"inventory\" quickly.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80b7-9716-e075138c3f87",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Inventory Risk: The Great Misconception",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Inventory Risk: The Great Misconception",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-801f-9461-de35e7c3afaf",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "A common retail myth is that market makers love wild, volatile swings to \"stop hunt\" small traders. In reality, market makers prefer high-volume, range-bound markets.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "A common retail myth is that market makers love wild, volatile swings to \"stop hunt\" small traders. In reality, market makers prefer high-volume, range-bound markets.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80b4-a5e1-d0b5f8bba009",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The Goal:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The Goal:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " They want to remain \"Delta Neutral,\" meaning they have no directional exposure.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " They want to remain \"Delta Neutral,\" meaning they have no directional exposure.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8081-947b-de891c226d86",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "The Risk:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "The Risk:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " If a market maker fills a large \"Market Buy\" order, they are now \"Short\" that asset. If the price immediately rips upward before they can buy it back, they lose money. This is called ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " If a market maker fills a large \"Market Buy\" order, they are now \"Short\" that asset. If the price immediately rips upward before they can buy it back, they lose money. This is called ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Inventory Risk",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Inventory Risk",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": ".",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": ".",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8019-b7bf-ff15e9a33ce7",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Toxic Flow:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Toxic Flow:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " This occurs when \"informed\" traders (whales or insiders) hit a market maker with massive orders that the market maker cannot easily offset.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " This occurs when \"informed\" traders (whales or insiders) hit a market maker with massive orders that the market maker cannot easily offset.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80a6-a6e4-eee4730849ff",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_2",
+          "heading_2": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Mitigating Risk",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Mitigating Risk",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-800c-b8ca-f8c9935b0b56",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "When volatility increases, market makers protect themselves by:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "When volatility increases, market makers protect themselves by:",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-8079-a3be-cd1434ff2477",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Widening Spreads:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Widening Spreads:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Increasing the gap between the Bid and Ask to compensate for the higher risk of being caught on the wrong side of a move.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Increasing the gap between the Bid and Ask to compensate for the higher risk of being caught on the wrong side of a move.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "31c2e378-b76a-80a9-a2da-e4d568bb59e4",
+          "parent": {
+            "type": "page_id",
+            "page_id": "31c2e378-b76a-8052-8ea4-e13014539047"
+          },
+          "created_time": "2026-03-07T12:51:00.000Z",
+          "last_edited_time": "2026-03-07T12:51:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Adjusting Quotes:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Adjusting Quotes:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " If they have too much of an asset (Long inventory), they will lower their \"Ask\" price to attract buyers and lower their \"Bid\" to discourage more sellers.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " If they have too much of an asset (Long inventory), they will lower their \"Ask\" price to attract buyers and lower their \"Bid\" to discourage more sellers.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        }
+      ],
+      "ogImageUrl": "/images/notion/31c2e378-b76a-8052-8ea4-e13014539047_2c32e396-og.jpg"
+    },
+    {
+      "id": "3202e378-b76a-8078-bac1-c8c8162efc8d",
+      "title": "The Japanese Method for Trading Discipline",
+      "slug": "the-japanese-method-for-trading-discipline",
+      "categories": [
+        "Education"
+      ],
+      "summary": "Based on the Kaizen approach to eliminating bad trading habits....",
+      "imageUrl": "/images/logo.png",
+      "hook": "",
+      "cta": "",
+      "blocks": [
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80fe-abed-e0adc66f5e87",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Based on the Kaizen approach to eliminating bad trading habits.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": true,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Based on the Kaizen approach to eliminating bad trading habits.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-8060-8935-c37b6520798e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T12:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "1. The Core Philosophy: \"The Gap\"",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "1. The Core Philosophy: \"The Gap\"",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-8062-b7de-fb1c6509cb35",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Trading discipline isn't about willpower; it’s about biology. When you lose, your brain enters a \"threat\" state and seeks immediate relief. Discipline is simply the ability to create a ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Trading discipline isn't about willpower; it’s about biology. When you lose, your brain enters a \"threat\" state and seeks immediate relief. Discipline is simply the ability to create a ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "gap",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "gap",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " between an emotion (anger/fear) and your next action.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " between an emotion (anger/fear) and your next action.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-800a-90d5-e83b93966507",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T12:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "2. The 14-Day Kaizen Challenge",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "2. The 14-Day Kaizen Challenge",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-8090-90cd-efdc7b3611fe",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Don't try to \"fix\" your personality. Choose ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Don't try to \"fix\" your personality. Choose ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "one",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "one",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " bad habit and apply a micro-change for 14 days straight.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " bad habit and apply a micro-change for 14 days straight.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80f3-b743-d21deb2bf217",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "If you Revenge Trade:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "If you Revenge Trade:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " After every losing trade, you must stand up and drink exactly one sip of water.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " After every losing trade, you must stand up and drink exactly one sip of water.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80a9-aa0a-c30be48aa78e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "If you Overtrade:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "If you Overtrade:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Set a hard limit (e.g., 3 trades). Stop when you are 80% \"full\" of excitement—while you still ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Set a hard limit (e.g., 3 trades). Stop when you are 80% \"full\" of excitement—while you still ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "want",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": true,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "want",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " to trade.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " to trade.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80d7-8ea9-c152cf624494",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "If you Fomo/Rush:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "If you Fomo/Rush:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Count slowly from 1 to 5 before clicking the mouse on any entry.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Count slowly from 1 to 5 before clicking the mouse on any entry.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-8044-9345-e643a89065cc",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "If you Move Stops:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "If you Move Stops:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " After placing your stop, you must take a screenshot of the chart immediately.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " After placing your stop, you must take a screenshot of the chart immediately.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80cb-8ae3-f15236ffacfe",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T12:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "3. The Five Pillars of Mastery",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "3. The Five Pillars of Mastery",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80be-a733-ced20a4a067e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Ikigai (Purpose):",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Ikigai (Purpose):",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Trading is a tool for your life, not your identity. If it's your \"everything,\" every loss will feel like an insult.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Trading is a tool for your life, not your identity. If it's your \"everything,\" every loss will feel like an insult.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80f8-a23c-feb4306503d1",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Kaizen (1% Rule):",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Kaizen (1% Rule):",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Aim to be 1% less reactive today. If you usually break 10 rules a week, aim for 9.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Aim to be 1% less reactive today. If you usually break 10 rules a week, aim for 9.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80cf-b77c-f6a666294d9d",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Hara Hachi Bu (The 80% Rule):",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Hara Hachi Bu (The 80% Rule):",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Stop trading before you are emotionally exhausted. Leave the desk while you still feel \"hungry.\"",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Stop trading before you are emotionally exhausted. Leave the desk while you still feel \"hungry.\"",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80d9-b0d5-ecfb1ec5ff57",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Wabi-sabi (Imperfection):",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Wabi-sabi (Imperfection):",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " You ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " You ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "will",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": true,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "will",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " mess up. A \"pro\" isn't someone who never breaks a rule, but someone who returns to their plan the very next trade without a \"death spiral.\"",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " mess up. A \"pro\" isn't someone who never breaks a rule, but someone who returns to their plan the very next trade without a \"death spiral.\"",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80f3-a070-c3706736e214",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Gambaru (Consistency):",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Gambaru (Consistency):",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " On bad days, do the bare minimum. Open the chart, write one line in your journal, and close it. Don't lose momentum.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " On bad days, do the bare minimum. Open the chart, write one line in your journal, and close it. Don't lose momentum.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-803c-874d-ec51a841b4ab",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T12:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "4. Why This Works",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "4. Why This Works",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80f4-ae79-f9b0b5f42813",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Bypasses the \"Alarm\":",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Bypasses the \"Alarm\":",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Big changes (e.g., \"I will never lose my cool again\") scare the brain. Tiny changes (e.g., \"I will stand up\") are too small to resist.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Big changes (e.g., \"I will never lose my cool again\") scare the brain. Tiny changes (e.g., \"I will stand up\") are too small to resist.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80d7-80c8-e071dcf9030e",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Dopamine Shift:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Dopamine Shift:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " You are training your brain to get a \"hit\" from ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " You are training your brain to get a \"hit\" from ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "self-control",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "self-control",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " rather than the \"hit\" from a winning trade.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " rather than the \"hit\" from a winning trade.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80da-a89a-e5f714966f6a",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Identity Shift:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Identity Shift:",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " Every time you keep a tiny 30-second promise to yourself, you provide evidence to your brain that you are a disciplined person.",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " Every time you keep a tiny 30-second promise to yourself, you provide evidence to your brain that you are a disciplined person.",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80e8-8949-efe2b57ce747",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T12:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "heading_1",
+          "heading_1": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "5. The \"Comeback\" Rule",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "5. The \"Comeback\" Rule",
+                "href": null
+              }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-80c0-a933-c2fdeab601a3",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "If you have a catastrophic day where you break every rule:",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "If you have a catastrophic day where you break every rule:",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-802d-90e5-ffcbec94ec58",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Do not",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Do not",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " analyze the trades immediately (you are too emotional).",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " analyze the trades immediately (you are too emotional).",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-8082-ac0b-cbac108db363",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Do not",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Do not",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " insult yourself (shame leads to more impulsive trading).",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " insult yourself (shame leads to more impulsive trading).",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-803e-912f-dfa6f93fc0d8",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T11:59:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "numbered_list_item",
+          "numbered_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Do",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "Do",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " ask one question the next morning: ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " ask one question the next morning: ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "\"Did I come back to my process today?\"",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": true,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "\"Did I come back to my process today?\"",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        },
+        {
+          "object": "block",
+          "id": "3202e378-b76a-807d-ba4e-d58ec2e985c9",
+          "parent": {
+            "type": "page_id",
+            "page_id": "3202e378-b76a-8078-bac1-c8c8162efc8d"
+          },
+          "created_time": "2026-03-11T11:59:00.000Z",
+          "last_edited_time": "2026-03-11T12:00:00.000Z",
+          "created_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "last_edited_by": {
+            "object": "user",
+            "id": "0e9cfc00-803f-4f56-9f94-3903a58db10f"
+          },
+          "has_children": false,
+          "in_trash": false,
+          "type": "quote",
+          "quote": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "\"The market rewards the person who stays long enough for small progress to accumulate into big strength.\"",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "\"The market rewards the person who stays long enough for small progress to accumulate into big strength.\"",
+                "href": null
+              }
+            ],
+            "color": "default"
+          },
+          "archived": false
+        }
+      ]
+    }
+  ],
   "strategies": [
     {
       "id": "3202e378-b76a-8012-b003-eadc4c2d6337",
@@ -40056,6 +45019,57 @@
         "end_date": "Feb 25, 2026"
       },
       "ogImageUrl": "/images/notion/3202e378-b76a-804b-859e-f9696f2626b5_b441b5c5-og.jpg"
+    }
+  ],
+  "explorer_strategies": [
+    {
+      "id": "mean-reversion",
+      "name": "Mean Reversion MTF",
+      "ogImageUrl": "/images/notion/3202e378-b76a-804b-859e-f9696f2626b5_b441b5c5-og.jpg",
+      "hook": "Multi-timeframe Bollinger Band mean reversion with EMA trend filter, RSI, and ADX confirmation.",
+      "cta": "View Now"
+    },
+    {
+      "id": "smc",
+      "name": "Smart Money Concepts",
+      "ogImageUrl": "/images/notion/explorer_smc_ab6e53d1-og.jpg",
+      "hook": "Order block and fair value gap strategy based on Smart Money Concepts with higher-timeframe structure filter.",
+      "cta": "View Backtest"
+    },
+    {
+      "id": "liquidation",
+      "name": "Liquidation Sweep",
+      "ogImageUrl": "/images/notion/3202e378-b76a-8012-b003-eadc4c2d6337_cf7527d4-og.jpg",
+      "hook": "Trades liquidation level sweeps detected from open interest and volume spikes at leveraged price offsets.",
+      "cta": "View Now"
+    },
+    {
+      "id": "confluence",
+      "name": "Confluence",
+      "ogImageUrl": "/images/notion/explorer_confluence_ab6e53d1-og.jpg",
+      "hook": "Multi-signal confluence strategy combining AlphaTrend, EMA filters, and SMMA for high-probability entries.",
+      "cta": "View Backtest"
+    },
+    {
+      "id": "trend-exhaustion",
+      "name": "Trend Exhaustion",
+      "ogImageUrl": "/images/notion/explorer_trend-exhaustion_ab6e53d1-og.jpg",
+      "hook": "Detects trend exhaustion using momentum oscillators with multi-filter confirmation and ATR-based risk management.",
+      "cta": "View Backtest"
+    },
+    {
+      "id": "scalper-ltf",
+      "name": "Scalper LTF",
+      "ogImageUrl": "/images/notion/explorer_scalper-ltf_ab6e53d1-og.jpg",
+      "hook": "Low-timeframe scalping strategy using EMA crossovers, RSI, and Bollinger Band squeezes on 1-minute charts.",
+      "cta": "View Backtest"
+    },
+    {
+      "id": "grid",
+      "name": "Grid Trading",
+      "ogImageUrl": "/images/notion/explorer_grid_ab6e53d1-og.jpg",
+      "hook": "Grid-based DCA strategy that places orders at fixed intervals around a baseline price.",
+      "cta": "View Backtest"
     }
   ],
   "policies": [

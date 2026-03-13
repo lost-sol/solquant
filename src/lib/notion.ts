@@ -34,6 +34,11 @@ export async function getStrategies() {
     return (notionData as any).strategies || [];
 }
 
+// Helper to fetch explorer strategies
+export async function getExplorerStrategies() {
+    return (notionData as any).explorer_strategies || [];
+}
+
 // Helper to fetch a single page content, including nested blocks
 export async function getPageContent(pageId: string) {
     const wikiArticle = notionData.wiki.find((a: any) => a.id === pageId);

@@ -3,7 +3,27 @@ import manifest from "@/data/backtest-explorer/manifest.json";
 
 export const metadata = {
   title: "Strategy Explorer | SolQuant",
-  description: "Explore backtested performance of SolQuant quantitative trading strategies across multiple tokens.",
+  description: "Explore institutional-grade quantitative trading strategies with full transparency. Detailed backtest performance across 15+ tokens including SOL, ETH, and BTC.",
+  openGraph: {
+    title: "Strategy Explorer | SolQuant",
+    description: "Explore institutional-grade quantitative trading strategies with full transparency.",
+    type: "website",
+    url: "https://solquant.xyz/strategies",
+    images: [
+      {
+        url: "/images/notion/3202e378-b76a-804b-859e-f9696f2626b5_b441b5c5-og.jpg", // Using Mean Reversion as the featured explorer image
+        width: 1200,
+        height: 630,
+        alt: "SolQuant Strategy Explorer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Strategy Explorer | SolQuant",
+    description: "Explore institutional-grade quantitative trading strategies with full transparency.",
+    images: ["/images/notion/3202e378-b76a-804b-859e-f9696f2626b5_b441b5c5-og.jpg"],
+  },
 };
 
 export default function StrategiesPage() {

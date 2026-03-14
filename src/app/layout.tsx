@@ -33,6 +33,9 @@ export const metadata: Metadata = {
         creator: "@SolQuant",
         images: ["/images/twitter-header.png"],
     },
+    alternates: {
+        canonical: "https://solquant.xyz/",
+    },
 };
 
 export default function RootLayout({

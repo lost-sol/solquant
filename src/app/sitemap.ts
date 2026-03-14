@@ -28,33 +28,41 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     getStrategies(),
   ]);
 
-  const roadmapRoutes = roadmap.map((item: any) => ({
-    url: `${baseUrl}/lab/${item.slug}`,
-    lastModified: item.date ? new Date(item.date) : new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }));
+  const roadmapRoutes = (roadmap || [])
+    .filter((item: any) => item.slug)
+    .map((item: any) => ({
+      url: `${baseUrl}/lab/${item.slug}`,
+      lastModified: item.date && !isNaN(new Date(item.date).getTime()) ? new Date(item.date) : new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    }));
 
-  const wikiRoutes = wiki.map((item: any) => ({
-    url: `${baseUrl}/docs/${item.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }));
+  const wikiRoutes = (wiki || [])
+    .filter((item: any) => item.slug)
+    .map((item: any) => ({
+      url: `${baseUrl}/docs/${item.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    }));
 
-  const educationRoutes = education.map((item: any) => ({
-    url: `${baseUrl}/education/${item.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }));
+  const educationRoutes = (education || [])
+    .filter((item: any) => item.slug)
+    .map((item: any) => ({
+      url: `${baseUrl}/education/${item.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    }));
 
-  const strategyRoutes = strategies.map((item: any) => ({
-    url: `${baseUrl}/strategies/${item.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.9,
-  }));
+  const strategyRoutes = (strategies || [])
+    .filter((item: any) => item.slug)
+    .map((item: any) => ({
+      url: `${baseUrl}/strategies/${item.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    }));
 
   return [
     ...staticRoutes,
